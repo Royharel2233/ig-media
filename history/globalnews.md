@@ -8,3 +8,4 @@
 - 2026-10-22_0000: United CEO: Starlink is #2 reason to choose an airline; ~half of departures, fleetwide by end 2027
 - 2026-10-22_0000: summary: JPMorgan SpaceX target $500; Recursive Flint local coding model; Whop $5.1B; Getty Images Chapter 11 going private; Taiwan blocks Grab-Foodpanda; CVC explores Verisure take-private; Syria letter of credit for Aramco fuel
 - 2026-10-22_1030: Tesla Q3 (FCF +1.53B, capex cut to 20B); China CSI 300 bear market; Meta Q3 64.6B revenue, Muse 10M, non-voting share split; summary: IBM Q3 beat, EQT-Qiagen, Daytona $1B, Bitcoin below 83K
+- 2026-10-22_1300: Barclays 5,000 job cuts AI (Q3 2.3B GBP); Marathon Fusion mercury-to-gold claim; summary: Brent above 112, Asia selloff, Norway fund -30B Q3, Huawei 15B yuan loan, SpaceX-Tesla China hurdle (Reuters analysis), China disaster losses ~30B 9M
