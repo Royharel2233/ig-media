@@ -4,6 +4,8 @@ name: reels-daily
 # the script only publishes when it is the right hour in Israel.
 on:
   schedule: [{ cron: "2 15 * * *" }, { cron: "2 16 * * *" }]
+  push:
+    paths: ["ops/reels-now.txt"]   # editing this file publishes today's videos immediately (for tests)
   workflow_dispatch:
     inputs:
       force: { description: "Publish now regardless of the hour", type: boolean, default: false }
@@ -20,7 +22,7 @@ jobs:
       - run: git config user.name "ig-media-bot"; git config user.email "bot@users.noreply.github.com"
       - run: python engine/reels_daily.py
         env:
-          FORCE: "${{ inputs.force && '1' || '0' }}"
+          FORCE: "${{ (github.event_name == 'push' || inputs.force) && '1' || '0' }}"
           IG_TOKEN_GLOBALNEWS: "${{ secrets.IG_TOKEN_GLOBALNEWS }}"
           IG_TOKEN_1PAPER: "${{ secrets.IG_TOKEN_1PAPER }}"
           IG_TOKEN_HOWITWORKS: "${{ secrets.IG_TOKEN_HOWITWORKS }}"
