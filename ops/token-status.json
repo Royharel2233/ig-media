@@ -1,0 +1,18 @@
+{
+ "globalnews": {
+  "ok": true,
+  "username": "globalnews.il",
+  "type": "MEDIA_CREATOR",
+  "followers": 25,
+  "posts": 35,
+  "quota_used_24h": 4
+ },
+ "1paper": {
+  "ok": false,
+  "error": "Missing secret IG_TOKEN_1PAPER for page 1paper. Add it in repo Settings > Secrets and variables > Actions."
+ },
+ "howitworks": {
+  "ok": false,
+  "error": "Missing secret IG_TOKEN_HOWITWORKS for page howitworks. Add it in repo Settings > Secrets and variables > Actions."
+ }
+}
