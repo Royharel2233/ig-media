@@ -4,6 +4,7 @@ At the page's publish hour (Israel time) every video in today's folder is publis
 Safe to re-run: published videos are recorded in jobs/<page>/<date>/result.json and skipped."""
 import datetime, glob, json, os, subprocess, sys, zoneinfo
 from common import ROOT, PAGES, ig, wait_container, raw_url, wait_public, log
+import tiktok
 
 TZ = zoneinfo.ZoneInfo("Asia/Jerusalem")
 
@@ -63,6 +64,17 @@ def main():
             except Exception as e:
                 failed = True; res["errors"].append(f"{key}: {e}"); log("FAILED", page, key, e)
             json.dump(res, open(resfile, "w"), indent=1)
+        # TikTok: same videos as drafts in the TikTok app (Roy publishes them by hand).
+        if cfg.get("tiktok_drafts"):
+            for v in videos:
+                key = "tiktok:" + os.path.basename(v)
+                if key in res["done"]:
+                    continue
+                try:
+                    res["done"][key] = tiktok.upload_draft(v, cfg["tiktok_secret"]); log("tiktok draft", page, key, res["done"][key])
+                except Exception as e:
+                    failed = True; res["errors"].append(f"{key}: {e}"); log("FAILED", page, key, e)
+                json.dump(res, open(resfile, "w"), indent=1)
         git_push(f"reels {page} {day}")
     return 1 if failed else 0
 

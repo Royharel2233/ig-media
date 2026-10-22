@@ -24,3 +24,7 @@ jobs:
           IG_TOKEN_GLOBALNEWS: "${{ secrets.IG_TOKEN_GLOBALNEWS }}"
           IG_TOKEN_1PAPER: "${{ secrets.IG_TOKEN_1PAPER }}"
           IG_TOKEN_HOWITWORKS: "${{ secrets.IG_TOKEN_HOWITWORKS }}"
+          TIKTOK_CLIENT_KEY: "${{ secrets.TIKTOK_CLIENT_KEY }}"
+          TIKTOK_CLIENT_SECRET: "${{ secrets.TIKTOK_CLIENT_SECRET }}"
+          TIKTOK_REFRESH_TOKEN_HOWITWORKS: "${{ secrets.TIKTOK_REFRESH_TOKEN_HOWITWORKS }}"
+          GH_TOKEN: "${{ secrets.GH_SECRETS_PAT }}"

@@ -25,6 +25,8 @@
     "token_secret": "IG_TOKEN_HOWITWORKS",
     "topic": "Ready-made reels up to about 1 minute, prepared by Roy elsewhere. Claude does not write content for this page.",
     "mode": "reels_daily",
-    "publish_hour": 18
+    "publish_hour": 18,
+    "tiktok_drafts": true,
+    "tiktok_secret": "TIKTOK_REFRESH_TOKEN_HOWITWORKS"
   }
 }
