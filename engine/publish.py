@@ -2,7 +2,7 @@
 download the chosen Pexels photos, render, push the media to this public repo,
 then publish carousels and stories to Instagram. Safe to re-run: finished items are skipped."""
 import glob, json, os, subprocess, sys, traceback
-from common import ROOT, PAGES, pexels, download, ig, wait_container, raw_url, wait_public, log
+from common import ROOT, PAGES, pexels_image, ig, wait_container, raw_url, wait_public, log
 import render
 
 MAX_SLIDES = 10
@@ -43,8 +43,7 @@ def build(job, media_rel):
     for pid in ids:
         dest = os.path.join(media, "photos", f"{pid}.jpg")
         if not os.path.exists(dest):
-            info = pexels(f"photos/{pid}")
-            download(info["src"]["large2x"], dest)
+            pexels_image(pid, dest)
     brand = PAGES[job["page"]]["brand"]
     out = {}
     for p in job["posts"]:

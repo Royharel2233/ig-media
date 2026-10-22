@@ -23,10 +23,17 @@ def http(url, method="GET", data=None, headers=None, timeout=60):
         raise RuntimeError(f"{method} {url.split('?')[0]} -> HTTP {e.code}: {e.read()[:500]!r}")
 
 
-# ---------- Pexels ----------
-def pexels(path, **params):
-    key = os.environ["PEXELS_API_KEY"]
-    return http(f"https://api.pexels.com/v1/{path}?{urllib.parse.urlencode(params)}", headers={"Authorization": key})
+# ---------- Pexels (no API key: direct image CDN, ids come from Claude's web search) ----------
+def pexels_image(pid, dest, width=1600):
+    """Downloads a Pexels photo by id. The file extension in the CDN path varies, so try the common ones."""
+    last = None
+    for ext in ("jpeg", "jpg", "png"):
+        url = f"https://images.pexels.com/photos/{pid}/pexels-photo-{pid}.{ext}?auto=compress&cs=tinysrgb&w={width}"
+        try:
+            return download(url, dest)
+        except Exception as e:
+            last = e
+    raise RuntimeError(f"Pexels photo {pid} not found ({last})")
 
 
 def download(url, dest):

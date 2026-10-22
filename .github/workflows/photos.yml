@@ -1,5 +1,5 @@
 name: photos
-# Stage A: search Pexels for every new jobs/<page>/<slot>/queries.json
+# Stage A: contact sheets for the Pexels ids in every new jobs/<page>/<slot>/queries.json
 on:
   push:
     paths: ["jobs/**/queries.json"]
@@ -16,7 +16,6 @@ jobs:
         with: { python-version: "3.12" }
       - run: sudo apt-get install -y -q libraqm0 libfribidi0 && pip install -q pillow==11.3.0
       - run: python engine/photos.py
-        env: { PEXELS_API_KEY: "${{ secrets.PEXELS_API_KEY }}" }
       - run: |
           git config user.name "ig-media-bot"; git config user.email "bot@users.noreply.github.com"
           git add jobs && (git diff --cached --quiet || git commit -qm "photo candidates")

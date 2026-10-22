@@ -1,8 +1,8 @@
-"""Stage A: for every jobs/<page>/<slot>/queries.json without candidates.json,
-search Pexels and write candidates.json + one contact sheet per post for Claude to review."""
+"""Stage A: for every jobs/<page>/<slot>/queries.json without candidates.json, download the
+candidate Pexels ids Claude found and write candidates.json + one contact sheet per post."""
 import glob, json, os, sys
 from PIL import Image, ImageDraw, ImageFont
-from common import ROOT, pexels, download, log
+from common import ROOT, pexels_image, log
 
 FONT = os.path.join(os.path.dirname(__file__), "fonts", "Heebo.ttf")
 
@@ -30,17 +30,14 @@ def main():
             continue
         spec = json.load(open(q, encoding="utf-8"))
         out, tmp = {}, os.path.join("/tmp", "thumbs")
-        for post, queries in spec["posts"].items():
-            seen, items = set(), []
-            for query in queries:
-                res = pexels("search", query=query, orientation="portrait", per_page=6)
-                for p in res.get("photos", []):
-                    if p["id"] in seen:
-                        continue
-                    seen.add(p["id"])
-                    thumb = download(p["src"]["medium"], os.path.join(tmp, f"{p['id']}.jpg"))
-                    items.append({"id": p["id"], "query": query, "alt": p.get("alt", ""),
-                                  "photographer": p.get("photographer", ""), "_thumb": thumb})
+        for post, ids in spec["posts"].items():
+            items = []
+            for pid in dict.fromkeys(int(i) for i in ids):
+                try:
+                    thumb = pexels_image(pid, os.path.join(tmp, f"{pid}.jpg"), width=400)
+                    items.append({"id": pid, "_thumb": thumb})
+                except Exception as e:
+                    log("skip", pid, e)
             os.makedirs(os.path.join(jobdir, "candidates"), exist_ok=True)
             sheet(items, os.path.join(jobdir, "candidates", f"sheet_{post}.jpg"))
             out[post] = [{k: v for k, v in it.items() if not k.startswith("_")} for it in items]

@@ -18,7 +18,6 @@ jobs:
       - run: git config user.name "ig-media-bot"; git config user.email "bot@users.noreply.github.com"
       - run: python engine/publish.py
         env:
-          PEXELS_API_KEY: "${{ secrets.PEXELS_API_KEY }}"
           IG_TOKEN_GLOBALNEWS: "${{ secrets.IG_TOKEN_GLOBALNEWS }}"
           IG_TOKEN_1PAPER: "${{ secrets.IG_TOKEN_1PAPER }}"
           IG_TOKEN_HOWITWORKS: "${{ secrets.IG_TOKEN_HOWITWORKS }}"

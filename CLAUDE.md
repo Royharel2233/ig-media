@@ -8,7 +8,7 @@ This repo is public. It holds the input texts, the jobs Claude writes, the rende
 |---|---|---|
 | Put the digest text | Roy | `inbox/<page>/<YYYY-MM-DD_HHMM>/news.txt` |
 | Verify, choose stories, write slides and captions | Claude (scheduled run) | `jobs/<page>/<slot>/queries.json`, then `job.json` |
-| Search Pexels, contact sheets | Action `photos` | `jobs/<page>/<slot>/candidates/` |
+| Contact sheets of the candidate photos | Action `photos` | `jobs/<page>/<slot>/candidates/` |
 | Download photos, render, publish posts and stories | Action `publish` | `media/<page>/<slot>/`, `jobs/<page>/<slot>/result.json` |
 
 Pages are defined in `pages.json`. Only pages with `"enabled": true` are processed.
@@ -27,11 +27,16 @@ For each enabled page:
 
 Roy authorized automatic publishing without per-post approval for these scheduled runs (2026-10-22). Publishing rules from the skill still apply: only verified stories.
 
-## queries.json
+## queries.json (candidate photos)
+Pexels no longer issues API keys, so Claude finds candidates itself: run WebSearch with
+`allowed_domains: ["pexels.com"]` and a concrete English query (e.g. "courtroom gavel photo").
+Photo pages look like `https://www.pexels.com/photo/black-wooden-gavel-5668484/`; the number at the end is the id.
+Search pages returned in those results (`https://www.pexels.com/search/gavel/`) may then be read with WebFetch for more ids.
+Collect 8-15 ids per post (2-4 queries), then write:
 ```json
-{"posts": {"single1_meta": ["courtroom gavel", "smartphone dark"], "summary": ["stock market screen", "laptop coding"]}}
+{"posts": {"single1_meta": [5668484, 34817075, 37732186], "summary": [10628030, 7567223]}}
 ```
-Post names: `single1_<slug>`, `single2_<slug>`, `single3_<slug>`, `summary`. 2-4 queries per post, English, concrete objects.
+Post names: `single1_<slug>`, `single2_<slug>`, `single3_<slug>`, `summary`.
 
 ## job.json
 ```json
@@ -49,10 +54,10 @@ Post names: `single1_<slug>`, `single2_<slug>`, `single3_<slug>`, `summary`. 2-4
   ]
 }
 ```
-- `photo` is a Pexels id from `candidates.json`. The CTA slide reuses the cover photo with `blur: 14`.
+- `photo` is a Pexels id that appears in `candidates.json` (its thumbnail was on a contact sheet). The CTA slide reuses the cover photo with `blur: 14`.
 - 2-10 slides per post. Caption under 2,200 characters, at most 5 hashtags.
 - Stories (automatic): first slide of every single, and every summary slide except the last (CTA).
 - Feed posts are published in the order of `posts`, then the stories.
 
 ## Secrets (repo Settings > Secrets and variables > Actions)
-`PEXELS_API_KEY`, `IG_TOKEN_GLOBALNEWS`, `IG_TOKEN_1PAPER`, `IG_TOKEN_HOWITWORKS`, and optionally `GH_SECRETS_PAT` (fine-grained, Secrets read/write on this repo only) for the bi-weekly token refresh.
+`IG_TOKEN_GLOBALNEWS`, `IG_TOKEN_1PAPER`, `IG_TOKEN_HOWITWORKS`, and optionally `GH_SECRETS_PAT` (fine-grained, Secrets read/write on this repo only) for the bi-weekly token refresh.
