@@ -1,0 +1,39 @@
+name: threads-connect
+# One-time: exchange the Threads authorization code for a long-lived (60-day) token and store it as a repo secret.
+# Run from the Actions tab > threads-connect > Run workflow, pasting the "code" from the redirect URL.
+on:
+  workflow_dispatch:
+    inputs:
+      code: { description: "The code= value from the address bar after approving in Threads", required: true }
+      secret_name: { description: "Secret to store the token in", default: "THREADS_TOKEN_GLOBALNEWS" }
+jobs:
+  connect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: exchange
+        env:
+          CODE: "${{ inputs.code }}"
+          NAME: "${{ inputs.secret_name }}"
+          APP_ID: "${{ secrets.THREADS_APP_ID }}"
+          SEC: "${{ secrets.THREADS_APP_SECRET }}"
+          GH_TOKEN: "${{ secrets.GH_SECRETS_PAT }}"
+          REDIRECT: "https://github.com/Royharel2233/ig-media/"
+        run: |
+          echo "::add-mask::$CODE"
+          [ -n "$GH_TOKEN" ] || { echo "::error::GH_SECRETS_PAT secret is missing"; exit 1; }
+          [ -n "$APP_ID" ] && [ -n "$SEC" ] || { echo "::error::THREADS_APP_ID / THREADS_APP_SECRET secrets are missing"; exit 1; }
+          CODE=$(python3 -c "import urllib.parse,os;c=urllib.parse.unquote(os.environ['CODE']).strip();print(c[:-2] if c.endswith('#_') else c)")
+          RESP=$(curl -s -X POST https://graph.threads.com/oauth/access_token \
+            --data-urlencode "client_id=$APP_ID" --data-urlencode "client_secret=$SEC" --data-urlencode "code=$CODE" \
+            --data-urlencode "grant_type=authorization_code" --data-urlencode "redirect_uri=$REDIRECT")
+          ST=$(echo "$RESP" | python3 -c "import sys,json;print(json.load(sys.stdin).get('access_token',''))")
+          if [ -z "$ST" ]; then echo "::error::code exchange failed: $(echo "$RESP" | python3 -c "import sys,json;print(json.load(sys.stdin).get('error'))")"; exit 1; fi
+          echo "::add-mask::$ST"
+          RESP=$(curl -s -G https://graph.threads.com/access_token \
+            --data-urlencode "grant_type=th_exchange_token" --data-urlencode "client_secret=$SEC" --data-urlencode "access_token=$ST")
+          LT=$(echo "$RESP" | python3 -c "import sys,json;print(json.load(sys.stdin).get('access_token',''))")
+          if [ -z "$LT" ]; then echo "::error::long-lived exchange failed: $(echo "$RESP" | python3 -c "import sys,json;print(json.load(sys.stdin).get('error'))")"; exit 1; fi
+          echo "::add-mask::$LT"
+          ME=$(curl -s -G https://graph.threads.com/v1.0/me --data-urlencode "fields=id,username" --data-urlencode "access_token=$LT")
+          gh secret set "$NAME" --body "$LT" -R "$GITHUB_REPOSITORY"
+          echo "Threads connected as $(echo "$ME" | python3 -c "import sys,json;print(json.load(sys.stdin).get('username'))"); 60-day token stored in $NAME"
