@@ -11,7 +11,12 @@ This repo is public. It holds the input texts, the jobs Claude writes, the rende
 | Contact sheets of the candidate photos | Action `photos` | `jobs/<page>/<slot>/candidates/` |
 | Download photos, render, publish posts and stories | Action `publish` | `media/<page>/<slot>/`, `jobs/<page>/<slot>/result.json` |
 
-Pages are defined in `pages.json`. Only pages with `"enabled": true` are processed.
+Pages are defined in `pages.json`. Only pages with `"enabled": true` are processed. Each page has a `mode`:
+| mode | Page | Who makes the content | When |
+|---|---|---|---|
+| `news_carousels` | globalnews | Claude, from the digest in the inbox (this file) | scheduled Claude runs |
+| `paper_carousels` | 1paper | Claude, with the `one-paper-carousel` skill (see below) | scheduled Claude runs, only if its inbox slot has input |
+| `reels_daily` | howitworks | Roy, ready-made video + caption | Action `reels-daily`, 18:00 Israel. Claude does nothing for this page. |
 
 ## Scheduled run (08:00, 13:00, 19:00 Asia/Jerusalem)
 The slot is the run time rounded to the hour: `YYYY-MM-DD_0800`, `_1300`, `_1900` (Israel date).
@@ -26,6 +31,18 @@ For each enabled page:
 7. Wait for `result.json` with `"complete": true` (poll every 60 s, up to 30 min). Report to Roy: what was published (permalinks), what was dropped and why, sources, and any errors.
 
 Roy authorized automatic publishing without per-post approval for these scheduled runs (2026-10-22). Publishing rules from the skill still apply: only verified stories.
+
+## 1paper (mode paper_carousels)
+Input: `inbox/1paper/<slot>/` with a text file listing one or more paper links or notes.
+For each paper follow the `one-paper-carousel` skill exactly (fact list, check.py must pass, render.py with `Overflow: none`, look at the contact sheet).
+Then convert the Instagram PNGs to JPEG (quality 92; Instagram rejects PNG) and commit them to
+`media/1paper/<slot>/<post-id>/01.jpg ... 08.jpg`. Write `jobs/1paper/<slot>/job.json` with pre-rendered images (no queries.json, no Pexels):
+```json
+{"page": "1paper", "slot": "2026-10-23_0800", "stories": false,
+ "posts": [{"name": "18-ai-example", "type": "single", "caption": "...",
+            "images": ["media/1paper/2026-10-23_0800/18-ai-example/01.jpg", "..."]}]}
+```
+Commit the media and job.json in the same push. Append the paper title to `history/1paper.md`.
 
 ## queries.json (candidate photos)
 Pexels no longer issues API keys, so Claude finds candidates itself: run WebSearch with
