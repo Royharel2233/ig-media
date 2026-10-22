@@ -5,22 +5,26 @@
     "instagram": "globalnews.il",
     "lang": "he",
     "token_secret": "IG_TOKEN_GLOBALNEWS",
-    "topic": "חדשות עולם: טכנולוגיה, AI וכלכלה בסקופים; כל השאר בקרוסלת הסיכום"
+    "topic": "חדשות עולם: טכנולוגיה, AI וכלכלה בסקופים; כל השאר בקרוסלת הסיכום",
+    "mode": "news_carousels"
   },
   "1paper": {
-    "enabled": false,
+    "enabled": true,
     "brand": "1paper.ai",
     "instagram": "1paper.ai",
     "lang": "en",
     "token_secret": "IG_TOKEN_1PAPER",
-    "topic": "TODO: research papers explained for a general audience (English). Needs its own template."
+    "topic": "One research paper explained in an English 8-slide carousel. Follow the one-paper-carousel skill; render, convert to JPEG and publish as pre-rendered images.",
+    "mode": "paper_carousels"
   },
   "howitworks": {
-    "enabled": false,
+    "enabled": true,
     "brand": "how.it.works.il",
     "instagram": "how.it.works.il",
     "lang": "he",
     "token_secret": "IG_TOKEN_HOWITWORKS",
-    "topic": "TODO"
+    "topic": "Ready-made reels up to about 1 minute, prepared by Roy elsewhere. Claude does not write content for this page.",
+    "mode": "reels_daily",
+    "publish_hour": 18
   }
 }

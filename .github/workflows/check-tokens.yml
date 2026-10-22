@@ -1,0 +1,39 @@
+name: check-tokens
+# Read-only: confirms each Instagram secret works (username + publishing quota). Never prints tokens.
+on:
+  push:
+    paths: ["ops/check-tokens.txt"]
+  workflow_dispatch:
+permissions: { contents: write }
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: |
+          python - <<'PY'
+          import json, sys
+          sys.path.insert(0, "engine")
+          from common import PAGES, ig
+          out = {}
+          for page in PAGES:
+              try:
+                  me = ig(page, "GET", "me", fields="username,account_type,followers_count,media_count")
+                  q = ig(page, "GET", "me/content_publishing_limit", fields="quota_usage,config").get("data", [{}])[0]
+                  out[page] = {"ok": True, "username": me.get("username"), "type": me.get("account_type"),
+                               "followers": me.get("followers_count"), "posts": me.get("media_count"), "quota_used_24h": q.get("quota_usage")}
+              except Exception as e:
+                  out[page] = {"ok": False, "error": str(e)[:300].split("access_token")[0]}
+          json.dump(out, open("ops/token-status.json", "w"), indent=1)
+          print(json.dumps(out, indent=1))
+          PY
+        env:
+          IG_TOKEN_GLOBALNEWS: "${{ secrets.IG_TOKEN_GLOBALNEWS }}"
+          IG_TOKEN_1PAPER: "${{ secrets.IG_TOKEN_1PAPER }}"
+          IG_TOKEN_HOWITWORKS: "${{ secrets.IG_TOKEN_HOWITWORKS }}"
+      - run: |
+          git config user.name "ig-media-bot"; git config user.email "bot@users.noreply.github.com"
+          git add ops/token-status.json && (git diff --cached --quiet || git commit -qm "token status")
+          for i in 1 2 3; do git push -q && break; git pull -q --rebase; done

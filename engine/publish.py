@@ -30,8 +30,12 @@ def validate(job):
         cap = p.get("caption", "")
         if len(cap) > 2200: errs.append(f"{p['name']}: caption {len(cap)} chars")
         if cap.count("#") > 5: errs.append(f"{p['name']}: more than 5 hashtags")
-        if not 2 <= len(p["slides"]) <= MAX_SLIDES: errs.append(f"{p['name']}: {len(p['slides'])} slides")
+        n = len(p["images"]) if "images" in p else len(p.get("slides", []))
+        if not 2 <= n <= MAX_SLIDES: errs.append(f"{p['name']}: {n} slides")
         if p.get("type") not in ("single", "summary"): errs.append(f"{p['name']}: type must be single or summary")
+        for img in p.get("images", []) + p.get("story_images", []):
+            if not img.lower().endswith((".jpg", ".jpeg")): errs.append(f"{p['name']}: {img} must be JPEG (Instagram rejects PNG)")
+            elif not os.path.exists(os.path.join(ROOT, img)): errs.append(f"{p['name']}: missing {img}")
     if errs:
         raise RuntimeError("job.json invalid: " + "; ".join(errs))
 
@@ -39,7 +43,7 @@ def validate(job):
 def build(job, media_rel):
     """Download photos and render every post. Returns {post: {feed: [...], story: [...]}} (repo-relative paths)."""
     media = os.path.join(ROOT, media_rel)
-    ids = {s["photo"] for p in job["posts"] for s in p["slides"]}
+    ids = {s["photo"] for p in job["posts"] if "images" not in p for s in p["slides"]}
     for pid in ids:
         dest = os.path.join(media, "photos", f"{pid}.jpg")
         if not os.path.exists(dest):
@@ -47,6 +51,9 @@ def build(job, media_rel):
     brand = PAGES[job["page"]]["brand"]
     out = {}
     for p in job["posts"]:
+        if "images" in p:   # pre-rendered by Claude (e.g. 1paper): publish the given JPEGs as they are
+            out[p["name"]] = {"feed": p["images"], "story": p.get("story_images", [])}
+            continue
         slides = [dict(s, photo=os.path.join(media, "photos", f"{s['photo']}.jpg")) for s in p["slides"]]
         pdir = os.path.join(media, p["name"])
         render.run(slides, pdir, brand)

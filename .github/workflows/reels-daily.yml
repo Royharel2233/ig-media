@@ -1,0 +1,26 @@
+name: reels-daily
+# Publishes today's videos for pages with "mode": "reels_daily" at their publish hour (Israel time).
+# GitHub cron is UTC and Israel switches between UTC+2 and UTC+3, so run at both 15:00 and 16:00 UTC;
+# the script only publishes when it is the right hour in Israel.
+on:
+  schedule: [{ cron: "2 15 * * *" }, { cron: "2 16 * * *" }]
+  workflow_dispatch:
+    inputs:
+      force: { description: "Publish now regardless of the hour", type: boolean, default: false }
+concurrency: { group: reels-daily, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  reels:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: git config user.name "ig-media-bot"; git config user.email "bot@users.noreply.github.com"
+      - run: python engine/reels_daily.py
+        env:
+          FORCE: "${{ inputs.force && '1' || '0' }}"
+          IG_TOKEN_GLOBALNEWS: "${{ secrets.IG_TOKEN_GLOBALNEWS }}"
+          IG_TOKEN_1PAPER: "${{ secrets.IG_TOKEN_1PAPER }}"
+          IG_TOKEN_HOWITWORKS: "${{ secrets.IG_TOKEN_HOWITWORKS }}"
