@@ -1,7 +1,7 @@
 """Stage B: for every jobs/<page>/<slot>/job.json whose result.json is not complete:
 download the chosen Pexels photos, render, push the media to this public repo,
 then publish carousels and stories to Instagram. Safe to re-run: finished items are skipped."""
-import glob, json, os, subprocess, sys, traceback
+import datetime, glob, json, os, subprocess, sys, time, traceback
 from common import ROOT, PAGES, pexels_image, ig, wait_container, raw_url, wait_public, log
 import render
 
@@ -99,6 +99,14 @@ def run_job(jobfile):
     media_rel = "media/" + rel.split("/", 1)[1]               # media/<page>/<slot>
     files = build(job, media_rel)
     git_push(f"render {rel}")
+
+    # Optional scheduled publish time, e.g. "2026-10-23T08:00:00+03:00" (prepared early, posted on time).
+    if job.get("publish_after"):
+        wait = (datetime.datetime.fromisoformat(job["publish_after"]) - datetime.datetime.now(datetime.timezone.utc)).total_seconds()
+        if wait > 0:
+            if wait > 100 * 60:
+                raise RuntimeError(f"publish_after is {wait/60:.0f} min away; jobs may be pushed at most 100 min early")
+            log(f"waiting {wait/60:.1f} min until {job['publish_after']}"); time.sleep(wait)
 
     plan = []
     for p in job["posts"]:

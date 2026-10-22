@@ -14,8 +14,8 @@
     "instagram": "1paper.ai",
     "lang": "en",
     "token_secret": "IG_TOKEN_1PAPER",
-    "topic": "One research paper explained in an English 8-slide carousel. Follow the one-paper-carousel skill; render, convert to JPEG and publish as pre-rendered images.",
-    "mode": "paper_carousels"
+    "topic": "Once a day Claude picks the most viral research paper of the day, explains it in an English 8-slide carousel with the one-paper-carousel skill, and it is posted at 08:00 Israel time.",
+    "mode": "paper_daily"
   },
   "howitworks": {
     "enabled": true,

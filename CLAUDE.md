@@ -15,13 +15,13 @@ Pages are defined in `pages.json`. Only pages with `"enabled": true` are process
 | mode | Page | Who makes the content | When |
 |---|---|---|---|
 | `news_carousels` | globalnews | Claude, from the digest in the inbox (this file) | scheduled Claude runs |
-| `paper_carousels` | 1paper | Claude, with the `one-paper-carousel` skill (see below) | scheduled Claude runs, only if its inbox slot has input |
+| `paper_daily` | 1paper | Claude picks the paper and writes it with the `one-paper-carousel` skill (see below) | separate scheduled Claude run at 07:15, posted at 08:00 Israel |
 | `reels_daily` | howitworks | Roy, ready-made video + caption | Action `reels-daily`, 18:00 Israel. Claude does nothing for this page. |
 
-## Scheduled run (08:00, 13:00, 19:00 Asia/Jerusalem)
+## News run (08:00, 13:00, 19:00 Asia/Jerusalem): pages with mode `news_carousels` only
 The slot is the run time rounded to the hour: `YYYY-MM-DD_0800`, `_1300`, `_1900` (Israel date).
 
-For each enabled page:
+For each enabled page with mode `news_carousels`:
 1. `git pull`. Read every `.txt` in `inbox/<page>/<slot>/`. If the folder or text is missing, skip that page and say so in the report. Never invent content.
 2. Read `history/<page>.md` (stories already published). Skip anything already covered.
 3. Follow the `hebrew-news-carousel` skill for globalnews: verify every story with web search, drop what is unverified or old news presented as new, pick 2-3 singles (tech, AI, economy; no sports or tragedies as singles) and one summary carousel of the remaining verified stories (skip the summary if too few). Covers: hook of at most 8 words, a number or a question. Last slide: CTA + source line. No em dashes. Write "דולר", not $.
@@ -32,17 +32,20 @@ For each enabled page:
 
 Roy authorized automatic publishing without per-post approval for these scheduled runs (2026-10-22). Publishing rules from the skill still apply: only verified stories.
 
-## 1paper (mode paper_carousels)
-Input: `inbox/1paper/<slot>/` with a text file listing one or more paper links or notes.
-For each paper follow the `one-paper-carousel` skill exactly (fact list, check.py must pass, render.py with `Overflow: none`, look at the contact sheet).
-Then convert the Instagram PNGs to JPEG (quality 92; Instagram rejects PNG) and commit them to
-`media/1paper/<slot>/<post-id>/01.jpg ... 08.jpg`. Write `jobs/1paper/<slot>/job.json` with pre-rendered images (no queries.json, no Pexels):
+## 1paper daily run (07:15 Asia/Jerusalem, posted at 08:00): mode `paper_daily`
+No inbox: Claude chooses the paper.
+1. `git pull`. Read `history/1paper.md` and never repeat a paper.
+2. Find today's most talked-about research paper or preprint (last ~48 hours): search for papers trending in news coverage, on Hugging Face Daily Papers, arXiv, Nature/Science news and major outlets. Prefer findings a general audience will care about (AI, brain, health, space). Pick one, and note 1-2 runners-up and why the winner is the most viral (evidence: coverage count, trending lists). Never pick a paper by Anthropic or OpenAI without stating the conflict of interest in the report.
+3. Follow the `one-paper-carousel` skill exactly (read the primary source, fact list, true hook, `check.py` must print ALL CHECKS PASSED, `render.py` must report `Overflow: none`, look at the contact sheet). Its rule about asking before publishing is replaced here: Roy authorized automatic daily publishing (2026-10-22).
+4. Convert the Instagram PNGs (`out/en/ig/<id>/`) to JPEG quality 92 and commit them to `media/1paper/<YYYY-MM-DD>/<id>/01.jpg ... 08.jpg`.
+5. Write `jobs/1paper/<YYYY-MM-DD>/job.json` and push it together with the media and the new line in `history/1paper.md`:
 ```json
-{"page": "1paper", "slot": "2026-10-23_0800", "stories": false,
+{"page": "1paper", "slot": "2026-10-23", "stories": false, "publish_after": "2026-10-23T08:00:00+03:00",
  "posts": [{"name": "18-ai-example", "type": "single", "caption": "...",
-            "images": ["media/1paper/2026-10-23_0800/18-ai-example/01.jpg", "..."]}]}
+            "images": ["media/1paper/2026-10-23/18-ai-example/01.jpg", "..."]}]}
 ```
-Commit the media and job.json in the same push. Append the paper title to `history/1paper.md`.
+`publish_after` is 08:00 Israel time today with the correct UTC offset (+03:00 in summer time, +02:00 in winter). The `publish` Action renders nothing for pre-rendered posts and waits until that time. If preparation runs past 08:00, set `publish_after` to now.
+6. Wait for `result.json` `"complete": true` (poll every 60 s, up to 90 min), then report: the paper, why it was picked, the hook, the permalink, and sources.
 
 ## queries.json (candidate photos)
 Pexels no longer issues API keys, so Claude finds candidates itself: run WebSearch with
