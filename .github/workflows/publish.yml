@@ -2,7 +2,7 @@ name: publish
 # Stage B: render and publish every new jobs/<page>/<slot>/job.json
 on:
   push:
-    paths: ["jobs/**/job.json"]
+    paths: ["jobs/**/job.json", "ops/publish-now.txt"]   # editing ops/publish-now.txt retries unfinished jobs
   workflow_dispatch:
 concurrency: { group: publish, cancel-in-progress: false }
 permissions: { contents: write }

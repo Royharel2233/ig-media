@@ -65,11 +65,22 @@ def build(job, media_rel):
     return out
 
 
+def with_retry(fn, tries=4, wait=20):
+    """Instagram sometimes fails to fetch a raw.githubusercontent URL (error 2207052). Retry those."""
+    for i in range(tries):
+        try:
+            return fn()
+        except RuntimeError as e:
+            if "2207052" not in str(e) or i == tries - 1:
+                raise
+            log(f"media fetch failed, retry {i + 1} in {wait}s"); time.sleep(wait)
+
+
 def publish_carousel(page, paths, caption):
     kids = []
     for path in paths:
         url = raw_url(path); wait_public(url)
-        kids.append(ig(page, "POST", "me/media", image_url=url, is_carousel_item="true")["id"])
+        kids.append(with_retry(lambda: ig(page, "POST", "me/media", image_url=url, is_carousel_item="true"))["id"])
     for k in kids:
         wait_container(page, k)
     cid = ig(page, "POST", "me/media", media_type="CAROUSEL", children=",".join(kids), caption=caption)["id"]
@@ -81,7 +92,7 @@ def publish_carousel(page, paths, caption):
 
 def publish_story(page, path):
     url = raw_url(path); wait_public(url)
-    cid = ig(page, "POST", "me/media", media_type="STORIES", image_url=url)["id"]
+    cid = with_retry(lambda: ig(page, "POST", "me/media", media_type="STORIES", image_url=url))["id"]
     wait_container(page, cid)
     return {"media_id": ig(page, "POST", "me/media_publish", creation_id=cid)["id"]}
 
