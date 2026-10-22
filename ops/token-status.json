@@ -1,0 +1,26 @@
+{
+ "globalnews": {
+  "ok": true,
+  "username": "globalnews.il",
+  "type": "MEDIA_CREATOR",
+  "followers": 27,
+  "posts": 35,
+  "quota_used_24h": 4
+ },
+ "1paper": {
+  "ok": true,
+  "username": "1paper.ai",
+  "type": "MEDIA_CREATOR",
+  "followers": 196,
+  "posts": 5,
+  "quota_used_24h": 0
+ },
+ "howitworks": {
+  "ok": true,
+  "username": "how.it.works.il",
+  "type": "MEDIA_CREATOR",
+  "followers": 0,
+  "posts": 0,
+  "quota_used_24h": 0
+ }
+}
