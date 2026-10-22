@@ -1,0 +1,23 @@
+name: photos
+# Stage A: search Pexels for every new jobs/<page>/<slot>/queries.json
+on:
+  push:
+    paths: ["jobs/**/queries.json"]
+  workflow_dispatch:
+concurrency: { group: photos, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: sudo apt-get install -y -q libraqm0 libfribidi0 && pip install -q pillow==11.3.0
+      - run: python engine/photos.py
+        env: { PEXELS_API_KEY: "${{ secrets.PEXELS_API_KEY }}" }
+      - run: |
+          git config user.name "ig-media-bot"; git config user.email "bot@users.noreply.github.com"
+          git add jobs && (git diff --cached --quiet || git commit -qm "photo candidates")
+          for i in 1 2 3; do git push -q && break; git pull -q --rebase; done

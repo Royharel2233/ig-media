@@ -1,0 +1,24 @@
+name: publish
+# Stage B: render and publish every new jobs/<page>/<slot>/job.json
+on:
+  push:
+    paths: ["jobs/**/job.json"]
+  workflow_dispatch:
+concurrency: { group: publish, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: sudo apt-get install -y -q libraqm0 libfribidi0 && pip install -q pillow==11.3.0
+      - run: git config user.name "ig-media-bot"; git config user.email "bot@users.noreply.github.com"
+      - run: python engine/publish.py
+        env:
+          PEXELS_API_KEY: "${{ secrets.PEXELS_API_KEY }}"
+          IG_TOKEN_GLOBALNEWS: "${{ secrets.IG_TOKEN_GLOBALNEWS }}"
+          IG_TOKEN_1PAPER: "${{ secrets.IG_TOKEN_1PAPER }}"
+          IG_TOKEN_HOWITWORKS: "${{ secrets.IG_TOKEN_HOWITWORKS }}"
