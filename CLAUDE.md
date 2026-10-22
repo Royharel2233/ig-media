@@ -26,7 +26,7 @@ For each enabled page with mode `news_carousels`:
 2. Read `history/<page>.md` (stories already published). Skip anything already covered.
 3. Follow the `hebrew-news-carousel` skill for globalnews: verify every story with web search, drop what is unverified or old news presented as new, pick 2-3 singles (tech, AI, economy; no sports or tragedies as singles) and one summary carousel of the remaining verified stories (skip the summary if too few). Covers: hook of at most 8 words, a number or a question. Last slide: CTA + source line. No em dashes. Write "דולר", not $.
 4. Write `jobs/<page>/<slot>/queries.json` (schema below), commit, push. Wait for `candidates.json` (poll `git pull` every 30 s, up to 10 min; if it never arrives, check the `photos` Action run and report).
-5. Open every `candidates/sheet_<post>.jpg` and choose photos by the skill's photo rules (no wrong brands, no identifiable random faces, no wrong country, no dark covers, no photo reused in the same slot). The id is printed under each thumbnail.
+5. Open every `candidates/sheet_<post>.jpg` and choose photos by the skill's photo rules (no wrong brands, no identifiable random faces, no wrong country, no dark covers, no photo reused in the same slot). The id is printed under each thumbnail. The renderer darkens the lower ~60% of each slide under the text, so the subject of a cover photo must sit in the upper half of the frame (a car at the bottom of a street photo disappears).
 6. Write `jobs/<page>/<slot>/job.json`, append the published headlines to `history/<page>.md`, commit, push.
 7. Wait for `result.json` with `"complete": true` (poll every 60 s, up to 30 min). Report to Roy: what was published (permalinks), what was dropped and why, sources, and any errors.
 
