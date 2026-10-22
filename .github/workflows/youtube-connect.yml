@@ -1,0 +1,31 @@
+name: youtube-connect
+# One-time: exchange the Google authorization code for a refresh token and store it as a repo secret.
+# Actions tab > youtube-connect > Run workflow, paste the code= value from the http://localhost address bar.
+on:
+  workflow_dispatch:
+    inputs:
+      code: { description: "The code= value from the address bar after approving in Google", required: true }
+      secret_name: { description: "Secret to store the refresh token in", default: "YT_REFRESH_TOKEN_HOWITWORKS" }
+jobs:
+  connect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: exchange
+        env:
+          CODE: "${{ inputs.code }}"
+          NAME: "${{ inputs.secret_name }}"
+          CID: "${{ secrets.YT_CLIENT_ID }}"
+          SEC: "${{ secrets.YT_CLIENT_SECRET }}"
+          GH_TOKEN: "${{ secrets.GH_SECRETS_PAT }}"
+        run: |
+          echo "::add-mask::$CODE"
+          [ -n "$GH_TOKEN" ] || { echo "::error::GH_SECRETS_PAT secret is missing"; exit 1; }
+          CODE=$(python3 -c "import urllib.parse,os;print(urllib.parse.unquote(os.environ['CODE']))")
+          RESP=$(curl -s -X POST https://oauth2.googleapis.com/token \
+            --data-urlencode "client_id=$CID" --data-urlencode "client_secret=$SEC" --data-urlencode "code=$CODE" \
+            --data-urlencode "grant_type=authorization_code" --data-urlencode "redirect_uri=http://localhost")
+          RT=$(echo "$RESP" | python3 -c "import sys,json;print(json.load(sys.stdin).get('refresh_token',''))")
+          if [ -z "$RT" ]; then echo "$RESP" | python3 -c "import sys,json;d=json.load(sys.stdin);print('::error::',d.get('error'),d.get('error_description'))"; exit 1; fi
+          echo "::add-mask::$RT"
+          gh secret set "$NAME" --body "$RT" -R "$GITHUB_REPOSITORY"
+          echo "YouTube connected; refresh token stored in $NAME"

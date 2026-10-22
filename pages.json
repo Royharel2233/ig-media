@@ -27,6 +27,8 @@
     "mode": "reels_daily",
     "publish_hour": 18,
     "tiktok_drafts": true,
-    "tiktok_secret": "TIKTOK_REFRESH_TOKEN_HOWITWORKS"
+    "tiktok_secret": "TIKTOK_REFRESH_TOKEN_HOWITWORKS",
+    "youtube_private": true,
+    "youtube_secret": "YT_REFRESH_TOKEN_HOWITWORKS"
   }
 }

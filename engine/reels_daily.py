@@ -5,6 +5,7 @@ Safe to re-run: published videos are recorded in jobs/<page>/<date>/result.json 
 import datetime, glob, json, os, subprocess, sys, zoneinfo
 from common import ROOT, PAGES, ig, wait_container, raw_url, wait_public, log
 import tiktok
+import youtube
 
 TZ = zoneinfo.ZoneInfo("Asia/Jerusalem")
 
@@ -64,6 +65,17 @@ def main():
             except Exception as e:
                 failed = True; res["errors"].append(f"{key}: {e}"); log("FAILED", page, key, e)
             json.dump(res, open(resfile, "w"), indent=1)
+        # YouTube Shorts: same videos uploaded as private (Roy makes them public in YouTube Studio).
+        if cfg.get("youtube_private"):
+            for v in videos:
+                key = "youtube:" + os.path.basename(v)
+                if key in res["done"]:
+                    continue
+                try:
+                    res["done"][key] = youtube.upload_private(v, caption_for(v), cfg["youtube_secret"]); log("youtube private", page, key, res["done"][key])
+                except Exception as e:
+                    failed = True; res["errors"].append(f"{key}: {e}"); log("FAILED", page, key, e)
+                json.dump(res, open(resfile, "w"), indent=1)
         # TikTok: same videos as drafts in the TikTok app (Roy publishes them by hand).
         if cfg.get("tiktok_drafts"):
             for v in videos:
