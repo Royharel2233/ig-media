@@ -38,7 +38,7 @@ against live MEXC klines and CoinGecko market_chart.
 5. DESIGN.md named CoinGecko market_chart as the data source; the run used MEXC klines.
    A deviation from the frozen design, but the MEXC data verifies as accurate.
 
-## CORRECTED NUMBERS (basket: USDF excluded, true TON substituted)
+## CORRECTED NUMBERS (clean 39-asset basket: USDF AND figure-heloc excluded, true TON)
 | series | v2 reported | corrected |
 |---|---|---|
 | M3 next (PRIMARY) | +37.87% | +38.37% |
@@ -46,9 +46,14 @@ against live MEXC klines and CoinGecko market_chart.
 | M3 next ex-QNT | -15.08% | -14.77% |
 | M3 liquid20 next | -12.22% | -12.24% (true TON) |
 | M3 liquid20 same | -15.16% | -15.14% (true TON) |
-| EW baseline next | -7.96% | -8.18% |
-| EW baseline same | -3.53% | -3.65% |
+| EW baseline next | -7.96% | -8.39% |
+| EW baseline same | -3.53% | -3.75% |
 | M4 SOL signals | 4 | 2 (Oct 9, Oct 12) |
+M3/pick numbers are identical whether or not figure-heloc is excluded (it was never
+picked); only the EW baseline moves (-8.18/-3.65 with it, -8.39/-3.75 without). The
+corrected column is the fully clean basket per the frozen design's non-stablecoin,
+non-RWA rule: 39 assets = 50 top-list - 10 pegged/RWA ids - falcon-finance(USDF) -
+figure-heloc + true TON substituted for the GRAM-mislabeled series.
 
 ## MODELING NOTES (disclosed conventions, not errors)
 - M3 charges 0.1% x 3 positions at every rebalance even when a pick repeats (QNT carried
@@ -59,7 +64,7 @@ against live MEXC klines and CoinGecko market_chart.
   EW-next matches M3-next exactly. Final segment Oct 16->22 is 6 days, the others 7.
 
 ## VERDICT
-The +37.9% headline is arithmetically reproducible (corrected: +38.4%) and every v2
+The +37.9% headline is arithmetically reproducible (corrected: +38.4% on the fully clean 39-asset basket) and every v2
 qualitative conclusion stands: the momentum screen's positive result is carried by one
 token (QNT, ex-QNT -14.8%), disappears in a liquid-only basket (-12.2%), rests on n=4
 weekly rebalances in one regime, and uses a survivorship-flagged basket chosen from

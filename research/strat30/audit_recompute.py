@@ -12,7 +12,7 @@ STABLE={'blackrock-usd-institutional-digital-liquidity-digital-fund',
  'ondo-us-dollar-yield','pax-gold','ripple-usd','spiko-amundi-overnight-swap-fund-eur',
  'tether-gold','usd1-wlfi'}
 corrected = len(sys.argv)>2 and sys.argv[1]=='--corrected'
-if corrected: STABLE = STABLE | {'falcon-finance'}
+if corrected: STABLE = STABLE | {'falcon-finance','figure-heloc'}
 basket=json.load(open(os.path.join(HERE,'basket.json')))
 S={}
 for c in basket:
