@@ -38,27 +38,38 @@ cfg["frames"] = int(cfg["t_end"] * cfg["fps"]) + 1
 json.dump(cfg, open("config_fuel.json","w"), indent=1)
 json.dump(cfg, open("config_fuel_cam.json","w"), indent=1)
 
-# captions: progressive word highlight; line = sentence; current word + next word amber
+# captions: progressive word highlight over SHORT display lines (<=5 words / 32 chars per
+# group, sentence boundaries respected) - regression fix 23.10: sentence-per-line produced
+# 4-5-line paragraph blocks (28-word sentence). current word + next word amber. Proper \n
+# line endings (the old "\\" continuation glued all events onto one line and libass saw 0 events).
 sents = re.split(r'(?<=[.!?]) ', script)
-idx = 0; sent_ranges = []
+groups = []
 for s in sents:
-    n = len(s.split()); sent_ranges.append((idx, idx+n, s)); idx += n
+    ws = s.split(); g = []
+    for w in ws:
+        if g and (len(g) >= 5 or len(' '.join(g + [w])) > 32):
+            groups.append(g); g = []
+        g.append(w)
+    if g: groups.append(g)
 def ass_time(t):
     t = max(t, 0); h = int(t//3600); m = int((t%3600)//60); sec = t%60
     return f"{h}:{m:02d}:{sec:05.2f}"
 events = []
-for (a, b, sent) in sent_ranges:
-    words = sent.split()
-    for i in range(len(words)):
-        t0 = time_of(a+i); t1 = end_of(a+i) if i == len(words)-1 else time_of(a+i+1)
+idx = 0
+for g in groups:
+    for i in range(len(g)):
+        gi = idx + i
+        t0 = time_of(gi)
+        t1 = end_of(gi) if gi == len(script_words)-1 else time_of(gi+1)
         parts = []
-        for j, w in enumerate(words):
+        for j, w in enumerate(g):
             if i <= j <= i+1:
                 parts.append(r"{\c&H00B3FF&}" + w + r"{\c&HFFFFFF&}")
             else:
                 parts.append(w)
-        line = " ".join(parts) + "‏"
-        events.append(f"Dialogue: 0,{ass_time(t0)},{ass_time(t1)},Default,,0,0,0,,{line}")
+        events.append(f"Dialogue: 0,{ass_time(t0)},{ass_time(t1)},Default,,0,0,0,," + " ".join(parts) + "\u200f")
+    idx += len(g)
+events.append(f"Dialogue: 0,{ass_time(end_of(len(script_words)-1))},{ass_time(cfg['t_end'])},Default,,0,0,0,," + " ".join(groups[-1]) + "\u200f")
 hdr = """[Script Info]
 ScriptType: v4.00+
 PlayResX: 1080
@@ -73,7 +84,5 @@ Style: Default,Secular One,68,&H00FFFFFF,&H0000B3FF,&H00000000,&H64000000,1,0,0,
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
-open("captions_fuel.ass","w").write(hdr + "\
-".join(events) + "\
-")
+open("captions_fuel.ass","w",encoding="utf-8").write(hdr + "\n".join(events) + "\n")
 print(len(events), "events;", cfg)
