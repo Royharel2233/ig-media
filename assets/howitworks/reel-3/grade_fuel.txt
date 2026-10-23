@@ -1,3 +1,9 @@
-[0:a]atrim=0:43.13999999999999,asetpts=PTS-STARTPTS,loudnorm=I=-14:TP=-1.5:LRA=11,volume=1.0,aformat=channel_layouts=stereo[vo];
-[1:a]atrim=0:43.13999999999999,asetpts=PTS-STARTPTS,volume=0.10,afade=t=in:st=0:d=1.5,afade=t=out:st=40.63999999999999:d=2.5,aformat=channel_layouts=stereo[mx];
-[vo][mx]amix=inputs=2:duration=first:dropout_transition=0[mix]
+[1:a]apad[va];
+[2:a]atrim=0:43.14,volume=0.10,afade=t=in:st=0:d=1.5,afade=t=out:st=40.64:d=2.5[m];
+[va][m]amix=inputs=2:duration=longest[a];
+[0:v]noise=alls=6:allf=t,split[fga][fgb];
+[fga]format=gbrp[fga2];
+[fgb]curves=all='0.6/0 0.75/0.12 0.88/0.55 1/1',gblur=sigma=16,format=gbrp[bl];
+[fga2][bl]blend=all_mode=screen:all_opacity=0.4,vignette=PI/4.6,eq=contrast=1.05:saturation=1.06,ass=captions_fuel.ass[vv];
+[3:v]scale=120:-1,format=rgba,colorchannelmixer=aa=0.9[lg];
+[vv][lg]overlay=40:40,format=yuv420p[v]
