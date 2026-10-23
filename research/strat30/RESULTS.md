@@ -30,17 +30,19 @@ Costs: 0.1% per position change (frozen in DESIGN.md). No slippage model on thin
 | M1 B&H BTC | -3.5% | - | - | negative |
 | M1 B&H ETH | -11.1% | - | - | negative |
 | M1 B&H SOL | -11.4% | - | - | negative |
-| M2 7d-SMA BTC | -3.8% (10 switches) | -8.6% | -3.5% | no better than hold |
-| M2 7d-SMA ETH | -12.0% (6) | -8.3% | -11.1% | no better than hold |
-| M2 7d-SMA SOL | -11.1% (4) | -3.0% | -11.4% | no better than hold |
+| M2 7d-SMA BTC | -3.8% (10 switches) | -8.6% | -3.5% | slightly worse than hold |
+| M2 7d-SMA ETH | -12.0% (6) | -8.3% | -11.1% | worse than hold |
+| M2 7d-SMA SOL | -11.1% (4) | -3.0% | -11.4% | slightly better than hold (+0.3pt, 4 switches - within noise) |
 | M4 dip-buy | 0 signals BTC/ETH, 4 SOL | - | - | no evidence |
 | M3 weekly top-3 momentum | +37.9% (4 rebalances) | +41.5% (5) | EW basket -8.0% (next) / -3.5% (same) | positive ONLY pre-robustness |
 | M3 ex-QNT probe | -15.1% | -11.1% | - | collapses |
 | M3 liquid-top-20 probe | -12.2% | -15.2% | - | collapses |
 
-Key correction vs v1: M2's apparent improvement on ETH/SOL was an ARTIFACT of same-close
-execution timing. Under honest next-bar execution the trend filter does not beat buy-and-hold
-on any major. M3 headline softens 42.7% -> 37.9% and its ex-QNT probe worsens -6.9% -> -15.1%.
+Key correction vs v1: M2's apparent ETH/SOL improvement does not survive the next-bar
+execution convention: under it M2 is mixed and within noise (SOL marginally better +0.3pt,
+BTC/ETH marginally worse). "same-close" is an EXECUTION ASSUMPTION (in the code a signal at
+close t earns only subsequent returns t->t+1), not asserted as lookahead; which convention is
+the right read is subject to the independent code audit. M3 headline softens 42.7% -> 37.9% and its ex-QNT probe worsens -6.9% -> -15.1%.
 
 ## The M3 momentum finding, honestly (v2)
 Picks (signal date / execution date): Sep 24->25 QNT, NEAR, ENA; Oct 1->2 QNT, PUMP, BTW;
