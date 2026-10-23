@@ -15,3 +15,4 @@
 12. Every delivery includes: the mp4 (under WhatsApp size limit), a one-line Hebrew script summary, the music credit line, and the QA report (what was and wasn't verified, labeled ASR-proxy only for pronunciation - Roy's ear is the authority).
 13. Be honest about what looks worse than the reference style; never claim parity we didn't verify.
 14. Money: never spend Roy's money. Free tiers and his explicitly-enabled APIs only; anything costing money is his decision first.
+15. Repo-first preservation (Roy, Oct 23: "תמיד תדחוף לריפו קודם כל"): push every project asset to the repo FIRST - full narration takes, videos and reusable source/scripts - under assets/howitworks/ (NEVER inbox/, which auto-publishes). A backup counts only after a verified round-trip: fresh download compared byte-for-byte. If preservation fails, pause dependent work and report.
