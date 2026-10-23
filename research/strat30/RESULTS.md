@@ -1,3 +1,10 @@
+> SUPERSEDED 2026-10-24 by the independent audit: see AUDIT_INDEPENDENT.md (repo commit
+> 4225410, research/strat30/). Canonical corrected numbers: clean 39-asset basket (USDF
+> mislabeled as falcon-finance and figure-heloc excluded, true TON substituted for the
+> GRAM-mislabeled series), M3 next-bar +38.37%, same +41.45%, ex-QNT -14.77%/-11.08->-14.77,
+> liquid20 -12.24%, EW -8.39%/-3.75%, M4 SOL = 2 signals (Oct 9, Oct 12). All conclusions
+> unchanged. Do not cite the v2 table below; kept for audit trail only.
+
 # 30-day retrospective crypto strategy screen - AUDIT v2 (Oct 24 2026)
 Research only. No trades, no accounts, no spending. Supersedes RESULTS_v1_superseded.md
 (v1 used the incomplete 2026-10-23 UTC candle as a "close" and let a stablecoin into the
