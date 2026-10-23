@@ -1,0 +1,325 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;overflow:hidden;background:#101216}</style></head>
+<body><script type="importmap">{"imports":{"three":"./three.module.js"}}</script><script type="module">
+import * as THREE from 'three';
+import { RGBELoader } from './jsm/loaders/RGBELoader.js';
+
+const cfg = await (await fetch('./config_fuel.json')).json();
+const FPS = cfg.fps;
+const renderer = new THREE.WebGLRenderer({antialias:true, preserveDrawingBuffer:true});
+renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.35;
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x101216);
+
+// HDRI environment, selective intensities (research-tuned)
+const pmrem = new THREE.PMREMGenerator(renderer);
+const hdrTex = await new RGBELoader().loadAsync('./studio_small_03_1k.hdr');
+hdrTex.mapping = THREE.EquirectangularReflectionMapping;
+scene.environment = pmrem.fromEquirectangular(hdrTex).texture;
+hdrTex.dispose();
+
+// lights (approved rig)
+const key1 = new THREE.SpotLight(0xfff2e0, 200, 70, Math.PI/5, 0.45, 1.6);
+key1.position.set(6, 12, 9); key1.castShadow = true;
+key1.shadow.mapSize.set(2048, 2048); key1.shadow.bias = -0.0005;
+scene.add(key1); scene.add(key1.target);
+const rim = new THREE.DirectionalLight(0xbdd0ff, 1.1); rim.position.set(-6, 6, -7); scene.add(rim);
+const fill1 = new THREE.SpotLight(0xcfe0ff, 90, 50, Math.PI/4, 0.6, 1.4);
+fill1.position.set(-4, 9, 10); fill1.target.position.set(0, 4, 0);
+scene.add(fill1); scene.add(fill1.target);
+const fill2 = new THREE.PointLight(0xfff2e0, 30, 25); fill2.position.set(3, 6, 7); scene.add(fill2);
+scene.add(new THREE.AmbientLight(0x4a5260, 0.7));
+
+// materials
+const darkM = new THREE.MeshPhysicalMaterial({color:0x17181c, metalness:0.9, roughness:0.32, clearcoat:0.6});
+const steelM = new THREE.MeshPhysicalMaterial({color:0x6a7078, metalness:1.0, roughness:0.28});
+const aluM = new THREE.MeshPhysicalMaterial({color:0xc9ced6, metalness:0.8, roughness:0.3, clearcoat:0.4});
+const redM = new THREE.MeshPhysicalMaterial({color:0xb3312d, metalness:0.4, roughness:0.45, clearcoat:0.5});
+const glassM = new THREE.MeshPhysicalMaterial({color:0x9fc4e2, metalness:0.1, roughness:0.06, transparent:true, opacity:0.10, side:THREE.DoubleSide, depthWrite:false});
+const fuelM = new THREE.MeshPhysicalMaterial({color:0x19b8d8, metalness:0.0, roughness:0.15, transparent:true, opacity:0.6, emissive:0x0a4a58, emissiveIntensity:0.35});
+const fuelPartM = new THREE.MeshBasicMaterial({color:0x53e8ff});
+const airPartM = new THREE.MeshBasicMaterial({color:0xffc35e});
+const charcoalM = new THREE.MeshStandardMaterial({color:0x1c1d20, roughness:0.95, metalness:0.0});
+const brassM = new THREE.MeshPhysicalMaterial({color:0xb08d57, metalness:0.95, roughness:0.35});
+
+// floor with concrete PBR texture
+const TL = new THREE.TextureLoader();
+async function tx(u, srgb, rx, ry){ const t = await TL.loadAsync(u); if(srgb) t.colorSpace = THREE.SRGBColorSpace; t.wrapS=t.wrapT=THREE.RepeatWrapping; t.repeat.set(rx,ry); return t; }
+const cD = await tx('./tex/brushed_concrete_diff_1k.jpg',1,5,5);
+const cR = await tx('./tex/brushed_concrete_rough_1k.jpg',0,5,5);
+const cN = await tx('./tex/brushed_concrete_nor_gl_1k.jpg',0,5,5);
+const floorC = new THREE.Mesh(new THREE.PlaneGeometry(60,60), new THREE.MeshPhysicalMaterial({map:cD, roughnessMap:cR, normalMap:cN, color:0x2b2f36, metalness:0.05, roughness:1.0}));
+floorC.rotation.x = -Math.PI/2; floorC.position.y = 0; floorC.receiveShadow = true; scene.add(floorC);
+const mR = await tx('./tex/metal_plate_rough_1k.jpg',0,1,3);
+const mN = await tx('./tex/metal_plate_nor_gl_1k.jpg',0,1,3);
+const spoutM = steelM.clone(); spoutM.roughnessMap = mR; spoutM.normalMap = mN; spoutM.normalScale = new THREE.Vector2(0.3,0.3);
+
+// ---------- helper: eased camera ----------
+const ease = u => u*u*(3-2*u);
+const clamp01 = v => Math.min(1, Math.max(0, v));
+const cam = new THREE.PerspectiveCamera(38, innerWidth/innerHeight, 0.1, 200);
+const phases = [
+  [0.0,  cfg.t_insert_start, [0.6, 4.9, 11.5], [0.5, 3.7, 0]],
+  [cfg.t_insert_start, cfg.t_insert_start+3.2, [-1.0, 5.6, 3.4], [-1.5, 5.3, 0]],   // handle/venturi close
+  [cfg.t_insert_start+3.2, cfg.t_insert_end, [1.6, 4.9, 2.4], [1.25, 4.15, 0]],       // dolly to tip hole
+  [cfg.t_insert_end, cfg.t_pulse_start, [1.6, 4.9, 2.4], [1.25, 4.15, 0]],            // hold tip
+  [cfg.t_pulse_start, cfg.t_pulse_start+2.6, [2.4, 3.4, 6.0], [1.4, 3.2, 0]],         // tank view, fuel rising
+  [cfg.t_pulse_start+2.6, cfg.t_pulse_end, [-1.0, 6.2, 2.8], [-1.55, 5.75, 0]],       // diaphragm+latch close, snap
+  [cfg.t_turn_start, cfg.t_canister, [2.4, 3.8, 6.5], [1.5, 3.6, 0]],                 // topping off, tank/neck
+  [cfg.t_canister, cfg.t_turn_end, [3.3, 5.1, 3.2], [3.55, 4.6, -0.3]],               // vapor line -> canister
+  [cfg.t_turn_end, cfg.t_end, [0.7, 4.6, 12.0], [0.6, 3.5, 0]],                       // CTA wide
+];
+function camAt(t) {
+  let i = 0;
+  while (i < phases.length-1 && t > phases[i+1][0]) i++;
+  const a = phases[i];
+  const b = phases[Math.min(i+1, phases.length-1)];
+  const span = Math.max(b[0]-a[0], 0.001);
+  const u = (i === phases.length-1) ? ease(clamp01((t-a[0])/Math.max(cfg.t_end-a[0],0.001))) : ease(clamp01((t-a[0])/span));
+  const p = a[2].map((v,k)=> v+(b[2][k]-v)*u), l = a[3].map((v,k)=> v+(b[3][k]-v)*u);
+  cam.position.set(p[0],p[1],p[2]); cam.lookAt(l[0],l[1],l[2]);
+}
+
+// ---------- nozzle (handle + spout), tilted down-right ----------
+const TILT = -0.42;
+const nozzle = new THREE.Group();
+nozzle.position.set(-1.5, 5.35, 0);
+nozzle.rotation.z = TILT;
+scene.add(nozzle);
+
+// handle body (solid back + ghost front)
+const body = new THREE.Mesh(new THREE.BoxGeometry(1.15, 0.8, 0.34), darkM);
+body.castShadow = true; nozzle.add(body);
+const bodyGlass = new THREE.Mesh(new THREE.BoxGeometry(1.15, 0.8, 0.02), glassM);
+bodyGlass.position.z = 0.18; nozzle.add(bodyGlass);
+// grip
+const grip = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.9, 0.3), redM);
+grip.position.set(-0.42, -0.75, 0); grip.rotation.z = 0.18; grip.castShadow = true; nozzle.add(grip);
+// trigger
+const trig = new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.5, 0.12), aluM);
+trig.position.set(-0.1, -0.62, 0.05); nozzle.add(trig);
+// inlet pipe (left)
+const inlet = new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.16, 0.7, 20), spoutM);
+inlet.rotation.z = Math.PI/2; inlet.position.set(-0.85, 0.05, 0); nozzle.add(inlet);
+
+// venturi hourglass (lathe) inside body
+const pts = [];
+for (let i = 0; i <= 20; i++) {
+  const u = i/20;
+  const r = 0.13 - 0.06*Math.sin(u*Math.PI);
+  pts.push(new THREE.Vector2(r, (u-0.5)*0.75));
+}
+const venturi = new THREE.Mesh(new THREE.LatheGeometry(pts, 24), brassM);
+venturi.rotation.z = Math.PI/2; venturi.position.set(0.1, 0.05, 0.05); nozzle.add(venturi);
+
+// main valve disc at inlet side of body
+const valve = new THREE.Mesh(new THREE.CylinderGeometry(0.13, 0.13, 0.03, 20), redM.clone());
+valve.rotation.z = Math.PI/2; valve.rotation.y = Math.PI/2; // open: edge-on to flow
+valve.position.set(-0.42, 0.05, 0.05); nozzle.add(valve);
+
+// diaphragm chamber on top of body + vacuum tap tube
+const chamber = new THREE.Mesh(new THREE.CylinderGeometry(0.3, 0.3, 0.16, 24), glassM);
+chamber.position.set(-0.1, 0.52, 0); nozzle.add(chamber);
+const diaphragm = new THREE.Mesh(new THREE.CylinderGeometry(0.26, 0.26, 0.04, 24), aluM.clone());
+diaphragm.position.set(-0.1, 0.48, 0); nozzle.add(diaphragm);
+const tapPath = new THREE.CatmullRomCurve3([
+  new THREE.Vector3(0.1, 0.13, 0.05), new THREE.Vector3(0.05, 0.3, 0.05), new THREE.Vector3(-0.1, 0.44, 0.0)]);
+const tap = new THREE.Mesh(new THREE.TubeGeometry(tapPath, 12, 0.02, 8), brassM);
+nozzle.add(tap);
+
+// latch lever near trigger pivot
+const latch = new THREE.Mesh(new THREE.BoxGeometry(0.26, 0.05, 0.08), brassM.clone());
+latch.position.set(-0.18, -0.38, 0.08); nozzle.add(latch);
+
+// spout
+const SPOUT_L = 3.1;
+const spout = new THREE.Mesh(new THREE.CylinderGeometry(0.13, 0.11, SPOUT_L, 20), spoutM);
+spout.rotation.z = -Math.PI/2; spout.position.set(0.6 + SPOUT_L/2 - 0.05, 0.05, 0); spout.castShadow = true; nozzle.add(spout);
+// tip hole (small dark disc on top of spout near tip)
+const tipX = 0.6 + SPOUT_L - 0.35;
+const hole = new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.035, 0.03, 12), darkM);
+hole.position.set(tipX, 0.16, 0); nozzle.add(hole);
+// sensing tube from venturi throat along top of spout to the hole
+const sensePath = new THREE.CatmullRomCurve3([
+  new THREE.Vector3(0.1, 0.05, 0.05), new THREE.Vector3(0.35, 0.16, 0.02),
+  new THREE.Vector3(1.6, 0.17, 0.0), new THREE.Vector3(tipX, 0.165, 0)]);
+const senseTube = new THREE.Mesh(new THREE.TubeGeometry(sensePath, 32, 0.022, 8), brassM);
+nozzle.add(senseTube);
+
+// world position of the tip hole (for tank alignment)
+nozzle.updateMatrixWorld(true);
+const tipWorld = new THREE.Vector3(tipX, 0.16, 0).applyMatrix4(nozzle.matrixWorld);
+
+// ---------- tank (ghost glass) + filler neck + fuel ----------
+const TANK_W = 2.6, TANK_H = 4.2, TANK_D = 1.8;
+const tankX = tipWorld.x + 0.3;
+const tank = new THREE.Group(); scene.add(tank);
+const tankGlass = new THREE.Mesh(new THREE.BoxGeometry(TANK_W, TANK_H, TANK_D), glassM);
+tankGlass.position.set(tankX, TANK_H/2 + 0.05, 0); tank.add(tankGlass);
+const tankEdge = new THREE.Mesh(new THREE.BoxGeometry(TANK_W, 0.06, TANK_D), steelM);
+tankEdge.position.set(tankX, 0.02, 0); tank.add(tankEdge);
+// filler neck from tank top up around the spout tip
+const neckTop = tipWorld.y + 0.35;
+const neck = new THREE.Mesh(new THREE.CylinderGeometry(0.24, 0.24, neckTop - (TANK_H+0.05) + 0.3, 16, 1, true), glassM);
+neck.position.set(tipWorld.x, (neckTop + TANK_H+0.05)/2 - 0.1, 0); scene.add(neck);
+const neckPipe = new THREE.Mesh(new THREE.CylinderGeometry(0.2, 0.2, neckTop - (TANK_H+0.05) + 0.3, 16, 1, true), new THREE.MeshPhysicalMaterial({color:0x3a3f47, metalness:0.8, roughness:0.4, transparent:true, opacity:0.35, side:THREE.DoubleSide}));
+neckPipe.position.copy(neck.position); scene.add(neckPipe);
+// fuel block inside tank (rises)
+const fuel = new THREE.Mesh(new THREE.BoxGeometry(TANK_W-0.25, 1, TANK_D-0.25), fuelM);
+fuel.position.set(tankX, 0.5, 0); scene.add(fuel);
+function setFuelLevel(h) { fuel.scale.y = h; fuel.position.y = 0.08 + h/2; }
+setFuelLevel(0.6);
+
+// ---------- vapor line + charcoal canister ----------
+const canX = tankX + 1.9, canY = TANK_H + 0.9, canZ = -0.4;
+const canister = new THREE.Group(); canister.position.set(canX, canY, canZ); scene.add(canister);
+const canBody = new THREE.Mesh(new THREE.CylinderGeometry(0.45, 0.45, 1.1, 20), darkM);
+canBody.castShadow = true; canister.add(canBody);
+const canGlass = new THREE.Mesh(new THREE.CylinderGeometry(0.42, 0.42, 1.0, 20, 1, true), glassM);
+canister.add(canGlass);
+// charcoal granules
+const granGeo = new THREE.SphereGeometry(0.055, 8, 6);
+const granules = new THREE.InstancedMesh(granGeo, charcoalM, 70);
+{
+  const m4 = new THREE.Matrix4(); let n = 0;
+  for (let i = 0; i < 70; i++) {
+    const a = Math.random()*Math.PI*2, r = Math.random()*0.32;
+    m4.setPosition(Math.cos(a)*r, -0.4 + Math.random()*0.5, Math.sin(a)*r);
+    granules.setMatrixAt(n++, m4);
+  }
+}
+canister.add(granules);
+// contamination tint layer inside canister (rises, red)
+const contamM = new THREE.MeshBasicMaterial({color:0xff3524, transparent:true, opacity:0.0});
+const contam = new THREE.Mesh(new THREE.CylinderGeometry(0.4, 0.4, 1, 16), contamM);
+contam.scale.y = 0.01; canister.add(contam);
+// vapor line tube: tank top -> canister
+const vaporPath = new THREE.CatmullRomCurve3([
+  new THREE.Vector3(tankX+0.8, TANK_H+0.05, -0.3), new THREE.Vector3(tankX+1.2, TANK_H+0.7, -0.4),
+  new THREE.Vector3(canX-0.2, canY-0.4, canZ)]);
+const vaporLine = new THREE.Mesh(new THREE.TubeGeometry(vaporPath, 24, 0.07, 10), steelM.clone());
+scene.add(vaporLine);
+
+// check-engine indicator (simple engine-block icon)
+const eng = new THREE.Group();
+const engM = new THREE.MeshBasicMaterial({color:0xffb020, transparent:true, opacity:0.0});
+const e1 = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.3, 0.06), engM); eng.add(e1);
+const e2 = new THREE.Mesh(new THREE.BoxGeometry(0.16, 0.12, 0.06), engM); e2.position.set(0, 0.2, 0); eng.add(e2);
+const e3 = new THREE.Mesh(new THREE.BoxGeometry(0.12, 0.18, 0.06), engM); e3.position.set(-0.31, 0, 0); eng.add(e3);
+const e4 = new THREE.Mesh(new THREE.BoxGeometry(0.12, 0.12, 0.06), engM); e4.position.set(0.31, 0.05, 0); eng.add(e4);
+eng.position.set(tankX, TANK_H+1.3, 0.4); scene.add(eng);
+
+// ---------- particles ----------
+// fuel stream: inlet -> body -> spout -> tip -> into neck
+nozzle.updateMatrixWorld(true);
+const fuelPathPts = [
+  new THREE.Vector3(-1.2, 0.05, 0), new THREE.Vector3(0.1, 0.05, 0.05),
+  new THREE.Vector3(0.6, 0.05, 0), new THREE.Vector3(tipX, 0.05, 0)
+].map(p => p.applyMatrix4(nozzle.matrixWorld));
+fuelPathPts.push(new THREE.Vector3(tipWorld.x, tipWorld.y - 0.5, 0));
+fuelPathPts.push(new THREE.Vector3(tipWorld.x, 1.2, 0));
+const fuelCurve = new THREE.CatmullRomCurve3(fuelPathPts);
+const NF = 90;
+const fuelParts = new THREE.InstancedMesh(new THREE.SphereGeometry(0.045, 8, 6), fuelPartM, NF);
+scene.add(fuelParts);
+// air stream: tip hole -> sensing tube -> body (reverse), then stop
+const airCurve = new THREE.CatmullRomCurve3(sensePath.points.slice().reverse().map(p => p.clone().applyMatrix4(nozzle.matrixWorld)));
+const NA = 24;
+const airParts = new THREE.InstancedMesh(new THREE.SphereGeometry(0.03, 8, 6), airPartM, NA);
+scene.add(airParts);
+// vapor contamination stream: tank top -> vapor line -> canister
+const NV = 20;
+const vapParts = new THREE.InstancedMesh(new THREE.SphereGeometry(0.045, 8, 6), fuelPartM.clone(), NV);
+scene.add(vapParts);
+const m4 = new THREE.Matrix4();
+
+// ---------- choreography ----------
+const T_BLOCK = cfg.t_pulse_start + 1.2;   // fuel covers the tip hole
+const T_CLICK = cfg.t_pulse_end - 0.75;    // latch releases, valve snaps
+const T_REFLOW = cfg.t_turn_start + 1.2;   // topping-off pulses resume
+const T_CAN = cfg.t_canister;              // liquid into vapor line
+let latchRot = 0, valveRot = 0;
+
+function setFrame(f) {
+  const t = f / FPS;
+  // fuel flow on/off: on until click, then pulsed bursts during topping off
+  let flow = 0;
+  if (t < T_CLICK && t > 2.5) flow = 1;
+  else if (t >= T_REFLOW && t < cfg.t_turn_end) flow = (Math.sin(t*3.2) > -0.2) ? 0.8 : 0.0; // repeated squeezes
+  // fuel particles
+  for (let i = 0; i < NF; i++) {
+    const phase = (i/NF + t*0.22) % 1;
+    if (flow > 0 && phase < flow*0.98) {
+      const p = fuelCurve.getPoint(phase);
+      m4.setPosition(p.x, p.y, p.z);
+    } else m4.setPosition(0, -10, 0);
+    fuelParts.setMatrixAt(i, m4);
+  }
+  fuelParts.instanceMatrix.needsUpdate = true;
+  // air particles: flow until hole blocked
+  const airOn = (t > cfg.t_insert_start - 1 && t < T_BLOCK);
+  for (let i = 0; i < NA; i++) {
+    if (airOn) {
+      const p = airCurve.getPoint((i/NA + t*0.35) % 1);
+      m4.setPosition(p.x, p.y, p.z);
+    } else m4.setPosition(0, -10, 0);
+    airParts.setMatrixAt(i, m4);
+  }
+  airParts.instanceMatrix.needsUpdate = true;
+  // vapor contamination particles
+  const vapOn = (t >= T_CAN && t < cfg.t_turn_end);
+  for (let i = 0; i < NV; i++) {
+    if (vapOn) {
+      const p = vaporPath.getPoint((i/NV + t*0.25) % 1);
+      m4.setPosition(p.x, p.y, p.z);
+    } else m4.setPosition(0, -10, 0);
+    vapParts.setMatrixAt(i, m4);
+  }
+  vapParts.instanceMatrix.needsUpdate = true;
+  // tank fuel level: slow rise while flowing, reach neck at block, rise into neck during topping off
+  let lvl;
+  const neckLvl = TANK_H + 0.15;
+  if (t < cfg.t_insert_end) lvl = 0.6 + (t/cfg.t_insert_end)*2.2;                      // 0.6 -> 2.8
+  else if (t < T_BLOCK) lvl = 2.8 + ease((t-cfg.t_insert_end)/(T_BLOCK-cfg.t_insert_end)) * (neckLvl-2.8);
+  else if (t < T_REFLOW) lvl = neckLvl;
+  else if (t < cfg.t_turn_end) lvl = neckLvl + ease((t-T_REFLOW)/(cfg.t_turn_end-T_REFLOW)) * 0.75; // into neck
+  else lvl = neckLvl + 0.75;
+  setFuelLevel(lvl);
+  // diaphragm: pulls in between block and click, releases after
+  const diaU = (t > T_BLOCK && t < T_CLICK) ? ease((t-T_BLOCK)/(T_CLICK-T_BLOCK)) : (t >= T_CLICK ? 1 : 0);
+  diaphragm.position.y = 0.48 - 0.07*diaU;
+  diaphragm.material.emissive = new THREE.Color(0xff9a20);
+  diaphragm.material.emissiveIntensity = diaU * (1 - clamp01((t-T_CLICK)/0.4)) * 0.9;
+  // latch + valve snap at click
+  const snapU = ease(clamp01((t-T_CLICK)/0.18));
+  latch.rotation.z = snapU * 0.6;
+  valve.rotation.y = Math.PI/2 * (1 - snapU); // closes
+  valve.material.emissive = new THREE.Color(0xff9a20);
+  valve.material.emissiveIntensity = (1 - clamp01((t-T_CLICK-0.15)/0.5)) * snapU * 1.2;
+  // canister contamination
+  const conU = ease(clamp01((t-T_CAN-0.6)/(cfg.t_turn_end-T_CAN-0.8)));
+  contam.scale.y = Math.max(0.01, conU*0.9);
+  contam.position.y = -0.5 + (conU*0.9)/2;
+  contamM.opacity = conU * 0.45;
+  // check-engine icon appears near end
+  const engU = clamp01((t-cfg.t_turn_end+1.2)/0.5);
+  engM.opacity = engU * (0.75 + 0.25*Math.sin(t*6));
+  camAt(t);
+  renderer.render(scene, cam);
+}
+
+// selective env intensities (keep dark-studio mood)
+scene.traverse(o => { if (o.material) { const ms = Array.isArray(o.material) ? o.material : [o.material]; for (const m of ms) { if ('envMapIntensity' in m) m.envMapIntensity = 0.12; } } });
+glassM.envMapIntensity = 0.02;
+floorC.material.envMapIntensity = 0.06;
+for (const m of [steelM, aluM, spoutM, brassM]) m.envMapIntensity = 0.5;
+
+window.setFrame = setFrame;
+setFrame(0);
+window.ready = true;
+</script></body></html>
