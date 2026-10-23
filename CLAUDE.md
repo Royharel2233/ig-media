@@ -35,7 +35,7 @@ Roy authorized automatic publishing without per-post approval for these schedule
 ## 1paper daily run (07:15 Asia/Jerusalem, posted at 08:00): mode `paper_daily`
 No inbox: Claude chooses the paper.
 1. `git pull`. Read `history/1paper.md` and never repeat a paper.
-2. Find today's most talked-about research paper or preprint (last ~48 hours): search for papers trending in news coverage, on Hugging Face Daily Papers, arXiv, Nature/Science news and major outlets. Prefer findings a general audience will care about (AI, brain, health, space). Pick one, and note 1-2 runners-up and why the winner is the most viral (evidence: coverage count, trending lists). Never pick a paper by Anthropic or OpenAI without stating the conflict of interest in the report.
+2. Choose the paper with step 0 of the `one-paper-carousel` skill ("Choose the paper"): candidates from the last 7 days that people are already sharing (Reddit, Hacker News, Hugging Face trending, big general outlets), virality scorecard with a 12/18 gate, and a pillar balance. Never pick a paper by Anthropic or OpenAI without stating the conflict of interest in the report.
 3. Follow the `one-paper-carousel` skill exactly (read the primary source, fact list, true hook, `check.py` must print ALL CHECKS PASSED, `render.py` must report `Overflow: none`, look at the contact sheet). Its rule about asking before publishing is replaced here: Roy authorized automatic daily publishing (2026-10-22).
 4. Convert the Instagram PNGs (`out/en/ig/<id>/`) to JPEG quality 92 and commit them to `media/1paper/<YYYY-MM-DD>/<id>/01.jpg ... 08.jpg`.
 5. Write `jobs/1paper/<YYYY-MM-DD>/job.json` and push it together with the media and the new line in `history/1paper.md`:
