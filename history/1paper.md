@@ -4,3 +4,4 @@
 - Large-scale online deanonymization with LLMs (Lermen, Paleka, Swanson, Aerni, Carlini, Tramèr; ETH Zurich, Anthropic, MATS; arXiv 2026)
 - Encoding tactile stimuli for Braille recognition with organoids (Liu, Philamore, Ward-Cherrier; University of Bristol; Frontiers in AI 2026)
 - Intrinsic physicochemical activity at microplastic-water interfaces (Qian, Min et al.; Columbia, UC Berkeley; Nature 2026)
+- Protracted Fate Acquisition and Epigenetic De-Aging During Induced Neural Stem Cell Conversion of Human Blood Cells (Berg ... Wagner, Brüstle; University of Bonn, RWTH Aachen; Aging Cell 2026)
