@@ -1,0 +1,28 @@
+name: insights
+# Read-only on Instagram: per-post stats for every enabled page -> history/<page>-stats.{json,md}.
+# Runs daily before the 07:15 Israel 1paper run; touch ops/insights-now.txt to run it now.
+on:
+  schedule:
+    - cron: "40 3 * * *"
+  push:
+    paths: ["ops/insights-now.txt", "ops/boosted.txt"]
+  workflow_dispatch:
+concurrency: { group: insights, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  insights:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python engine/insights.py
+        env:
+          IG_TOKEN_GLOBALNEWS: "${{ secrets.IG_TOKEN_GLOBALNEWS }}"
+          IG_TOKEN_1PAPER: "${{ secrets.IG_TOKEN_1PAPER }}"
+          IG_TOKEN_HOWITWORKS: "${{ secrets.IG_TOKEN_HOWITWORKS }}"
+      - if: always()
+        run: |
+          git config user.name "ig-media-bot"; git config user.email "bot@users.noreply.github.com"
+          git add history/*-stats.* && (git diff --cached --quiet || git commit -qm "insights")
+          for i in 1 2 3; do git push -q && break; git pull -q --rebase; done

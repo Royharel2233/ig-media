@@ -1,0 +1,3 @@
+# Posts with paid promotion, one permalink or shortcode per line, e.g.
+# https://www.instagram.com/p/DeygbWqlomU/
+# The insights Action keeps these out of the organic comparison.
