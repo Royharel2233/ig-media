@@ -1,0 +1,41 @@
+{
+ "done": {
+  "post:single1_chips": {
+   "media_id": "18104255990668009",
+   "permalink": "https://www.instagram.com/p/De4gLu1mqwe/"
+  },
+  "post:single2_bitcoin": {
+   "media_id": "18078019895721708",
+   "permalink": "https://www.instagram.com/p/De4gQHqGqsU/"
+  },
+  "post:summary": {
+   "media_id": "17920930890452852",
+   "permalink": "https://www.instagram.com/p/De4gU2Bmtao/"
+  },
+  "story:single2_bitcoin:1": {
+   "media_id": "17963579334236840"
+  },
+  "story:summary:1": {
+   "media_id": "17952113898300457"
+  },
+  "story:summary:2": {
+   "media_id": "18132204721665699"
+  },
+  "story:summary:3": {
+   "media_id": "18108565397166423"
+  },
+  "story:summary:4": {
+   "media_id": "18100822697633639"
+  },
+  "story:summary:5": {
+   "media_id": "18116576402164459"
+  },
+  "story:summary:6": {
+   "media_id": "18352027291268935"
+  }
+ },
+ "errors": [
+  "story:single1_chips:1: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"AyVKny9eYBb-WMgqIFW1wi-\"}}'"
+ ],
+ "complete": false
+}
