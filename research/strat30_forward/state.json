@@ -1,0 +1,53 @@
+{
+ "started_utc": "2026-10-23",
+ "positions": [
+  {
+   "cid": "memecore",
+   "sym": "M",
+   "entry_px": 0.93022,
+   "entry_date": "2026-10-23",
+   "last_px": 0.93022,
+   "ret_since_entry": 0.0
+  },
+  {
+   "cid": "monero",
+   "sym": "XMR",
+   "entry_px": 584.77,
+   "entry_date": "2026-10-23",
+   "last_px": 584.77,
+   "ret_since_entry": 0.0
+  },
+  {
+   "cid": "zcash",
+   "sym": "ZEC",
+   "entry_px": 1182.12,
+   "entry_date": "2026-10-23",
+   "last_px": 1182.12,
+   "ret_since_entry": 0.0
+  }
+ ],
+ "cash_mult": 0.997002999,
+ "marks": [],
+ "rebalances": [
+  {
+   "date": "2026-10-23",
+   "picks": [
+    {
+     "sym": "M",
+     "r7": 0.1827
+    },
+    {
+     "sym": "XMR",
+     "r7": 0.0479
+    },
+    {
+     "sym": "ZEC",
+     "r7": 0.0293
+    }
+   ],
+   "universe_n": 35
+  }
+ ],
+ "last_rebal_date": "2026-10-23",
+ "last_mark_date": null
+}
