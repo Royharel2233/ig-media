@@ -6,7 +6,7 @@ Terms: 20% buyer premium + 18% VAT on premium only => all-in = hammer x 1.236, b
 Lot page pattern verified by fetching 4 lots (17210, 17274, 17229, 17215): https://il.bidspirit.com/ui/lotPage/shusterman/source/catalog/auction/82338/lot/{idInApp}?lang=he
 
 ## Verdict
-No lot shows a defensible resale gap at its opening bid after premium+VAT and before shipping/payment fees. House estimates on #16, #24, #75 exceed observed market by 40-400%. Raw Morgans sit at/near the mixed-grade eBay sold median before selling costs. Graded Morgans MS62-63 all-in sits at/above the realistic mid-grade band. Raw Morgans: individual-coin margin UNVERIFIED (condition unverified, medians mix grades); even at best, selling fees (~13%) + shipping erase any difference. URLs: no canonical per-lot URL in catalog data; identifiers are lot numbers in the verified catalog link.
+Screened all 79 lots; exact sold comparisons cited where available (Pokemon sealed, watches); coin individual margins and Reptar are explicitly UNRESOLVED, not priced. No lot shows a defensible resale gap at its opening bid after premium+VAT and before shipping/payment fees. House estimates on #16, #24, #75 exceed observed market by 40-400%. Raw Morgans sit at/near the mixed-grade eBay sold median before selling costs. Graded Morgans MS62-63 all-in sits at/above the realistic mid-grade band. Raw Morgans: individual-coin margin UNVERIFIED (condition unverified, medians mix grades); even at best, selling fees (~13%) + shipping erase any difference. URLs: no canonical per-lot URL in catalog data; identifiers are lot numbers in the verified catalog link.
 
 ## Pokemon lots
 - #11 ME04 Chaos Rising bulk (open $50 -> $61.80): 3 EX identified from enlarged lot photo = Gourgeist ex 041/086 ($0.35), Mega Pyroar ex 015/086 ($0.48), Mega Gallade ex 048/086 ($0.50) - all DOUBLE RARE (thepricedex.com/set/me4/chaos-rising/price-list). Bulk realizable comp: eBay UK SOLD 1000 commons/uncommons GBP 29.99 (ebay.co.uk/itm/227416402788) ~ $0.04/card; local IL liquidity unverified. "Master Set" text is descriptive marketing; photo shows only the 3 regular EX, hidden contents unknown. NO GAP.
@@ -50,7 +50,7 @@ Melt anchor: 0.7734 ozt x $53.92 spot (PCGS guide update 23.10) = $41.70.
 - #27 1921 PCGS MS63 ($100->$123.60): raw $53.84 / top $158.63
 MARGIN UNVERIFIED on all graded lots: raw/top-grade brackets do not settle an individual mid-grade coin; slab authenticity/grade not independently verified (seller/house claim).
 
-## American Silver Eagles (#31-69, 39 lots, 2022 & 2026) - identical terms
+## American Silver Eagles (#31-69, 39 lots, 2022 & 2026) - identical terms. 50a/b/c are Pokemon suffix items, NOT eagles. Full coverage math: 69 (1-69) + 3 (50a-c) + 7 (71-77) = 79.
 Open $70 -> $86.52 all-in vs melt $53.92 and CoinGrader 2022 ASE eBay median $82.95 (Dec 2025, 96 sales, trend -8.4% to Jul 2026). All-in above both. NO GAP.
 
 ## MoonSwatch (#28-30)
