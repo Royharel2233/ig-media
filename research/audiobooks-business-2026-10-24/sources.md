@@ -30,7 +30,7 @@
 ## Tier C — field/community (directional only)
 24. r/selfpublish AI audiobook sales sample (7 titles; audio ranks ≪ ebook ranks; 5/6 AI reviews 1-star): https://www.reddit.com/r/selfpublish/comments/1q97on4/ (2026-01-10)
 25. r/selfpublish audiobook earnings thread ($0–30/mo without audience; 6–24mo ROI): https://www.reddit.com/r/selfpublish/comments/1k4wiwa/ (2025-04-22)
-26. audiobook.co.uk — 10,000+ Virtual Voice results on Audible UK, same prices, no filter: https://www.audiobook.co.uk/ai-narrated-audiobooks/ (checked 2026-09-11)
+26. audiobook.co.uk — SECONDARY sample (their sampling, not this research): 10,000+ Virtual Voice results on Audible UK, same prices, no filter: https://www.audiobook.co.uk/ai-narrated-audiobooks/ (checked by them 2026-09-11)
 27. BookLaunch News — forum-compiled Spotify per-hour $0.011–0.019 (unverified): https://booklaunchnews.com/spotifys-per-stream-payouts-are-forcing-an-audiobook-launch-rethink/ (2026-06-26)
 28. audiobookzap — Virtual Voice flood observation: https://audiobookzap.com/audibles-virtual-voice-is-flooding-the-market/index.html (2023-12-12)
 29. ACX country limits (third-party corroboration): https://www.indieaudiobookproductions.co.uk/post/why-some-indie-authors-can-t-publish-through-acx-and-what-to-do-instead (2026-05-21)
@@ -39,3 +39,5 @@
 32. TomeVox "is it worth it" (vendor blog — framework only, optimistic bias): https://tomevox.com/blog-audiobook-worth-it (2026-04-02)
 33. KDP Virtual Voice official Program Terms (author keeps book copyright, Amazon retains ownership of the AVV edition file; 40% ALC + membership royalties; KDP Select audio exclusivity): https://kdp.amazon.com/en_US/help/topic/GWHSFAK69P2537YR
 34. KDP Virtual Voice pricing/royalties page (beta is US-marketplace distribution only at this time; royalty mechanics; 60-day payment): https://kdp.amazon.com/en_US/help/topic/GHJW2N8GLTQLK9TY
+35. Audible.com US — direct narrator search "Virtual Voice" sorted by Popular, sampled 2026-10-24 (primary, this research): "1-20 of over 50,000 results"; top 20: 14 unrated, rated counts 1/1/2/2/5/647; prices $3.99-14.99. No sales inference (ratings are not sales). Screenshots in repo screenshots/: https://www.audible.com/search?keywords=&narrator=Virtual+Voice&sort=popularity-rank
+36. ALLi Self-Publishing Advice — "Spotify Ends Findaway Voices; INaudio Takes Over Wide Audiobook Distribution" (Tier B trade news; corrects the stale "Spotify-owned" description of INaudio): https://selfpublishingadvice.org/spotify-ends-findaway-voices/ (2025-05-06)
