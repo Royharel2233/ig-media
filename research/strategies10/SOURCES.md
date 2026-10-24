@@ -1,11 +1,12 @@
-# Ten additional strategies - source registry v3 (24 Oct 2026)
-All URLs fetched today; excerpts verbatim from primary text. The File page (v3) shows ten methods WITH positive backtest evidence; rejected candidates are in a separate exclusions appendix.
+# Additional crypto strategies - source registry v4.1 (24 Oct 2026)
+All URLs fetched 24 Oct 2026; excerpts verbatim from primary text. The File page (v4.1) shows SEVEN methods with positive backtest evidence; event studies and rejected candidates are in a separate exclusions appendix.
 
 
-> v4 (24 אוקטובר 2026, ~11:37 IDT): עודכן בעקבות ביקורת v3. שמונה שיטות במקום עשר (ניסיון כפול כובס: תיזמון MA נכלל במשפחת המומנטום, סקיונס ב-MAX). פרטי מדגם OOS של Guidolin-Ionta חולצו מהטקסט הפתוח (ינואר 2018 - אפריל 2025, 382 תצפיות, 40 מטבעות, מדד ייחוס CMBI10); הגדלים המספריים בטבלאות אינם ניתנים לחילוץ טקסט בעותק הפתוח וסומנו כלא-מאומתים מספרית.
+> v4 (24 אוקטובר 2026, ~11:37 IDT): שמונה שיטות במקום עשר (תיזמון MA נכלל במשפחת המומנטום, סקיונס ב-MAX).
+> v4.1 (24 אוקטובר 2026, ~11:42 IDT): שבע שיטות - אפקט הרישום הועבר לנספח כמחקר אירועים, לא בקטסט שיטה (כמו הארביטראז׳). טבלה 6 של Guidolin-Ionta נקראה בעין מה-PDF המרונדר: מיון לונג-שורט CER OOS - סנטימנט Google 0.73% שבועי (Sharpe 0.27, אלפא 0.73%, p=0.00), משתמשים 0.77% (0.24), כוח-חישוב 0.79% (0.24); קונה 20 צפויים-טוב / מוכר 20 צפויים-גרוע; 5.1.2018-25.4.2025, 382 שבועות; אלפא מול CMBI10; ללא עלויות מסחר בבקטסט; מיון מומנטום שלילי בטבלה. טבלה A3 של Bouri נקראה בעין: FPAR עם עמלת 0.03%, ללא שורט, כל המדגם, S=182 - תשואה שנתית 42.78%, Sharpe 0.74, מקס׳ ירידה -121.76% כמודפס; מדגם Bitstamp 2014-2019; רווחיות פחתה אחרי פברואר 2017 לפי המחברים; המאמר לא בדק מול buy-and-hold. Fieberg 2024 אומת מחדש מול העמוד החי (ניתוח אילוצים כלכליים, לא שכפול ספציפי). Low-vol: ביטחון נטו ירד לנמוך (גודל לא נגיש, סתירת תקופות, שחזור לונג-אונלי נזיל לא אומת). OOS אמיתי נשאר רק בשיטה 3 (Guidolin-Ionta).
 
 
-## THE TEN (positive backtest evidence)
+## THE SEVEN (positive backtest evidence) + exclusions appendix
 1. Weekly reversal - Kozlowski, Puleo & Zhou, Applied Economics Letters 28(11) 2021. https://digitalcommons.fairfield.edu/cgi/viewcontent.cgi?article=1249&context=business-facultypubs
    "Analyzing a set of 200 cryptocurrencies over the period from 2015 to 2019, we document a significant return reversal effect that holds at the daily, weekly, and monthly rebalancing frequencies and is robust to controls for differences in size, turnover, and illiquidity."
    Caveats: effect strongest in illiquid tail; L-S needs shorting small caps; long-only liquid version untested; Zaremba et al. IRFA 2021 (3600+ coins) found daily MOMENTUM in the largest liquid coins.
@@ -13,7 +14,7 @@ All URLs fetched today; excerpts verbatim from primary text. The File page (v3) 
    17-523 coins >$5M, Jan 2014-Sep 2020. Weekly high-minus-low MAX decile: 3.03% RAW return difference; 1.99% three-factor regression alpha (risk-adjusted; NEITHER nets trading costs). t=4.10/3.72. Sign opposite equities. Conflicts: Grobys & Junttila 2021 (20 coins) negative.
 3. Sentiment + on-chain factors (OOS) - Guidolin & Ionta, JIFMIM 107 (2026) 102285 (open). https://iris.unibocconi.it/retrieve/ca0d5636-301d-4177-b28c-1e88a6b6cdb1/Guidolin%20and%20Ionta%20JIFMIM%202026.pdf
    "three weekly factor-mimicking portfolios based on network activity (active users), computing intensity (hashrate), and a sentiment measure from Google search trends. Using an out-of-sample forecasting framework, we find that all three predictors show strong performance across 40 cryptocurrencies. The certainty equivalent returns are often well above the risk-free rate." Sample Aug 2015-Apr 2025.
-4. Price-to-MA ratio timing (OOS) - Detzel, Liu, Strauss, Zhou & Zhu, Financial Management 50(1) 2021. https://ideas.repec.org/a/bla/finmgt/v50y2021i1p107-137.html
+4. [EXCLUDED v4 - trend family variant] Price-to-MA ratio timing - Detzel, Liu, Strauss, Zhou & Zhu, Financial Management 50(1) 2021. https://ideas.repec.org/a/bla/finmgt/v50y2021i1p107-137.html
    "ratios of prices to their moving averages forecast daily Bitcoin returns in and out of sample. Trading strategies based on these ratios generate an economically significant alpha and Sharpe ratio gains relative to a buy-and-hold position." Family note: adjacent to trend/momentum.
 5. Higher moments / skewness - Jia, Liu & Yan, FRL 39, 2021. https://ideas.repec.org/a/eee/finlet/v39y2021ics1544612320303135.html
    "volatility and kurtosis are positively related to future returns while the return predictability of skewness is negative... cryptocurrency investors have lottery-type preferences." 84 coins, intraday data.
