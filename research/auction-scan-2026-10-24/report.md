@@ -1,4 +1,4 @@
-# Auction scan — 2026-10-24 (v5, verified)
+# Auction scan — 2026-10-24 (v6, verified)
 
 Scan executed 2026-10-24, verified through 12:50 IDT. Sources: il.bidspirit.com portal (109 auction links enumerated), cars.bidspirit.com receiver portal (236 vehicles), govil house page, kones.co.il (via web_fetch; Cloudflare blocks the cloud browser). **Coverage: 12 catalogs in Roy's categories parsed in full (4,059 lots, data/all_catalog_lots.csv) — not the whole portal.**
 
@@ -42,7 +42,7 @@ Verified lot links (opened and title-checked 24.10):
 
 ## Timezone caveat (applies to every bidspirit time here)
 
-Israel DST ends tonight (25.10). Bidspirit's displayed times use a stale UTC+3 conversion: verified fa-firm shows 10:00 while its own startDate 2026-10-25T07:00Z converts to 09:00 IST under Asia/Jerusalem zoneinfo. Dates are consistent in both readings; exact hours are NOT verified. * Exact opening/closing hours must be confirmed with the auction house before participation; on closing days we watch from 16:30 and treat displayed-minus-1h as the earliest possible close. The kones tender deadline (28.10 12:00) is wall-time text on the kones page, not a UTC conversion.
+Israel DST ends tonight (25.10). There is a display/timestamp conflict on bidspirit: fa-firm shows 10:00 while its own startDate 2026-10-25T07:00Z converts to 09:00 IST under Asia/Jerusalem zoneinfo (same one-hour gap on hob-cars, federlaw, cflaw). The evidence does not establish which reading the sale engine follows. Dates are consistent in both readings; exact hours are NOT verified. * Exact opening/closing hours must be confirmed with the auction house before participation; on closing days we watch from 16:00 and treat displayed-minus-1h as the earliest possible close. The kones tender deadline (28.10 12:00) is wall-time text on the kones page, not a UTC conversion.
 
 ## Receiver vehicles (asking-price anchors, not transactions)
 
