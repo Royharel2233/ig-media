@@ -44,7 +44,6 @@ def completed_closes(rows):
 
 def main():
     st = load_state()
-    now = datetime.datetime.utcnow()
     uni = universe()
     data = {}
     for cid, sym in uni:
@@ -52,13 +51,41 @@ def main():
             rows = completed_closes(series_mexc(sym, 10))
             if len(rows) >= 8:
                 data[(cid, sym)] = rows
-        except Exception as e:
+        except Exception:
             pass
         time.sleep(1.2)
     if not data:
         print('NO DATA'); return
     last_close = max(r[-1][0] for r in data.values())
-    # daily mark
+
+    # 1. EXECUTE pending signal at this close (NEXT-BAR: signal close t -> execute close t+1)
+    ps = st.get('pending_signal')
+    if ps and last_close > datetime.date.fromisoformat(ps['signal_date']):
+        prev_n = len(st['positions'])
+        positions = []
+        for pick in ps['picks']:
+            rows = data.get((pick['cid'], pick['sym']))
+            if rows and rows[-1][0] == last_close:
+                positions.append({'cid': pick['cid'], 'sym': pick['sym'],
+                                  'entry_px': rows[-1][1], 'entry_date': str(last_close),
+                                  'last_px': rows[-1][1], 'ret_since_entry': 0.0})
+        if positions:
+            changes = max(len(positions), prev_n)
+            st['cash_mult'] *= (1 - COST) ** changes
+            st['positions'] = positions
+            st['rebalances'].append({'signal_date': ps['signal_date'],
+                'exec_date': str(last_close),
+                'picks': [{'sym': p['sym'], 'entry_px': p['entry_px']} for p in positions],
+                'universe_n': ps.get('universe_n')})
+            if st['started_utc'] is None:
+                st['started_utc'] = str(last_close)
+            st['last_rebal_date'] = str(last_close)
+            print('EXECUTED next-bar at', last_close, [(p['sym'], p['entry_px']) for p in positions])
+        else:
+            print('PENDING SIGNAL UNEXECUTABLE (no price rows at close); kept pending')
+        st['pending_signal'] = None
+
+    # 2. daily mark of open positions
     if st['positions'] and st.get('last_mark_date') != str(last_close):
         seg = []
         for p in st['positions']:
@@ -70,31 +97,23 @@ def main():
         if seg:
             st['marks'].append({'date': str(last_close), 'avg_open_ret': sum(seg)/len(seg)})
             st['last_mark_date'] = str(last_close)
-    # weekly rebalance
-    due = (st['last_rebal_date'] is None or
-           (last_close - datetime.date.fromisoformat(st['last_rebal_date'])).days >= REBAL_DAYS)
-    if due:
+            print('MARK', last_close, [(p['sym'], round(p['ret_since_entry'],3)) for p in st['positions']])
+
+    # 3. NEW SIGNAL every 7 days (computed at this close; executes at the NEXT close)
+    last_sig = st.get('last_signal_date')
+    if last_sig is None or (last_close - datetime.date.fromisoformat(last_sig)).days >= REBAL_DAYS:
         ranked = []
         for (cid, sym), rows in data.items():
             if rows[-1][0] == last_close and len(rows) >= 8:
-                r7 = rows[-1][1]/rows[-8][1] - 1
-                ranked.append((r7, cid, sym, rows[-1][1]))
+                ranked.append((rows[-1][1]/rows[-8][1] - 1, cid, sym))
         ranked.sort(reverse=True)
-        picks = ranked[:3]
-        changes = max(len(picks), len(st['positions']))
-        st['cash_mult'] *= (1 - COST) ** changes
-        st['positions'] = [{'cid': cid, 'sym': sym, 'entry_px': px, 'entry_date': str(last_close),
-                            'last_px': px, 'ret_since_entry': 0.0} for r7, cid, sym, px in picks]
-        st['rebalances'].append({'date': str(last_close),
-                                 'picks': [{'sym': s, 'r7': round(r, 4)} for r, c, s, p in picks],
-                                 'universe_n': len(ranked)})
-        st['last_rebal_date'] = str(last_close)
-        if st['started_utc'] is None:
-            st['started_utc'] = str(last_close)
-        print('REBALANCE', last_close, [(s, round(r,3)) for r,c,s,p in picks], 'n_uni', len(ranked))
-    else:
-        print('MARK only', last_close, [ (p['sym'], round(p['ret_since_entry'],3)) for p in st['positions'] ])
-    # forward performance since tracking start (equal-weight open positions vs entry, cost-adjusted)
+        picks = [{'cid': c, 'sym': s, 'r7': round(r, 4)} for r, c, s in ranked[:3]]
+        st['pending_signal'] = {'signal_date': str(last_close), 'picks': picks,
+                                'universe_n': len(ranked),
+                                'note': 'next-bar: executes at the next completed UTC close'}
+        st['last_signal_date'] = str(last_close)
+        print('SIGNAL', last_close, picks, 'n_uni', len(ranked))
+
     if st['positions']:
         avg = sum(p['ret_since_entry'] for p in st['positions'])/len(st['positions'])
         print('OPEN-RET avg %.3f cash_mult %.4f n_rebal %d' % (avg, st['cash_mult'], len(st['rebalances'])))

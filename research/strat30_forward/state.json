@@ -1,53 +1,41 @@
 {
- "started_utc": "2026-10-23",
- "positions": [
-  {
-   "cid": "memecore",
-   "sym": "M",
-   "entry_px": 0.93022,
-   "entry_date": "2026-10-23",
-   "last_px": 0.93022,
-   "ret_since_entry": 0.0
-  },
-  {
-   "cid": "monero",
-   "sym": "XMR",
-   "entry_px": 584.77,
-   "entry_date": "2026-10-23",
-   "last_px": 584.77,
-   "ret_since_entry": 0.0
-  },
-  {
-   "cid": "zcash",
-   "sym": "ZEC",
-   "entry_px": 1182.12,
-   "entry_date": "2026-10-23",
-   "last_px": 1182.12,
-   "ret_since_entry": 0.0
-  }
- ],
- "cash_mult": 0.997002999,
+ "design": "FORWARD_DESIGN.md frozen 2026-10-24; corrected same day per parent review (next-bar, no backdated fills)",
+ "started_utc": null,
+ "positions": [],
+ "cash_mult": 1.0,
  "marks": [],
- "rebalances": [
-  {
-   "date": "2026-10-23",
-   "picks": [
-    {
-     "sym": "M",
-     "r7": 0.1827
-    },
-    {
-     "sym": "XMR",
-     "r7": 0.0479
-    },
-    {
-     "sym": "ZEC",
-     "r7": 0.0293
-    }
-   ],
-   "universe_n": 35
-  }
- ],
- "last_rebal_date": "2026-10-23",
+ "rebalances": [],
+ "pending_signal": {
+  "signal_date": "2026-10-23",
+  "snapshot_taken_utc": "2026-10-24T06:46Z",
+  "note": "Decision/universe snapshot taken post-approval from the completed 2026-10-23 UTC close. Indicative signal ONLY until executed; no holdings or P&L before the 2026-10-24 UTC close entry.",
+  "picks": [
+   {
+    "cid": "memecore",
+    "sym": "M",
+    "r7": 0.1827,
+    "mexc_pair": "MUSDT",
+    "cg_spot_check_usd": 0.998878
+   },
+   {
+    "cid": "monero",
+    "sym": "XMR",
+    "r7": 0.0479,
+    "mexc_pair": "XMRUSDT",
+    "cg_spot_check_usd": 582.0
+   },
+   {
+    "cid": "zcash",
+    "sym": "ZEC",
+    "r7": 0.0293,
+    "mexc_pair": "ZECUSDT",
+    "cg_spot_check_usd": 1169.95
+   }
+  ],
+  "universe_n": 35,
+  "universe": "dynamic real-time (CG top-50 minus pegged/RWA minus no-MEXC-pair) - DISCLOSED difference from the audited fixed-39 retrospective basket"
+ },
+ "last_signal_date": "2026-10-23",
+ "last_rebal_date": null,
  "last_mark_date": null
 }
