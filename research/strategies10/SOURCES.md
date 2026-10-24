@@ -1,6 +1,10 @@
 # Ten additional strategies - source registry v3 (24 Oct 2026)
 All URLs fetched today; excerpts verbatim from primary text. The File page (v3) shows ten methods WITH positive backtest evidence; rejected candidates are in a separate exclusions appendix.
 
+
+> v4 (24 אוקטובר 2026, ~11:37 IDT): עודכן בעקבות ביקורת v3. שמונה שיטות במקום עשר (ניסיון כפול כובס: תיזמון MA נכלל במשפחת המומנטום, סקיונס ב-MAX). פרטי מדגם OOS של Guidolin-Ionta חולצו מהטקסט הפתוח (ינואר 2018 - אפריל 2025, 382 תצפיות, 40 מטבעות, מדד ייחוס CMBI10); הגדלים המספריים בטבלאות אינם ניתנים לחילוץ טקסט בעותק הפתוח וסומנו כלא-מאומתים מספרית.
+
+
 ## THE TEN (positive backtest evidence)
 1. Weekly reversal - Kozlowski, Puleo & Zhou, Applied Economics Letters 28(11) 2021. https://digitalcommons.fairfield.edu/cgi/viewcontent.cgi?article=1249&context=business-facultypubs
    "Analyzing a set of 200 cryptocurrencies over the period from 2015 to 2019, we document a significant return reversal effect that holds at the daily, weekly, and monthly rebalancing frequencies and is robust to controls for differences in size, turnover, and illiquidity."
