@@ -1,0 +1,76 @@
+{
+ "markets_processed": 128,
+ "added": 768,
+ "upgraded": 0,
+ "A90": {
+  "signals": 1600,
+  "fills": 304,
+  "open": 3,
+  "settled": 301,
+  "wins": 279,
+  "win_rate": 0.9269,
+  "net": -184.23,
+  "fees": 0.0,
+  "worst": -15.0
+ },
+ "A45": {
+  "signals": 2214,
+  "fills": 151,
+  "open": 1,
+  "settled": 150,
+  "wins": 142,
+  "win_rate": 0.9467,
+  "net": -49.09,
+  "fees": 0.0,
+  "worst": -15.0
+ },
+ "A90d": {
+  "signals": 1945,
+  "fills": 475,
+  "open": 5,
+  "settled": 470,
+  "wins": 418,
+  "win_rate": 0.8894,
+  "net": -435.39,
+  "fees": 0.0,
+  "worst": -15.0
+ },
+ "B05": {
+  "signals": 119,
+  "fills": 119,
+  "open": 0,
+  "settled": 119,
+  "wins": 99,
+  "win_rate": 0.8319,
+  "net": -28.61,
+  "fees": 19.52,
+  "worst": -15.4761
+ },
+ "B02": {
+  "signals": 251,
+  "fills": 251,
+  "open": 3,
+  "settled": 248,
+  "wins": 207,
+  "win_rate": 0.8347,
+  "net": -40.88,
+  "fees": 42.88,
+  "worst": -15.4935
+ },
+ "B10": {
+  "signals": 30,
+  "fills": 30,
+  "open": 0,
+  "settled": 30,
+  "wins": 25,
+  "win_rate": 0.8333,
+  "net": -29.17,
+  "fees": 3.26,
+  "worst": -15.4095
+ },
+ "cursors": {
+  "5m": 1792830300,
+  "15m": 1792829700
+ },
+ "now": 1792830479
+}
