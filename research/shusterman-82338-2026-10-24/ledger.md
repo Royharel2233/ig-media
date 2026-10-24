@@ -6,7 +6,7 @@ Terms: 20% buyer premium + 18% VAT on premium only => all-in = hammer x 1.236, b
 Lot page pattern verified by fetching 4 lots (17210, 17274, 17229, 17215): https://il.bidspirit.com/ui/lotPage/shusterman/source/catalog/auction/82338/lot/{idInApp}?lang=he
 
 ## Verdict
-No lot shows a defensible resale gap at its opening bid after premium+VAT and before shipping/payment fees. House estimates on #16, #24, #75 exceed observed market by 40-400%. Raw Morgans sit at/near the mixed-grade eBay sold median before selling costs. Graded Morgans MS62-63 all-in sits at/above the realistic mid-grade band. Closest-to-market rows are raw Morgans; even there, selling fees (~13%) + shipping erase any difference.
+No lot shows a defensible resale gap at its opening bid after premium+VAT and before shipping/payment fees. House estimates on #16, #24, #75 exceed observed market by 40-400%. Raw Morgans sit at/near the mixed-grade eBay sold median before selling costs. Graded Morgans MS62-63 all-in sits at/above the realistic mid-grade band. Raw Morgans: individual-coin margin UNVERIFIED (condition unverified, medians mix grades); even at best, selling fees (~13%) + shipping erase any difference. URLs: no canonical per-lot URL in catalog data; identifiers are lot numbers in the verified catalog link.
 
 ## Pokemon lots
 - #11 ME04 Chaos Rising bulk (open $50 -> $61.80): 3 EX identified from enlarged lot photo = Gourgeist ex 041/086 ($0.35), Mega Pyroar ex 015/086 ($0.48), Mega Gallade ex 048/086 ($0.50) - all DOUBLE RARE (thepricedex.com/set/me4/chaos-rising/price-list). Bulk realizable comp: eBay UK SOLD 1000 commons/uncommons GBP 29.99 (ebay.co.uk/itm/227416402788) ~ $0.04/card; local IL liquidity unverified. "Master Set" text is descriptive marketing; photo shows only the 3 regular EX, hidden contents unknown. NO GAP.
@@ -24,16 +24,16 @@ No lot shows a defensible resale gap at its opening bid after premium+VAT and be
 Note: an independent audit numbered these 74/75/76/78-79; the portal JSON itemIndex (72/73/74/76-77) is authoritative and matches verified lot URLs.
 
 ## Raw Morgan dollars (#1-10) - CoinGrader eBay sold medians (8,190 sales Oct 2025-Jul 2026, coingrader.app/coin-prices/morgan-dollar); medians mix grades, lot condition unverified
-- #1 1880-P: open $50 -> $61.80; raw median $56.83. AT MARKET, no margin after selling costs.
-- #2 1883-O: $45 -> $55.62; median $74.18. AT MARKET (median mixes BU raw).
-- #3 1884-O: $45 -> $55.62; median $69.27. AT MARKET.
-- #4 1886-P: $50 -> $61.80; median $69.72. AT MARKET.
-- #5 1887-P: $50 -> $61.80; median $69.37. AT MARKET.
-- #6 1889-P: $50 -> $61.80; median $62.94. AT MARKET.
-- #7 1890-O: $45 -> $55.62; median $54.03. AT/BELOW.
-- #8 1896-P: $50 -> $61.80; median $65.36. AT MARKET.
-- #9 1900-O: $45 -> $55.62; median $74.35. AT MARKET.
-- #10 1921-D: $60 -> $74.16; median $57.33. BELOW MARKET.
+- #1 1880-P: open $50 -> $61.80; raw median $56.83. MARGIN UNVERIFIED (median mixes grades; coin condition unverified).
+- #2 1883-O: $45 -> $55.62; median $74.18. MARGIN UNVERIFIED (median mixes BU raw; condition unverified).
+- #3 1884-O: $45 -> $55.62; median $69.27. MARGIN UNVERIFIED.
+- #4 1886-P: $50 -> $61.80; median $69.72. MARGIN UNVERIFIED.
+- #5 1887-P: $50 -> $61.80; median $69.37. MARGIN UNVERIFIED.
+- #6 1889-P: $50 -> $61.80; median $62.94. MARGIN UNVERIFIED.
+- #7 1890-O: $45 -> $55.62; median $54.03. MARGIN UNVERIFIED (median below all-in).
+- #8 1896-P: $50 -> $61.80; median $65.36. MARGIN UNVERIFIED.
+- #9 1900-O: $45 -> $55.62; median $74.35. MARGIN UNVERIFIED.
+- #10 1921-D: $60 -> $74.16; median $57.33. MARGIN UNVERIFIED (median below all-in).
 Melt anchor: 0.7734 ozt x $53.92 spot (PCGS guide update 23.10) = $41.70.
 
 ## Graded Morgans (#17-27, NGC/PCGS MS62-63, ICG AU58) - all-in $117-$136; raw median and top-grade median per date bracket the MS62-63 band; all-in sits at/above the realistic mid-grade value
@@ -48,7 +48,7 @@ Melt anchor: 0.7734 ozt x $53.92 spot (PCGS guide update 23.10) = $41.70.
 - #25 1889 ICG AU58 ($70->$86.52): raw $62.94 / top $137.25
 - #26 1898 ICG AU58 ($70->$86.52): raw $60.60 / top $251.16
 - #27 1921 PCGS MS63 ($100->$123.60): raw $53.84 / top $158.63
-NO GAP on all; slab authenticity/grade not independently verified (seller/house claim).
+MARGIN UNVERIFIED on all graded lots: raw/top-grade brackets do not settle an individual mid-grade coin; slab authenticity/grade not independently verified (seller/house claim).
 
 ## American Silver Eagles (#31-69, 39 lots, 2022 & 2026) - identical terms
 Open $70 -> $86.52 all-in vs melt $53.92 and CoinGrader 2022 ASE eBay median $82.95 (Dec 2025, 96 sales, trend -8.4% to Jul 2026). All-in above both. NO GAP.
