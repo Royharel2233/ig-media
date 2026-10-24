@@ -1,6 +1,6 @@
 # Auction scan — 2026-10-24 (v3, verified)
 
-Scan executed 2026-10-24, verified through 12:40 IDT. Sources: il.bidspirit.com portal (109 auction links enumerated), cars.bidspirit.com receiver portal (236 vehicles), govil house page, kones.co.il (via web_fetch; Cloudflare blocks the cloud browser). **Coverage: 12 catalogs in Roy's categories parsed in full (4,059 lots, data/all_catalog_lots.csv) — not the whole portal.**
+Scan executed 2026-10-24, verified through 12:45 IDT. Sources: il.bidspirit.com portal (109 auction links enumerated), cars.bidspirit.com receiver portal (236 vehicles), govil house page, kones.co.il (via web_fetch; Cloudflare blocks the cloud browser). **Coverage: 12 catalogs in Roy's categories parsed in full (4,059 lots, data/all_catalog_lots.csv) — not the whole portal.**
 
 ## Verified terms and rates (24.10)
 
@@ -14,9 +14,9 @@ Scan executed 2026-10-24, verified through 12:40 IDT. Sources: il.bidspirit.com 
 
 ## Headline (coverage-scoped)
 
-Within the 12 catalogs checked, no sale closing this weekend shows a verified gap below melt. Four lots closing Nov 1–10 are on the watch list below. Nothing here is a confirmed bargain: all weights/purity are seller claims, photos cannot verify gold, and no margin is confirmed without physical inspection.
+Within the 12 catalogs checked, no sale closing this weekend shows a verified gap below melt. Four lots closing Nov 1–2 are on the watch list below. Nothing here is a confirmed bargain: all weights/purity are seller claims, photos cannot verify gold, and no margin is confirmed without physical inspection.
 
-## Watch list — break-even framing (closes Nov 1–10)
+## Watch list — break-even framing (closes Nov 1–2)
 
 Break-even = verified grams of gold needed for scrap payout alone to return the current all-in cost, before inspection/pickup costs. Seller gross weight is shown separately; it includes movement, glass, stones, pearls, strap. Unknown case construction/authenticity → no confirmed margin at any of these.
 
@@ -37,12 +37,12 @@ Verified lot links (opened and title-checked 24.10):
 ## Checked this weekend — status
 
 - **rimon 80951 (silver, closes Mon 26.10):** all 360 parsed lots lead at 1.16–1.30x melt. Priced above metal. Out.
-- **behrooz 80869 (closes Wed 28.10):** gold items lead at 0.80–0.98x melt before commission; no room after commission. Out.
+- **behrooz 80869 (closes Wed 28.10):** gold items lead at 0.80–0.98x melt before commission. Net margin after commission and payout is unverified — unresolved, not an established rejection.
 - **gallery74 79495 #6533 (14K pendant with pearl + stones, 14g gross, closes Sun 25.10):** the $700 lead is a real bid. All-in $857. Break-even requires ~12.4g verified gold out of 14g gross including the pearl and stones. Neither confirmed nor ruled out — the pearl's weight is unknown. Unverified value gap, not an established rejection and not an opportunity.
 
 ## Receiver vehicles (asking-price anchors, not transactions)
 
-12 live receiver sales, 236 vehicles, 91 from 2021+. No appraiser estimates in the API; openings effectively free-bid. Notable: fa-firm Sun 26.10 10:00 (2024 BMW 318i יד2 34,929km — Yad2 price-list ₪186,500; 2025 Aygo X יד2 33,850km — asks 85k–108.9k), hob-cars Sun 11:00 (2026 BMW X1 11,952km — carwiz ₪259,000; 2022 GLE400D יד3 98,253km — ₪329,750), federlaw Mon 09:00 (2022 X6 יד1 140,512km — Yad2 list ₪379,800), cflaw Mon 09:00 (59 cars). All anchors are asking prices.
+12 live receiver sales, 236 vehicles, 91 from 2021+. No appraiser estimates in the API; openings effectively free-bid. Notable: fa-firm Sun 25.10 10:00 (2024 BMW 318i יד2 34,929km — Yad2 price-list ₪186,500; 2025 Aygo X יד2 33,850km — asks 85k–108.9k), hob-cars Sun 25.10 11:00 (2026 BMW X1 11,952km — carwiz ₪259,000; 2022 GLE400D יד3 98,253km — ₪329,750), federlaw Mon 26.10 09:00 (2022 X6 יד1 140,512km — Yad2 list ₪379,800), cflaw Mon 26.10 09:00 (59 cars). All anchors are asking prices.
 
 ## kones Sentra tender (verified on the tender page 24.10)
 
