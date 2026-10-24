@@ -1,0 +1,16 @@
+# Raw notes (see sources.md for URLs)
+- APA 2025: $2.43B +9%; 750k titles +43%; AI 0.03% of sales; AI-curiosity 70%->61%; 16% tried AI title; piracy: 45% listened on YouTube.
+- Spotify expansion to 180+ markets incl Israel (listening), Oct 7 2026.
+- ACX: human-only narration on direct submit; US/UK/CA/IE only.
+- KDP Virtual Voice: free, 40% ALC royalty, $3.99-14.99 price band, US beta, needs eligible KDP ebook, Amazon owns audio.
+- Google Play: IL not in seller table; auto-narration free during beta, parity pricing, needs EPUB + audiobook rights.
+- INaudio: all countries; 80% of received royalties; retailer rates ALC 40-50% list, subscription 30-40%, revshare 25-45%; monthly USD payouts; AI only via LPF from Google Play Books/ElevenLabs/Spoken Press.
+- Spotify DVN: disclosure mandatory; no referral-partner sharing.
+- Kobo: AI accepted w/ synthesised-voice credit; EFT USD; CAD 50 threshold; 45 days.
+- Apple: own digital narration free via D2D/PublishDrive/Ingram; English; selective; 1-2 months.
+- ElevenLabs: Starter $6 30k cr (~30min); Creator $22 121k (~2h); Pro $99 600k (~10h); commercial license from Starter; no rollover; 10-15% redo burn.
+- Spotify stream pay ~$0.011-0.019/completed hour (ALLi forums via BookLaunch News).
+- Reddit r/selfpublish Jan 2026: 7 bestselling ebooks w/ Virtual Voice -> audio ranks 70k-370k, 5/6 AI reviews 1-star; returns; authors pulling titles.
+- Reddit Apr 2025: without reader base audiobooks sit at $0-30/mo; ROI 6-24 months even with 50+ backlist; audio follows existing ebook sales.
+- Google Play public domain: no longer accepted except select partners.
+- Hebrew: no open self-pub audio channel; small market.

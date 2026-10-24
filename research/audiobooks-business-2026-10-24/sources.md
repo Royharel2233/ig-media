@@ -1,0 +1,17 @@
+# Sources
+- Publishers Weekly (2026-06-08), APA sales survey: US audiobook sales $2.43B 2025 (+9%); 750k active titles (+43% YoY); AI-narrated = 0.03% of sales; willingness to try AI titles fell 70%->61%; only 16% of listeners tried an AI-voiced title. https://www.publishersweekly.com/pw/by-topic/industry-news/audio-books/article/100588-u-s-audiobook-sales-up-9-in-2025-reaches-2-43-billion.html
+- Google Play Books supported countries (fetched 2026-10-24): ISRAEL NOT LISTED as seller sign-up or payments country; auto-narrated creation limited to listed countries. https://support.google.com/books/partner/table/6052428
+- Google auto-narrated policies: free during beta; must own audiobook rights; parity pricing (Play price <= other platforms). https://support.google.com/books/partner/answer/10013009
+- Spotify support: accepts digital voice narration (must disclose); providers incl. Google Play Books, ElevenLabs; digital-voice titles not shared to referral partners. https://support.spotify.com/us/authors/article/digital-voice-narration/
+- ACX audio submission requirements (human narration required; AI/TTS prohibited; updated 2026-04-15), via dated matrix: https://audiopod.ai/guides/audiobook/where-ai-narration-is-accepted (2026-09-24) and indieaudiobookproductions.co.uk (ACX countries US/UK/CA/IE, 2026-05-21)
+- KDP Virtual Voice overview (free, 40% ALC royalty, US beta, needs eligible ebook, Amazon owns file): https://kdp.amazon.com/en_US/help/topic/G3QRL9HQNF273Q2H
+- Voices by INaudio: supported countries (all): https://voicessupport.inaudio.com/en/articles/3222272 ; per-sale royalties (80% of received; ALC 40-50% list): https://voicessupport.inaudio.com/en/articles/3223552 ; payment timing: https://voicessupport.inaudio.com/en/articles/3222720
+- ElevenLabs x Spotify/INaudio LPF route: https://elevenlabs.io/blog/spotify-is-now-accepting-audiobooks-narrated-by-elevenlabs
+- ElevenLabs pricing: https://elevenlabs.io/pricing + breakdown https://texttolab.com/blog/elevenlabs-pricing (Oct 2026)
+- Spotify digital voice narration policy: https://support.spotify.com/us/authors/article/digital-voice-narration/ ; global expansion incl. Israel (listening): https://newsroom.spotify.com/2026-10-07/audiobooks-global-expansion/
+- Spotify per-hour payout ~$0.011-0.019 (ALLi forums, compiled): https://booklaunchnews.com/spotifys-per-stream-payouts-are-forcing-an-audiobook-launch-rethink/
+- Kobo AI narration accepted: https://kobowritinglife.zendesk.com/hc/en-us/articles/10563450280475 ; payments: https://kobowritinglife.zendesk.com/hc/en-us/articles/360059385891
+- Apple digital narration program: https://authors.apple.com/support/4973-get-started-digital-narration
+- Google Play public domain not accepted (except select partners): https://support.google.com/books/partner/answer/1067634
+- Reddit field evidence: https://www.reddit.com/r/selfpublish/comments/1q97on4/ ; https://www.reddit.com/r/selfpublish/comments/1k4wiwa/
+- Vendor-framework (biased, treat as such): https://tomevox.com/blog-audiobook-worth-it
