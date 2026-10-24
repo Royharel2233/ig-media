@@ -54,3 +54,20 @@ Verified watch-lot links (opened and title-checked 2026-10-24):
 - Melt math: weight × purity × spot. Pocket-watch cases assumed 50–100% of total weight; wristwatch cases less. All dealer payouts are below melt; premiums: Masoret 15% + VAT (per house terms recorded 21.10); gallery74/empire premiums not re-verified this scan.
 - Leads below start price are absentee bids, not winnable prices — effective floor is max(start, lead).
 - Nothing here is a recommendation to bid. Roy bids himself.
+
+## Update 12:35 — verified economics (supersedes ratio-based conclusions above)
+
+Verification pass after review. What changed:
+
+- **gallery74 #6533 pearl pendant: the $700 is a REAL bid** (≥ opening), not an artifact. All-in at $700 × 1.2242 (19% commission + 18% VAT on commission) = $857, vs conservative gold-only scrap payout ≈ $620–760 (9–11g gold after removing pearl/stones from the 14g gross). Negative margin. Rejected stands, with real math.
+- **Commissions verified on-site 24.10:** masoret 10% + VAT when paying within 3 days (standard 15%; +1.5% credit-card surcharge), gallery74 19% + VAT, empire 20% + VAT. VAT is 18% on the commission only (masoret lot-page note + gov.il decision 1270).
+- **Dealer payout benchmark:** goldtrade.co.il live calculator pays ₪2,152 for 10g of 14K = 92.3% of its own melt table. USD/ILS ₪3.11 (their table). Gold ~$3,996/oz corroborated by the same table; silver $53.92/oz remains exa.ai-only (not an owning source).
+- **Watch-lot scenarios (seller-claim weights, photos cannot verify gold):**
+  - masoret #106 (57.39g gross): if case is 25–40g after movement/glass, scrap payout ≈ $1,730–2,770. Lead $130 all-in ≈ $145. Large theoretical margin; physical check before the last day.
+  - masoret #107 (28.5g incl. chain): if chain is 15–20g of 14K, its scrap alone ≈ $1,035–1,380. Omega model/year unstated; collector value unverified.
+  - masoret #108 (9.4g): scrap ≈ $280–415 if case is 4–6g. Small; working-watch value dominates.
+  - empire #205 (13g 18K): all-in now $325 × 1.236 ≈ $402; scrap ≈ $415–585 if case is 5–7g. Thin at current bid.
+- **Bidspirit mechanics:** a "lead" below the opening price is a non-winning absentee-bid artifact; effective floor = max(opening, lead). Applied everywhere.
+- **kones Sentra SV 2023 (tender 6291):** current bid ₪25,000 vs Yad2 asking ~₪68,000. Tender ends 28.10 12:00 and is PRELIMINARY (subject to seller approval even if won). Km not published, ownership count unknown, dealer-owned, carries a disabled badge requiring licensing-office cancellation before transfer. Test valid to 05/2027. All car price anchors are asking prices, not transactions.
+- **Galeria:** no current verified sale (site unreachable from our channels; Bidspirit house dormant since Feb 2025). Not declared lapsed.
+- **User deliverable:** private Hebrew shortlist File published: https://files.instinct.com/3gqbvms8migm
