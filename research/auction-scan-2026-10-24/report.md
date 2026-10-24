@@ -1,73 +1,62 @@
-# Auction scan — 2026-10-24 (resume of standing bargain hunt)
+# Auction scan — 2026-10-24 (v3, verified)
 
-Scan executed 2026-10-24 12:17–12:23 IDT. Sources: il.bidspirit.com portal (109 auction links), cars.bidspirit.com receiver portal, govil house page, kones.co.il. 12 catalogs in Roy's categories fetched in full (4,059 lots, see data/all_catalog_lots.csv). Spot at scan time: silver $53.92/oz, gold $3,996/oz (exa.ai quote, 2026-10-24 09:18 UTC).
+Scan executed 2026-10-24, verified through 12:40 IDT. Sources: il.bidspirit.com portal (109 auction links enumerated), cars.bidspirit.com receiver portal (236 vehicles), govil house page, kones.co.il (via web_fetch; Cloudflare blocks the cloud browser). **Coverage: 12 catalogs in Roy's categories parsed in full (4,059 lots, data/all_catalog_lots.csv) — not the whole portal.**
 
-## Headline: no actionable bargain closing in the next 48 hours
+## Verified terms and rates (24.10)
 
-Everything closing Sun–Mon in Roy's categories is already priced at or above melt/retail. The opportunities are all in sales closing Nov 1–10, still at opening bids — worth watching into the final hours, not yet worth bidding ceilings.
+- Commissions, verified on each house's lot pages: masoret 10% + VAT (when paying within 3 days; standard terms text says 15%; +1.5% for credit card), gallery74 19% + VAT, empire 20% + VAT.
+- VAT is 18% on the commission only (masoret lot-page note + gov.il decision 1270, 18% from 2025).
+- All-in multipliers on the hammer: masoret ×1.118, gallery74 ×1.2242, empire ×1.236.
+- Dealer payout benchmark: goldtrade.co.il live calculator pays ₪2,152 for 10g of 14K = 92.3% of its own melt table → ~$69.2/g for 14K, ~$88.6/g for 18K. USD/ILS ₪3.11 (their table, 24.10). Gold ~$3,996/oz corroborated by the same table; silver $53.92/oz is exa.ai-only (not an owning source).
+- Bidspirit mechanics: a "leading bid" below the opening price is a non-winning absentee-bid artifact. Effective floor = max(opening, lead).
+- masoret freezes early bids on Shabbat/holidays; bidding resumes Saturday night.
+- masoret catalog 82241 carries a house banner about **item 15 only** (winner chooses the item or $1,000 cash offset; item 15 opens live at $10; no early bids on that item). Verified on the lot pages of items 106/107/108: the banner is catalog-wide boilerplate, the special terms apply to item 15 only. Our watch lots are ordinary early-bid lots.
 
-## Closing soonest — checked and rejected
+## Headline (coverage-scoped)
 
-1. **rimon 80951 — ~20 kg silver bullion, closes Mon 26.10 18:00.** All 360 parsed lots already lead at 1.16–1.30x melt (min ratio 1.16, median 1.30). Zero lots under 0.85x melt. Bullion pricing is efficient here. Skip.
-2. **gallery74 79495 — jewelry + brand bags, closes Sun 25.10 18:45.** Best ratio: 14K rose-gold pearl pendant at $700 vs ~$1,050 melt (0.67), and after ~15–20% premium + VAT it lands at melt. A "79.1g 18K diamond necklace" showing a $120 lead is a below-opening absentee bid artifact — the opening is $6,500, i.e. 0.85x melt before premium. No margin. Skip.
-3. **behrooz 80869 — gold coins/Judaica, closes Wed 28.10 20:00.** 4 gold items at 0.80–0.98x melt already. No margin.
-4. **neverland 81631 — "$1 starts", closes Tue 27.10 18:00.** 592 low-value collectible lots (cards, toys, novelty clocks). Nothing in Roy's categories with defensible resale.
+Within the 12 catalogs checked, no sale closing this weekend shows a verified gap below melt. Four lots closing Nov 1–10 are on the watch list below. Nothing here is a confirmed bargain: all weights/purity are seller claims, photos cannot verify gold, and no margin is confirmed without physical inspection.
 
-## Watch list — sales closing Nov 1–10, still near opening
+## Watch list — break-even framing (closes Nov 1–10)
 
-Alert thresholds assume buy ceiling ≈ 60–65% of conservative melt (covers premium + VAT + below-melt dealer payout). All weights/purity are seller claims; photos cannot verify.
+Break-even = verified grams of gold needed for scrap payout alone to return the current all-in cost, before inspection/pickup costs. Seller gross weight is shown separately; it includes movement, glass, stones, pearls, strap. Unknown case construction/authenticity → no confirmed margin at any of these.
 
-| Sale | Closes | Lot | Item | Now | Conservative melt note |
-|---|---|---|---|---|---|
-| masoret 82241 | Mon 2.11 18:00 | #106 | 14K white-gold antique pocket watch, 57.39g | lead $130 | case-heavy pocket watch; even at 50% gold content ≈ $2,100 melt |
-| masoret 82241 | Mon 2.11 18:00 | #107 | Omega pocket watch + 14K rope chain, 28.5g, enamel dial, "worked then stopped" | lead $240 | Omega collector value + gold |
-| masoret 82241 | Mon 2.11 18:00 | #108 | 14K wristwatch, working, 9.4g | lead $80 | ~$700 melt at full weight; case-only maybe half |
-| masoret 82242 | Tue 3.11 18:00 | #151 | 14K hamsa pendant set 2.32g | lead $150 | ~$174 melt — already near; watch only if stalls |
-| empire 81753 | Sun 1.11 18:00 | #205 | 18K MARVIN mechanical, working, 13g | lead $325 | $1,250 melt full weight; realistic case gold ~$600–750 |
-| agam2000 81719 | Sun 8.11 19:00 | #152 | gold item 6.4g | start $150, no bids | ~$617 melt; 2 weeks out |
-| jacob-jewelry 81774 | Tue 10.11 19:00 | #214, #207–#212 | 14K gold + natural pearl pieces (shop's own new stock) | $45–$135 starts, no bids | 0.19–0.61x melt; verify gold claims on lot page |
+| Sale | Closes | Lot | Item (seller claims) | Lead now | All-in now | Break-even verified gold | Seller gross weight |
+|---|---|---|---|---|---|---|---|
+| masoret 82241 | Mon 2.11 18:00 | #106 | 14K white-gold antique pocket watch | $130 | $145 | ~2.1g 14K | 57.39g |
+| masoret 82241 | Mon 2.11 18:00 | #107 | Omega pocket watch + 14K rope chain (worked, stopped) | $240 | $268 | ~3.9g 14K | 28.5g |
+| masoret 82241 | Mon 2.11 18:00 | #108 | 14K Exactus wristwatch, working | $80 | $89 | ~1.3g 14K | 9.4g |
+| empire 81753 | Sun 1.11 18:00 | #205 | 18K MARVIN mechanical, working | $325 | $402 | ~4.5g 18K | 13g |
 
-Verified watch-lot links (opened and title-checked 2026-10-24):
+Verified lot links (opened and title-checked 24.10):
 - #106: https://il.bidspirit.com/ui/lotPage/masoret/source/catalog/auction/82241/lot/59039/%D7%A9%D7%A2%D7%95%D7%9F-%D7%9B%D7%99%D7%A1-%D7%9E%D7%96%D7%94%D7%91-14-%D7%9C%D7%91%D7%9F-%D7%A2%D7%AA%D7%99%D7%A7?lang=he
 - #107: https://il.bidspirit.com/ui/lotPage/masoret/source/catalog/auction/82241/lot/59274/%D7%A9%D7%A2%D7%95%D7%9F-%D7%9B%D7%99%D7%A1-omega?lang=he
 - #108: https://il.bidspirit.com/ui/lotPage/masoret/source/catalog/auction/82241/lot/59279/%D7%A9%D7%A2%D7%95%D7%9F-%D7%9E%D7%96%D7%94%D7%91-14?lang=he
-- masoret 82241 catalog: https://il.bidspirit.com/ui/catalog/auction/masoret/82241?lang=he
-- empire 81753 catalog: https://il.bidspirit.com/ui/catalog/auction/empireauctions/81753?lang=he
+- masoret catalog: https://il.bidspirit.com/ui/catalog/auction/masoret/82241?lang=he
+- empire catalog: https://il.bidspirit.com/ui/catalog/auction/empireauctions/81753?lang=he
 
-## Receiver vehicles (Roy asked for these even out of budget)
+## Checked this weekend — status
 
-12 live receiver law-firm sales on cars.bidspirit.com, 236 vehicles total, 91 from 2021+. Sales: pgr Sun 25.10 09:00 (23 cars), fa-firm Sun 10:00 (22), hob-cars Sun 11:00 (33), cflaw Mon 26.10 09:00 (59), federlaw Mon 09:00 (12), shilansky Mon 09:30 (3), shap-cars Mon 12:00 (7), kaya Wed 28.10 09:00 (57), vo-law Wed 13:00 (2), penerlaw Wed 14:00 (2), chuyoon Thu 29.10 11:30 (8), tpl-law Thu 14:00 (8). No appraiser estimates exposed in the API; openings are effectively free-bid. Notable late-model lots: 2026 BMW X1 12k km (hob-cars #10), 2024 BMW 318i 35k km (fa-firm #8), 2022 BMW X-6 (federlaw #4), 2022 Mercedes GLE400D (hob-cars #2), 2025 Toyota Aygo X 34k km (fa-firm #14). Per-car Yad2/price-list comparison still awaits Roy's yes (offered 21.10, never answered).
+- **rimon 80951 (silver, closes Mon 26.10):** all 360 parsed lots lead at 1.16–1.30x melt. Priced above metal. Out.
+- **behrooz 80869 (closes Wed 28.10):** gold items lead at 0.80–0.98x melt before commission; no room after commission. Out.
+- **gallery74 79495 #6533 (14K pendant with pearl + stones, 14g gross, closes Sun 25.10):** the $700 lead is a real bid. All-in $857. Break-even requires ~12.4g verified gold out of 14g gross including the pearl and stones. Neither confirmed nor ruled out — the pearl's weight is unknown. Unverified value gap, not an established rejection and not an opportunity.
 
-## kones.co.il (live, fetched 2026-10-24)
+## Receiver vehicles (asking-price anchors, not transactions)
 
-17 vehicle tenders, all "2 days left" (~close 26.10): Nissan Sentra SV 2023 current bid 25,000 ILS; Isuzu pickup S 2018 bid 27,000; MAN Austria 2017 bid 25,000; Toyota Corolla SENSE 2022 opening 65,000; several "60% under list price" openings (Seat Ibiza 2021 @ 33,410; Peugeot 2008 2020 @ 37,250; Hyundai Venue 2023 @ 60,560; Chevrolet Trailblazer 2022 @ 49,000; MG EHS PHEV 2023 @ 59,000; Suzuki Vitara Hybrid 2022 @ 60,000); cheap openings: Peugeot 308 SW 2016 @ 10,000, Hyundai i20 2011 @ 10,000. "Under list price" is the marketer's claim vs new-car list, not verified market value. Real-estate invitations: Kfar Saba house (deadline 24.10), Petah Tikva 6-room apt (deadline 25.10).
+12 live receiver sales, 236 vehicles, 91 from 2021+. No appraiser estimates in the API; openings effectively free-bid. Notable: fa-firm Sun 26.10 10:00 (2024 BMW 318i יד2 34,929km — Yad2 price-list ₪186,500; 2025 Aygo X יד2 33,850km — asks 85k–108.9k), hob-cars Sun 11:00 (2026 BMW X1 11,952km — carwiz ₪259,000; 2022 GLE400D יד3 98,253km — ₪329,750), federlaw Mon 09:00 (2022 X6 יד1 140,512km — Yad2 list ₪379,800), cflaw Mon 09:00 (59 cars). All anchors are asking prices.
+
+## kones Sentra tender (verified on the tender page 24.10)
+
+https://www.kones.co.il/cars/carinsidepageauction/6291 — Sentra SV 2023, on-road 05/2023, 2.0L auto, test valid to 05/2027. Current bid ₪25,000 vs Yad2 asking ~₪68,000. **Tender ends 28.10 12:00.** It is a PRELIMINARY tender: the sale requires seller approval even if won. Km not published, ownership count unknown, dealer-owned, carries a disabled badge that requires a licensing-office visit to cancel before ownership transfer.
 
 ## Channel status
 
-- **govil (Enforcement & Collection movables)**: still idle — latest catalog 15.6.2025 (verified on house page 24.10). The seized jewelry/coins channel that produced past finds remains dead.
-- **The Galeria (Petah Tikva)**: the remembered "sale Mon 26.10 19:00" could not be verified — Bidspirit house page dormant since Feb 2025, own site thegaleria.co.il unreachable (proxy-level failure from two routes). Treat as lapsed/cancelled unless Roy has an independent source.
-- **Tiroche 25.10 19:00 handbags**: not in Roy's categories, not scanned deeply.
+- govil (מיטלטלין): no active tender; last ended 15.6.2025. Wakes when one appears.
+- Galeria: no current verified sale — site unreachable from our channels, Bidspirit house dormant since Feb 2025. Not declared lapsed.
 
-## Method + caveats
+## User deliverable
 
-- Catalog enumeration via il/cars portal pages in a read browser; lot data via the site's public getItems JSON; leads via getAccountActionsForAuction.
-- Melt math: weight × purity × spot. Pocket-watch cases assumed 50–100% of total weight; wristwatch cases less. All dealer payouts are below melt; premiums: Masoret 15% + VAT (per house terms recorded 21.10); gallery74/empire premiums not re-verified this scan.
-- Leads below start price are absentee bids, not winnable prices — effective floor is max(start, lead).
-- Nothing here is a recommendation to bid. Roy bids himself.
+Private Hebrew shortlist File (break-even framing, photos, verified links): https://files.instinct.com/3gqbvms8migm
 
-## Update 12:35 — verified economics (supersedes ratio-based conclusions above)
+## Standing watch
 
-Verification pass after review. What changed:
-
-- **gallery74 #6533 pearl pendant: the $700 is a REAL bid** (≥ opening), not an artifact. All-in at $700 × 1.2242 (19% commission + 18% VAT on commission) = $857, vs conservative gold-only scrap payout ≈ $620–760 (9–11g gold after removing pearl/stones from the 14g gross). Negative margin. Rejected stands, with real math.
-- **Commissions verified on-site 24.10:** masoret 10% + VAT when paying within 3 days (standard 15%; +1.5% credit-card surcharge), gallery74 19% + VAT, empire 20% + VAT. VAT is 18% on the commission only (masoret lot-page note + gov.il decision 1270).
-- **Dealer payout benchmark:** goldtrade.co.il live calculator pays ₪2,152 for 10g of 14K = 92.3% of its own melt table. USD/ILS ₪3.11 (their table). Gold ~$3,996/oz corroborated by the same table; silver $53.92/oz remains exa.ai-only (not an owning source).
-- **Watch-lot scenarios (seller-claim weights, photos cannot verify gold):**
-  - masoret #106 (57.39g gross): if case is 25–40g after movement/glass, scrap payout ≈ $1,730–2,770. Lead $130 all-in ≈ $145. Large theoretical margin; physical check before the last day.
-  - masoret #107 (28.5g incl. chain): if chain is 15–20g of 14K, its scrap alone ≈ $1,035–1,380. Omega model/year unstated; collector value unverified.
-  - masoret #108 (9.4g): scrap ≈ $280–415 if case is 4–6g. Small; working-watch value dominates.
-  - empire #205 (13g 18K): all-in now $325 × 1.236 ≈ $402; scrap ≈ $415–585 if case is 5–7g. Thin at current bid.
-- **Bidspirit mechanics:** a "lead" below the opening price is a non-winning absentee-bid artifact; effective floor = max(opening, lead). Applied everywhere.
-- **kones Sentra SV 2023 (tender 6291):** current bid ₪25,000 vs Yad2 asking ~₪68,000. Tender ends 28.10 12:00 and is PRELIMINARY (subject to seller approval even if won). Km not published, ownership count unknown, dealer-owned, carries a disabled badge requiring licensing-office cancellation before transfer. Test valid to 05/2027. All car price anchors are asking prices, not transactions.
-- **Galeria:** no current verified sale (site unreachable from our channels; Bidspirit house dormant since Feb 2025). Not declared lapsed.
-- **User deliverable:** private Hebrew shortlist File published: https://files.instinct.com/3gqbvms8migm
+12h cadence (wake schedule active). Reports only on material findings: a watch-lot lead moving materially, a new catalog in Roy's categories with a verifiable gap, or channel reactivation. Roy bids himself; this work is research/ranking only — no bids, registrations, deposits, or seller contact.
