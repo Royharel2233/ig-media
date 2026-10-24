@@ -1,67 +1,78 @@
-# Audiobooks as a business — deep research report
-Date: 2026-10-24. Prepared for Roy Harel's side-business evaluation.
+# Audiobooks as a business — qualified commercial verdict
+Date: 2026-10-24. Prepared for Roy Harel's side-business evaluation. v2 (evidence-tiered).
 
-## One-paragraph answer
+## The verdict
 
-Audiobooks as a standalone, agent-run business under Roy's constraints (max 1,000 ILS loss, <=10 min/day, 90%+ automation, no marketing/outreach) is **not viable as a new business today**. The technical pipeline (AI narration + wide distribution from Israel) exists and is cheap, but the demand side is decisive: AI-narrated titles were 0.03% of US audiobook sales in 2025 (Audio Publishers Association), listener willingness to try AI narration is *falling*, and field evidence shows AI-narrated audiobooks sell near-zero even when the same book's ebook edition is a top-2,000 Kindle title. Audiobooks extend a book that already sells; they do not create demand. Roy has no narrative ebook catalog (puzzle books do not translate to audio), so this "business" is really "become an English-language book publisher first" — a much bigger, marketing-driven venture that conflicts with the constraints. The only scenario where AI audio makes sense for Roy: as a cheap add-on *if* a future book of his already sells in text form.
+**No currently substantiated low-touch opportunity: as of October 2026 the research does not support starting an audiobook business under Roy's constraints (<=1,000 ILS loss, <=10 min/day, 90%+ automation, no marketing/outreach).** This is a qualified commercial judgment, not a proven impossibility - a well-executed niche entry is not ruled out by the evidence found; it is just not substantiated by it either. The judgment rests on three legs:
 
-## Verdict against each constraint
+1. **Roy has nothing to narrate.** His catalog is visual puzzle books; KDP's own suitability criteria exclude image/table-heavy books from audio, and no audio route turns a puzzle book into an audiobook. An audiobook business for Roy means first becoming an English-language *text* publisher. Note this does not by itself prove the 10-min/day constraint fails - original text can be drafted largely by the agent - but human QA of the text, the full listen-through of the audio, and especially reader acquisition are ongoing demands that do not fit a hands-off model on the evidence available.
+2. **The biggest sales channels are closed to this exact model from Israel.** Audible is closed twice (ACX direct is human-narration-only, and ACX accounts are US/UK/CA/IE-only — both quoted verbatim below). Google Play Books does not accept sellers from Israel at all (official country table).
+3. **Demand for AI-narrated titles from unknown authors is unproven at best, negative in field samples.** Industry-wide, AI-narrated titles were 0.03% of US audiobook revenue in 2025 (APA). That 0.03% is a market-share figure and only a weak signal about any single new quality title - it is not a failure probability. But no source found shows a no-audience, no-marketing AI-narrated title earning meaningful income, and informal field samples point the other way.
 
-| Constraint | Fit |
-|---|---|
-| Max loss 1,000 ILS | Fits. One book costs ~$22-99 in ElevenLabs credits (or $0 via KDP Virtual Voice / Google auto-narration where available). |
-| <=10 min/day of Roy's time | Fits for production. Does NOT fit for what actually drives sales (ongoing marketing, review building, platform optimization). |
-| 90%+ automation | Production: yes. Demand generation: no. |
-| No sales/outreach | Fails in practice: discoverability without marketing is near zero (evidence below). |
-| Free/local first | Partly: KDP Virtual Voice and Google auto-narration are free but have eligibility barriers (below); quality free local TTS on M3 exists but is weaker and needs production work. |
+What would change the verdict: an existing ebook that already sells in text; a working marketing channel (his Pinterest/YouTube plans, if built); Audible opening to third-party TTS (officially "working on it", no date); or multi-voice AI quality at near-zero cost (currently the quality tier costs real money — Spoken, below).
 
-## What the research established (with sources)
+## Evidence tiers (what is solid vs. directional)
 
-### 1. Market is big and growing — and flooded
-- US audiobook sales $2.43B in 2025, +9% YoY; 750,000 active titles, +43% in one year. (Publishers Weekly / APA, 2026-06-08)
-- **AI-narrated audiobooks were 0.03% of 2025 sales.** Willingness to try AI-narrated titles fell from 70% (2025) to 61% (2026); only 16% of listeners have tried one. (same source)
-- Spotify expanding audiobooks from 22 to 180+ markets by end of 2026, incl. Israel as a *listening* market (Spotify newsroom, 2026-10-07).
+### Tier A — official platform documentation (accessed 2026-10-24)
+- **ACX (Audible direct), AI narration:** "Your submitted audiobook must be narrated by a human unless otherwise authorized: Unauthorized use of text-to-speech, AI, or automated recordings in ACX titles is prohibited... Audible is working to accept third-party TTS content from publishers and creators... and will share more updates on timing and availability as our offering evolves." — help.acx.com/s/article/what-are-the-acx-audio-submission-requirements (read directly on the official page via browser, 2026-10-24; the page is JS-gated to plain fetch).
+- **ACX country eligibility:** "ACX is currently open to residents of the United States, United Kingdom, Canada and Ireland who have a mailing address, valid local Taxpayer Identification Number (TIN), and banking details for one of these countries." — help.acx.com/s/article/what-is-acx (read directly on the official page via browser, 2026-10-24).
+- **KDP Virtual Voice:** invite-only beta; requires a Live KDP **eBook** with worldwide or US distribution rights, reflowable format, NCX TOC, primary language English/Spanish/Italian/French, **not public domain**, not image-heavy ("cookbooks or comic books would generally not provide the best listener experience"). 40% royalty on à la carte and membership sales; $3.99–14.99 price band; beta distribution is US-marketplace only at this time; per the official Program Terms (section 2), the author retains copyright in the book while Amazon retains ownership of the AVV (virtual-voice) edition audio file; KDP Select enrollment adds exclusivity of the audio edition and subscription-fund royalties. Royalties paid monthly, ~60 days after month end. — kdp.amazon.com/en_US/help/topic/GJSXT4GZLP4PL62B, G3QRL9HQNF273Q2H, official Program Terms GWHSFAK69P2537YR, pricing page GHJW2N8GLTQLK9TY.
+- **Google Play Books:** Israel does not appear in the official seller sign-up / payments country table — no direct seller route from Israel, and auto-narrated creation is limited to listed countries. Auto-narration itself is free during beta, needs an EPUB on sale as an ebook, requires owning audiobook rights, with price-parity rules. — support.google.com/books/partner/table/6052428, answer/10013009. Google Play also no longer accepts public-domain content except from select partners (answer/1067634).
+- **Spotify for Authors legal terms:** à la carte sales pay **50% of the author-set list price**; Premium-subscription listening pays a **pro-rata share of a per-market revenue pool based on consumption** (no fixed per-hour rate is published). — spotify.com/legal/spotify-for-authors-opt-in-distribution-terms. Spotify accepts digital-voice-narrated audiobooks with mandatory disclosure; digital-voice titles are not shared to referral partners. — support.spotify.com/us/authors/article/digital-voice-narration/.
+- **Voices by INaudio (ex-Findaway, Spotify-owned):** "All Voices by INaudio services are available to authors in all countries." Author keeps 80% of royalties received; retailers pay 40–50% of list (à la carte), 30–40% (subscription), 25–45% (revenue share); monthly USD payouts. AI narration accepted only as an unmodified LPF package from Google Play Books, ElevenLabs, or Spoken Press. — voicessupport.inaudio.com articles 3222272, 3223552, 3222720; DVN FAQ via audiopod.ai matrix.
+- **Kobo Writing Life:** accepts AI narration (narrator credited as "Synthesised voice"); pays via EFT in USD 45 days after month-end, CAD 50 threshold. — kobowritinglife.zendesk.com articles 10563450280475, 360059385891.
+- **Apple Books:** free digital narration is Apple's own program (English ebooks, via Draft2Digital/PublishDrive/Ingram, selective, 1–2 months processing). Apple also accepts third-party AI-narrated uploads via PublishDrive. — authors.apple.com/support/4973.
+- **ElevenLabs:** commercial license from Starter tier ($6/mo); Studio has a "Publish to Spotify" LPF export via INaudio. — elevenlabs.io/pricing, elevenlabs.io blog 2025-02-20.
 
-### 2. Demand evidence for AI-narrated indie titles is brutal
-- Manual sample of 7 bestselling Kindle books with Virtual Voice audio editions: audio editions ranked ~70,000-370,000 in Audiobooks while ebooks ranked top-2,000-50,000; of 6 reviews mentioning the AI narration, 5 were 1-star. (r/selfpublish, 2026-01-10 — informal sample, not official statistics)
-- Authors report purchased AI-narrated copies being returned quickly; multiple authors pulled them before review damage. (same thread)
-- Counter-evidence exists but is conditional: authors *with existing readership* report audio adding sales (one reports audio = 1/3 of purchases via free KDP Virtual Voice; an established author claims some Virtual Voice titles above his earning $600+/day). Pattern: audio monetizes existing demand, doesn't create it.
-- Indie earnings thread: without an existing reader base, "even great audiobooks just sit there"; typical outcomes $0-30/month without marketing; ROI periods of 6-24 months even for a 50+ title backlist. (r/selfpublish, 2025-04-22)
+### Tier B — industry surveys (reputable, but note commissioners)
+- **APA/Publishers Weekly (2026-06-08):** US audiobook revenue $2.43B in 2025 (+9%); 750k active titles (+43% in one year — supply flood); **AI-narrated = 0.03% of 2025 sales revenue**; willingness to try AI-narrated titles fell 70%→61% (2025→2026); only 16% of listeners have ever listened to an AI-voiced title. General fiction is the largest genre (27%); fastest-growing: humor, general fiction, children's/YA.
+- **Edison Research at SSRS blinded study (July 2026, n=1,005, commissioned by Spoken, an AI-audiobook vendor — treat as vendor-sponsored):** blinded listeners rated Spoken's multi-voice AI narration comparably to a single human narrator for character-driven fiction (favorability 61% vs 53%; purchase intent 46% vs 49%, statistically comparable even after AI was revealed); 61% mistook the AI for human. For exposition without multiple characters, human narration was still preferred. Reconciliation: quality multi-voice AI can pass blind tests; flat single-voice AI cannot. The quality tier that passes costs money (below).
+- **Spotify global expansion (newsroom, 2026-10-07):** audiobooks expanding from 22 to 180+ markets by end of 2026, including Israel as a *listening* market. (Listener availability, not author eligibility.)
 
-### 3. Platform access from Israel (verified on official pages, 2026-10-24)
-- **ACX (Audible direct): closed twice over.** AI narration prohibited on direct submission ("must be narrated by a human... unauthorized use of text-to-speech, AI or automated recordings is prohibited", ACX submission requirements, updated 2026-04-15, via audiopod.ai matrix); and ACX accounts limited to US/UK/Canada/Ireland residents.
-- **Audible via distributors: effectively closed to third-party AI narration** (PublishDrive store table: Audible accepts AI only via Audible's own tool).
-- **KDP Virtual Voice: free, 40% royalty on a la carte, but** Amazon's own TTS built from your eligible KDP *ebook*; US-marketplace beta (interest list); Amazon owns the audio file; English/Spanish/French/Italian voices; requires an eligible narrative ebook — Roy has paperbacks, not eligible ebooks.
-- **Google Play Books: not available to Israeli sellers** — Israel is absent from the official seller sign-up and payments country table. Auto-narration also limited to listed countries. (support.google.com/books/partner/table/6052428)
-- **Spotify: accepts digital voice narration** (ElevenLabs, Google Play Books providers), mandatory disclosure label, digital-voice titles not shared to referral partners (Spotify-only). Direct Spotify for Authors country availability for Israel unverified (page section unreadable), but the distributor route below bypasses this.
-- **Voices by INaudio (ex-Findaway Voices, Spotify-owned): available to authors in ALL countries** (official support article). Pays monthly in USD; author keeps 80% of royalties received (retailers pay 40-50% of list ALC, 30-40% subscription, 25-45% revenue share → net to author roughly 32-40% of list on a sale). Accepts AI narration only as an unmodified LPF package from Google Play Books, ElevenLabs, or Spoken Press; ElevenLabs Studio has a built-in "Publish to Spotify" LPF export.
-- **Kobo Writing Life: accepts AI narration** (list narrator as "Synthesised voice"), open to international authors, pays via EFT in USD (threshold CAD 50, 45 days after month end).
-- **Apple Books: digital narration is Apple's own free program** (from your English ebook, via preferred partners Draft2Digital/PublishDrive/Ingram; selective; 1-2 months; English only). Apple also accepts third-party AI-narrated uploads via PublishDrive.
-- **Public-domain shortcut is blocked/saturated**: Google Play no longer accepts public-domain content except from select partners; ACX public domain requires human narration via ACX (unavailable); classic titles are saturated everywhere else.
+### Tier C — field/community evidence (directional, not measured truth)
+- r/selfpublish (Jan 2026), one user's manual sample of 7 bestselling Kindle books with Virtual Voice audio editions: audio editions ranked ~70k–370k in Audiobooks while the ebooks ranked top-2k–50k; 5 of 6 reviews mentioning the AI voice were 1-star; authors in-thread report quick returns and pulling AI editions. **Small informal sample — not a success rate.**
+- r/selfpublish earnings thread (Apr 2025): multiple indie authors report audiobooks earning ~$0–30/month without an existing reader base; one 50+-title author cites 6–24 month ROI per title; the repeated pattern is "audio monetizes an audience you already have."
+- audiobook.co.uk (checked 2026-09-11): 10,000+ AI-narrated ("Virtual Voice") results on Audible UK, sold at the same prices as human narration, no filter to exclude them — i.e., the cheap-production channel is already crowded. Concrete current listings they sampled: Virtual Voice editions of Mark Twain's Hawaii (13.5h), God: The Most Unpleasant Character in All Fiction (12.9h), The Oxygen Revolution (11.75h), Start With Values (4h) — the visible pattern is back-catalog nonfiction and classics, sold at full-length prices.
+- BookLaunch News (Jun 2026) compiles ALLi-forum reports of Spotify Premium per-completed-hour payouts of ~$0.011–0.019 for indies. **Forum hearsay, unverified**; consistent with the official pool model but not an official rate.
+- Counterpoints exist: some authors with existing readership report free KDP Virtual Voice adding meaningful sales; an established author reports Virtual Voice titles above his earning well. All such positive cases share one precondition — a book that already sells.
 
-### 4. Unit economics
-- Production (ElevenLabs): Creator $22/mo ≈ 121k credits ≈ ~2h audio; Pro $99/mo ≈ 600k ≈ ~10h. An 80k-word novel (~7.5h audio) ≈ one month of Pro (~$99) or ~4 months of Creator. A 2-hour short nonfiction ≈ $22. Failed generations burn credits (10-15% redo rate typical). Commercial license included from Starter ($6/mo). (texttolab.com breakdown, Oct 2026; elevenlabs.io/pricing)
-- Spotify streaming payout: ~$0.011-0.019 per completed listening hour (ALLi forum data compiled by BookLaunch News, 2026-06) → a full 10-hour listen ≈ $0.15 gross, ~$0.12 to author. Audiobook sales via INaudio ≈ 32-40% of list price net.
-- So: near-zero cost to produce, near-zero revenue without an audience. Break-even per book is trivially low (5-10 sales) but the expected number of sales for an unknown author with no marketing is ~0-10 lifetime.
+## Platform matrix for an Israeli author with AI narration (all Tier A unless noted)
 
-### 5. Copyright/licensing notes
-- AI narration of your own original text is fine; commercial license required on the TTS plan (ElevenLabs Starter+).
-- Narrating others' books requires audiobook rights (not available cheaply); public domain mostly blocked or saturated (above).
-- All platforms that accept AI narration require disclosure; hiding it risks post-publication removal.
+| Route | AI narration | From Israel | Economics | Catch |
+|---|---|---|---|---|
+| ACX → Audible (direct) | No (human only) | No (US/UK/CA/IE) | — | Double closure |
+| Audible via distributor | Effectively no (Audible's own tool only, per PublishDrive's table; unconfirmed per-title) | via distributors | — | Biggest store closed to outside AI |
+| KDP Virtual Voice | Yes (Amazon's own TTS) | Technically account-based; invite-only beta | Free; 40% ALC royalty | Needs an eligible *ebook* first; Amazon owns the audio |
+| Google Play (direct) | Auto-narration yes | **No — IL not a seller country** | 50-70% split varies | Hard block |
+| Spotify (direct or via INaudio) | Yes, with disclosure | Yes via INaudio (all countries); direct IL availability unverified | ALC 50% of list (official); Premium = pool share (rate unpublished; forum est. ~$0.01–0.02/listening hour, unverified) | AI titles stay on Spotify (no referral partners) |
+| Kobo Writing Life | Yes, with disclosure | Yes | EFT USD, CAD 50 threshold, 45-day lag | Kobo is a smaller store |
+| Apple Books | Yes via PublishDrive; or Apple's free program | Yes via partners | per partner terms | Apple's own program: English, selective, 1–2 months |
+| Voices by INaudio (aggregator) | Yes, only as LPF from ElevenLabs/Google/Spoken | Yes ("all countries") | 80% of royalties received (≈32–40% of list on a sale) | Israeli payout method unverified without account creation |
 
-### 6. Hebrew angle
-- No meaningful open self-publish audiobook channel in Hebrew; Israeli market is small and served by production houses/publishers (Storytel/iCast, paid production services). Not a shortcut.
+## Niche comparison (if Roy ever enters, with a text-first strategy)
 
-## The one scenario where this makes sense for Roy
-If a future Clear Mind/Walter Hayes (or any) **ebook already sells** in text, adding an AI-narrated audio edition is nearly free (KDP Virtual Voice $0, or ~$22 ElevenLabs) and low-risk. Order of operations: prove the text first, then add audio. Audio is a multiplier on existing demand, not a business by itself.
+| Niche | AI fit | Demand evidence | Saturation | Verdict |
+|---|---|---|---|---|
+| Short nonfiction (self-help/business/how-to), English | Best for single-voice AI; listening during commutes is a top use case (APA) | Large genres (APA top genres) | Extreme — the cheapest content to AI-generate, hence the most flooded | Only viable with genuinely differentiated content |
+| Fiction (romance/thriller/fantasy) | Needs multi-voice quality to pass (Edison/Spoken study); flat single voice fails reviews | Largest audio genres | High | Production cost rises (Spoken ~$10–30 per 5k words → $300–480 per 80k-word novel) |
+| Language learning | Medium; pronunciation quality critical | Steady niche | Established players with native speakers | Not recommended without a real edge |
+| Kids' content | Medium | Fastest-growing genre group (APA) | Moderate | Extra scrutiny/restrictions on kids' content; not a first move |
+| Public-domain re-narration | Easy text | Saturated; blocked on Google Play; excluded from KDP Virtual Voice | Extreme | Dead end |
+| His existing puzzle books | **None — visual content** | — | — | Structurally incompatible with audio |
 
-## Cheapest possible test (if Roy insists on empirics)
-~$22-30 total: one short English nonfiction ebook (must be written first — the real work), KDP ebook + free Virtual Voice for Audible, ElevenLabs Creator one month → LPF → INaudio → Spotify/Kobo. Expected revenue realistically $0-20. This tests the pipeline, not a business.
+## Conditional economics, separated by phase (assumptions labeled)
 
-## Open gaps (unverified)
-- Whether Spotify for Authors direct sign-up accepts Israeli accounts (the distributor route via INaudio works regardless).
-- Exact INaudio payment-method options for Israeli bank accounts (USD payment; methods/thresholds set in Payment Profile; would need account creation to confirm).
-- KDP Virtual Voice beta admission odds/timeline for a non-US author account.
+- **Phase 0 — text creation (the real cost).** An original English 25–30k-word nonfiction ebook. Cash cost can be ~$0 (agent-written), but this is days of production and QA work, and KDP requires disclosure of AI-generated text. This phase, not narration, is where the business actually lives or dies. *Assumption: Roy wants agent-generated content; quality bar is his call.*
+- **Phase 1 — narration production.** Single-voice: ElevenLabs $22 (Creator, ~2h audio, short book) to $99 (Pro, ~10h, full novel). Quality multi-voice: Spoken $30/5k words pay-per-project ($15/5k with subscription) → $180–300 for 30k words, $480+ for a novel. Plus a full listen-through QA (1× runtime). *Vendor prices, accessed 2026-10-24.*
+- **Phase 2 — distribution.** Uploads are free; INaudio takes 20% of receipts; Kobo/Spotify-direct have their own splits (above). Review times: days (Spotify) to 1–2 months (Apple). Israeli payout mechanics unverified until an account exists.
+- **Phase 3 — acquisition (the constraint-breaker).** No ad budget within 1,000 ILS across a whole catalog and no outreach allowed → organic discoverability only. Tier C evidence: unknown titles without marketing sit at ~$0–30/month. There is no Tier A/B evidence quantifying this either way; treat any revenue projection as unproven.
+- **Honest expected outcome:** unknowable from available evidence. Observed community outcomes for no-audience titles cluster near zero. Break-even per book is low (~5–10 sales), but nothing found establishes that an unknown, no-marketing title gets those sales.
 
-## Bottom line for delivery
-Don't start an audiobook business. The pipeline exists and is cheap, but every demand-side signal says AI-narrated titles without an existing readership sell ~nothing, the biggest store (Audible) is closed to outside AI narration, and Google Play seller access doesn't exist from Israel. Revisit only as an add-on to a book that already sells in text.
+## Open gaps (none change the verdict; all fixable before any spend)
+1. INaudio payout methods/thresholds for an Israeli bank account — needs account creation to confirm (not authorized).
+2. Spotify for Authors direct sign-up availability in Israel — page section unreadable; INaudio route bypasses.
+3. KDP Virtual Voice beta admission odds/timeline for a non-US author account.
+4. Spotify Premium pool per-hour rates — officially unpublished; only forum estimates exist.
+
+## Sources
+Full ledger with URLs in sources.md (same folder).

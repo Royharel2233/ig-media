@@ -8,7 +8,7 @@
 - Spotify DVN: disclosure mandatory; no referral-partner sharing.
 - Kobo: AI accepted w/ synthesised-voice credit; EFT USD; CAD 50 threshold; 45 days.
 - Apple: own digital narration free via D2D/PublishDrive/Ingram; English; selective; 1-2 months.
-- ElevenLabs: Starter $6 30k cr (~30min); Creator $22 121k (~2h); Pro $99 600k (~10h); commercial license from Starter; no rollover; 10-15% redo burn.
+- ElevenLabs: Starter $6 30k cr (~30min); Creator $22 121k (~2h); Pro $99 600k (~10h); commercial license from Starter; 10-15% redo burn (third-party estimate).
 - Spotify stream pay ~$0.011-0.019/completed hour (ALLi forums via BookLaunch News).
 - Reddit r/selfpublish Jan 2026: 7 bestselling ebooks w/ Virtual Voice -> audio ranks 70k-370k, 5/6 AI reviews 1-star; returns; authors pulling titles.
 - Reddit Apr 2025: without reader base audiobooks sit at $0-30/mo; ROI 6-24 months even with 50+ backlist; audio follows existing ebook sales.
