@@ -1,0 +1,23 @@
+{
+ "page": "1paper",
+ "slot": "2026-10-25",
+ "stories": false,
+ "publish_after": "2026-10-25T08:00:00+02:00",
+ "posts": [
+  {
+   "name": "25-ai-hard-to-read-text",
+   "type": "single",
+   "caption": "Why does AI writing feel so hard to read? A new linguistics study points at how chatbots are trained 🧠\n\nSource: Clark, Martin, Mahowald (NYU, UT Austin), “Why is AI-generated language so hard to understand?”, arXiv, 2026 (preprint, not peer-reviewed).\n\n#ai #chatgpt #linguistics #writing #research",
+   "images": [
+    "media/1paper/2026-10-25/25-ai-hard-to-read-text/01.jpg",
+    "media/1paper/2026-10-25/25-ai-hard-to-read-text/02.jpg",
+    "media/1paper/2026-10-25/25-ai-hard-to-read-text/03.jpg",
+    "media/1paper/2026-10-25/25-ai-hard-to-read-text/04.jpg",
+    "media/1paper/2026-10-25/25-ai-hard-to-read-text/05.jpg",
+    "media/1paper/2026-10-25/25-ai-hard-to-read-text/06.jpg",
+    "media/1paper/2026-10-25/25-ai-hard-to-read-text/07.jpg",
+    "media/1paper/2026-10-25/25-ai-hard-to-read-text/08.jpg"
+   ]
+  }
+ ]
+}
