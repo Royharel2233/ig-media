@@ -1,4 +1,4 @@
-# Polymarket paper-trading pilot - durable archive (2026-10-23)
+# Polymarket paper-trading pilot - durable archive (updated 2026-10-25, cycle 99)
 
 Paper only. No real money. Read-only public data (gamma / data-api / Coinbase).
 Owner: Roy. Todo: todo-01M5ECKPM14F87B4B1AH3DKXNV. Genesis: 1792558500 (2026-10-21 04:55 UTC).
@@ -7,6 +7,9 @@ Owner: Roy. Todo: todo-01M5ECKPM14F87B4B1AH3DKXNV. Genesis: 1792558500 (2026-10-
 - data/ledger_replay_cycle48_20261023.jsonl - REPLAY-vintage ledger, 19,008 rows, genesis -> cycle 48
   (cursors 5m=1792736700, 15m=1792736100), sha size 5,110,178 bytes.
 - data/summary_replay_cycle48_20261023.json - summary at cycle 48.
+- data/ledger_replay_cycle99_20261025.jsonl - REPLAY-vintage ledger, cycle 99 snapshot
+  (cursors 5m=1792920300, 15m=1792919700), 10,394,931 bytes.
+- data/summary_replay_cycle99_20261025.json - summary at cycle 99.
 - data/pilot.py - collector as of 2026-10-23 (includes --until chunking patch).
 - data/SPEC.md - strategy/simulation spec.
 - data/AGGREGATES.md - this file.
@@ -46,6 +49,18 @@ Cycle 74 (2026-10-24 11:29 IDT, after wipe-3 recovery) - snapshot files: ledger_
 - Wipe #3 (2026-10-24 ~11:27 IDT): workspace reset; recovered from this archive (cycle-72 snapshot)
   with zero row loss; ~2h delta replayed deterministically in one 65s run. Third wipe overall.
 - Correlated cluster during the gap: 10 paper losses across 5m windows 1792827000 (x7) and 1792828800 (x3).
+
+
+Cycle 99 (2026-10-25 11:30 IST; Israel moved IDT->IST/UTC+2 2026-10-25 02:00) - snapshot files:
+  ledger_replay_cycle99_20261025.jsonl, summary_replay_cycle99_20261025.json;
+  cursors 5m=1792920300 15m=1792919700:
+- A90 391 (360W/31L, -$276.67), A45 193 (182W/11L, -$73.63), A90d 594 (529W/65L, -$543.81),
+  B05 146 (121W/25L, -$42.86), B02 323 (273W/50L, -$30.37), B10 38 (33W/5L, -$0.10).
+- B-variants partially recovered from the cycle-74 trough (B02 -$40.88 -> -$30.37,
+  B10 -$29.17 -> -$0.10) before a correlated sol 5m hit on window 1792917600
+  (A45 + B02 + B05, -$15/-$15.34/-$15.34) in cycle 99.
+- 2 stale open rows still carried (A45 btc 5m 1792746900, A90d btc 5m 1792757700; resolution
+  data still absent from gamma as of cycle 99).
 
 ## Divergence note (aggregate level only - matched-fill attribution impossible without live rows)
 Replay shows equal or more losses per variant over comparable spans (e.g. B05 -$19.74 replay vs
