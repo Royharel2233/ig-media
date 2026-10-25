@@ -24,3 +24,4 @@ jobs:
           IG_TOKEN_GLOBALNEWS: "${{ secrets.IG_TOKEN_GLOBALNEWS }}"
           IG_TOKEN_1PAPER: "${{ secrets.IG_TOKEN_1PAPER }}"
           IG_TOKEN_HOWITWORKS: "${{ secrets.IG_TOKEN_HOWITWORKS }}"
+          THREADS_TOKEN_GLOBALNEWS: "${{ secrets.THREADS_TOKEN_GLOBALNEWS }}"

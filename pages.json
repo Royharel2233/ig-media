@@ -6,7 +6,13 @@
     "lang": "he",
     "token_secret": "IG_TOKEN_GLOBALNEWS",
     "topic": "חדשות עולם: טכנולוגיה, AI וכלכלה בסקופים; כל השאר בקרוסלת הסיכום",
-    "mode": "news_carousels"
+    "mode": "news_carousels",
+    "threads": {
+      "token_secret": "THREADS_TOKEN_GLOBALNEWS",
+      "since": "2026-10-25_1300",
+      "format": "carousel",
+      "topic_tag": "חדשות"
+    }
   },
   "1paper": {
     "enabled": true,

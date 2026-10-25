@@ -78,6 +78,7 @@ Post names: `single1_<slug>`, `single2_<slug>`, `single3_<slug>`, `summary`.
 - 2-10 slides per post. Caption under 2,200 characters, at most 5 hashtags.
 - Stories (automatic): first slide of every single, and every summary slide except the last (CTA).
 - Feed posts are published in the order of `posts`, then the stories.
+- Threads (globalnews only, `pages.json` > `threads`): every feed post is cross-posted to Threads as the same slides plus a text of at most 500 characters (emojis count as several). Write `"threads_text"` for each post: the hook, the 1-3 key facts and the source line, no hashtags, same verification rules as the caption. For the summary, list only as many stories as fit and end with "(ההמשך בתמונות)". Without `threads_text` the caption is trimmed automatically by whole lines. Result keys: `threads:<post>`.
 
 ## Secrets (repo Settings > Secrets and variables > Actions)
-`IG_TOKEN_GLOBALNEWS`, `IG_TOKEN_1PAPER`, `IG_TOKEN_HOWITWORKS`, and optionally `GH_SECRETS_PAT` (fine-grained, Secrets read/write on this repo only) for the bi-weekly token refresh.
+`IG_TOKEN_GLOBALNEWS`, `IG_TOKEN_1PAPER`, `IG_TOKEN_HOWITWORKS`, `THREADS_TOKEN_GLOBALNEWS` (created by the `threads-connect` Action; refreshed with the Instagram tokens), and optionally `GH_SECRETS_PAT` (fine-grained, Secrets read/write on this repo only) for the bi-weekly token refresh.

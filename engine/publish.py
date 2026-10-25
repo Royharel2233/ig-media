@@ -4,6 +4,7 @@ then publish carousels and stories to Instagram. Safe to re-run: finished items 
 import datetime, glob, json, os, subprocess, sys, time, traceback
 from common import ROOT, PAGES, pexels_image, ig, wait_container, raw_url, wait_public, log
 import render
+import threads
 
 MAX_SLIDES = 10
 
@@ -63,6 +64,7 @@ def validate(job):
         n = len(p["images"]) if "images" in p else len(p.get("slides", []))
         if not 2 <= n <= MAX_SLIDES: errs.append(f"{p['name']}: {n} slides")
         if p.get("type") not in ("single", "summary"): errs.append(f"{p['name']}: type must be single or summary")
+        if threads.weight(p.get("threads_text", "")) > threads.LIMIT: errs.append(f"{p['name']}: threads_text over {threads.LIMIT}")
         for img in p.get("images", []) + p.get("story_images", []):
             if not img.lower().endswith((".jpg", ".jpeg")): errs.append(f"{p['name']}: {img} must be JPEG (Instagram rejects PNG)")
             elif not os.path.exists(os.path.join(ROOT, img)): errs.append(f"{p['name']}: missing {img}")
@@ -164,6 +166,9 @@ def run_job(jobfile):
     plan = []
     for p in job["posts"]:
         plan.append(("post:" + p["name"], lambda p=p: post(p)))
+    if threads.enabled_for(page, job.get("slot", "")):   # cross-post to Threads after the Instagram feed posts
+        for p in job["posts"]:
+            plan.append(("threads:" + p["name"], lambda p=p: threads.publish(page, p, files[p["name"]]["feed"])))
     if job.get("stories", True):
         for p in job["posts"]:
             st = files[p["name"]]["story"]

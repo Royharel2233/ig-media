@@ -1,5 +1,5 @@
 name: refresh-tokens
-# Instagram long-lived tokens expire after 60 days. Refresh every 2 weeks and store the new value.
+# Instagram and Threads long-lived tokens expire after 60 days. Refresh every 2 weeks and store the new value.
 # Needs secret GH_SECRETS_PAT: a fine-grained token with "Secrets: Read and write" on this repo only.
 on:
   schedule: [{ cron: "17 6 1,15 * *" }]
@@ -14,11 +14,21 @@ jobs:
           T_GLOBALNEWS: "${{ secrets.IG_TOKEN_GLOBALNEWS }}"
           T_1PAPER: "${{ secrets.IG_TOKEN_1PAPER }}"
           T_HOWITWORKS: "${{ secrets.IG_TOKEN_HOWITWORKS }}"
+          TH_GLOBALNEWS: "${{ secrets.THREADS_TOKEN_GLOBALNEWS }}"
         run: |
           [ -n "$GH_TOKEN" ] || { echo "::error::GH_SECRETS_PAT missing"; exit 1; }
+          fail=0
+          # Threads tokens: same 60-day life, refreshable once at least 24h old.
+          for name in GLOBALNEWS; do
+            var="TH_$name"; tok="${!var}"; [ -n "$tok" ] || continue
+            new=$(curl -s -G https://graph.threads.com/refresh_access_token --data-urlencode "grant_type=th_refresh_token" --data-urlencode "access_token=$tok" | python3 -c "import sys,json;print(json.load(sys.stdin).get('access_token',''))" || true)
+            if [ -n "$new" ]; then echo "::add-mask::$new"; gh secret set "THREADS_TOKEN_$name" --body "$new" -R "$GITHUB_REPOSITORY"; echo "refreshed Threads $name";
+            else echo "::error::Threads refresh failed for $name"; fail=1; fi
+          done
           for name in GLOBALNEWS 1PAPER HOWITWORKS; do
             var="T_$name"; tok="${!var}"; [ -n "$tok" ] || continue
-            new=$(curl -s "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=$tok" | python3 -c "import sys,json;print(json.load(sys.stdin).get('access_token',''))")
+            new=$(curl -s "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=$tok" | python3 -c "import sys,json;print(json.load(sys.stdin).get('access_token',''))" || true)
             if [ -n "$new" ]; then echo "::add-mask::$new"; gh secret set "IG_TOKEN_$name" --body "$new" -R "$GITHUB_REPOSITORY"; echo "refreshed $name";
-            else echo "::error::refresh failed for $name"; fi
+            else echo "::error::refresh failed for $name"; fail=1; fi
           done
+          exit $fail
