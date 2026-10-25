@@ -7,12 +7,12 @@ Pin images: 1000x1500 JPG, composed in code from the actual book covers.
 ## Pin 1 - Christmas book - board: Christmas Activities for Kids
 - Image: pin-c-christmas.jpg ("A Screen-Free Stocking Stuffer" / "46 festive activities - Ages 4-8")
 - Title: Christmas Activity Book for Kids: 46 Festive Activities for Ages 4-8
-- Description: 46 festive Christmas activities for ages 4-8: mazes, word searches, dot-to-dot and coloring pages in one screen-free activity book from Clear Mind Junior. A holiday gift kids actually open.
+- Description: 46 festive Christmas activities for ages 4-8: mazes, word searches, dot-to-dot and coloring pages in one screen-free activity book from Clear Mind Junior. A screen-free holiday gift for kids.
 - Alt text: Cover of the Christmas Activity Book for Kids by Clear Mind Junior: 46 festive activities including mazes, word searches, dot-to-dot and coloring pages, for ages 4-8.
 - Link: https://www.amazon.com/dp/B0HNH54KYL
 
 ## Pin 2 - Large print book - board: Large Print Puzzles for Seniors
-- Image: pin-a-large-print.jpg ("A Gift for Puzzle Lovers" / "90 puzzles - Extra Large Print")
+- Image: pin-a-large-print.jpg ("A Gift for Puzzle Lovers" / "90 easy puzzles - One per page")
 - Title: Large Print Puzzle Book for Seniors: 90 Easy Puzzles
 - Description: 90 easy puzzles, one per page. A thoughtful gift for a parent or grandparent who loves puzzles. From Clear Mind Puzzles.
 - Alt text: Cover of the Large Print Puzzle Book for Seniors by Clear Mind Puzzles: 90 easy puzzles.
