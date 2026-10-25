@@ -45,3 +45,14 @@ https://www.instagram.com/wehavethedata/p/De5GQN7GOYL/
 https://www.instagram.com/wehavethedata/p/De42Ly3to1n/
 
 ב־unusualwhales לא נמצאו פוסטים חדשים.
+
+
+---
+
+שני תיקונים לעדכון הבוקר:
+
+בסעיף ברזיל צירפתי קישור לכתבה אחרת בטעות. זה הקישור הנכון לדיווח של FT על המרוץ הצמוד בין בולסונארו ללולה:
+https://x.com/FT/status/2114225052954550460
+
+תוכנית המפעל של אאודי אומתה גם בהודעה הרשמית שלה, כולל ההשקעה ונתוני המשרות והייצור שציינתי. מדובר בקיבולת עתידית מתוכננת, לא בייצור שכבר התחיל:
+https://www.audi.com/en/press-releases/audi-to-establish-first-us-production-site-in-georgia-investing-4-billion-and-creating-4500-jobs-18420
