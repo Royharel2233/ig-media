@@ -1,0 +1,42 @@
+{
+ "done": {
+  "post:single1_fedweek": {
+   "media_id": "17965356243206217",
+   "permalink": "https://www.instagram.com/p/De6jLEmlXNO/"
+  },
+  "post:single2_cancer": {
+   "media_id": "17866669488680446",
+   "permalink": "https://www.instagram.com/p/De6jPPRFR04/"
+  },
+  "post:summary": {
+   "media_id": "18105911357205123",
+   "permalink": "https://www.instagram.com/p/De6jSgilQSJ/"
+  },
+  "threads:single1_fedweek": {
+   "media_id": "18644340022023810",
+   "permalink": "https://www.threads.com/@globalnews.il/post/De6jWA0Ff5-"
+  },
+  "threads:single2_cancer": {
+   "media_id": "17895797730427420",
+   "permalink": "https://www.threads.com/@globalnews.il/post/De6jZVJld0K"
+  },
+  "threads:summary": {
+   "media_id": "18048599792684397",
+   "permalink": "https://www.threads.com/@globalnews.il/post/De6jcOulf-2"
+  },
+  "story:single1_fedweek:1": {
+   "media_id": "18129058675844233"
+  },
+  "story:single2_cancer:1": {
+   "media_id": "18123750142915148"
+  },
+  "story:summary:1": {
+   "media_id": "18131554771828269"
+  },
+  "story:summary:2": {
+   "media_id": "17878930737633417"
+  }
+ },
+ "errors": [],
+ "complete": true
+}
