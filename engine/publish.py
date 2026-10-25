@@ -8,6 +8,15 @@ import render
 MAX_SLIDES = 10
 
 
+def git_pull():
+    """Rebase local commits onto the latest remote. On a conflict our version of the file wins
+    (in a rebase, -X theirs means the commit being replayed, i.e. this run's result.json)."""
+    if subprocess.run(["git", "pull", "-q", "--rebase"], cwd=ROOT).returncode == 0:
+        return
+    subprocess.run(["git", "rebase", "--abort"], cwd=ROOT)
+    subprocess.run(["git", "pull", "-q", "--rebase", "-X", "theirs"], cwd=ROOT, check=True)
+
+
 def git_push(msg):
     subprocess.run(["git", "add", "-A", "media", "jobs"], cwd=ROOT, check=True)
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode == 0:
@@ -16,8 +25,29 @@ def git_push(msg):
     for _ in range(4):
         if subprocess.run(["git", "push", "-q"], cwd=ROOT).returncode == 0:
             return
-        subprocess.run(["git", "pull", "-q", "--rebase"], cwd=ROOT, check=True)
+        git_pull()
     raise RuntimeError("git push failed 4 times")
+
+
+def load_result(resfile):
+    try:
+        return json.load(open(resfile))
+    except (FileNotFoundError, ValueError):
+        return {"done": {}, "errors": []}
+
+
+def already_on_instagram(page, caption, hours=36):
+    """Last line of defence against double posts: is a post with this exact caption already live?"""
+    try:
+        items = ig(page, "GET", "me/media", fields="caption,timestamp,permalink", limit=15).get("data", [])
+    except Exception as e:
+        log("duplicate check failed (continuing)", e); return None
+    now = datetime.datetime.now(datetime.timezone.utc)
+    for m in items:
+        ts = datetime.datetime.strptime(m["timestamp"], "%Y-%m-%dT%H:%M:%S%z")
+        if (m.get("caption") or "").strip() == caption.strip() and (now - ts).total_seconds() < hours * 3600:
+            return {"media_id": m["id"], "permalink": m.get("permalink"), "note": "already live, not re-posted"}
+    return None
 
 
 def validate(job):
@@ -101,7 +131,7 @@ def run_job(jobfile):
     jobdir = os.path.dirname(jobfile)
     rel = os.path.relpath(jobdir, ROOT)                      # jobs/<page>/<slot>
     resfile = os.path.join(jobdir, "result.json")
-    res = json.load(open(resfile)) if os.path.exists(resfile) else {"done": {}, "errors": []}
+    res = load_result(resfile)
     if res.get("complete"):
         return
     job = json.load(open(jobfile, encoding="utf-8"))
@@ -119,9 +149,21 @@ def run_job(jobfile):
                 raise RuntimeError(f"publish_after is {wait/60:.0f} min away; jobs may be pushed at most 100 min early")
             log(f"waiting {wait/60:.1f} min until {job['publish_after']}"); time.sleep(wait)
 
+    # Re-read the latest result.json right before publishing: another run may have finished this job meanwhile.
+    git_pull()
+    res = load_result(resfile)
+    if res.get("complete"):
+        log(f"{rel} already complete, nothing to publish"); return
+
+    def post(p):
+        dup = already_on_instagram(page, p["caption"])
+        if dup:
+            log("skip, already live:", dup); return dup
+        return publish_carousel(page, files[p["name"]]["feed"], p["caption"])
+
     plan = []
     for p in job["posts"]:
-        plan.append(("post:" + p["name"], lambda p=p: publish_carousel(page, files[p["name"]]["feed"], p["caption"])))
+        plan.append(("post:" + p["name"], lambda p=p: post(p)))
     if job.get("stories", True):
         for p in job["posts"]:
             st = files[p["name"]]["story"]
@@ -155,7 +197,8 @@ def main():
             failed = True
             err = traceback.format_exc(); log(err)
             rf = os.path.join(os.path.dirname(jf), "result.json")
-            r = json.load(open(rf)) if os.path.exists(rf) else {"done": {}, "errors": []}
+            subprocess.run(["git", "rebase", "--abort"], cwd=ROOT, capture_output=True)
+            r = load_result(rf)
             r["errors"].append(err.strip().splitlines()[-1]); json.dump(r, open(rf, "w"), indent=1)
             git_push(f"error {os.path.relpath(os.path.dirname(jf), ROOT)}")
     return 1 if failed else 0
