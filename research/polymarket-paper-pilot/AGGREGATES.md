@@ -1,4 +1,4 @@
-# Polymarket paper-trading pilot - durable archive (updated 2026-10-26, cycle 114)
+# Polymarket paper-trading pilot - durable archive (updated 2026-10-26, cycle 124)
 
 Paper only. No real money. Read-only public data (gamma / data-api / Coinbase).
 Owner: Roy. Todo: todo-01M5ECKPM14F87B4B1AH3DKXNV. Genesis: 1792558500 (2026-10-21 04:55 UTC).
@@ -13,6 +13,9 @@ Owner: Roy. Todo: todo-01M5ECKPM14F87B4B1AH3DKXNV. Genesis: 1792558500 (2026-10-
 - data/ledger_replay_cycle114_20261026.jsonl - REPLAY-vintage ledger, cycle 114 snapshot
   (cursors 5m=1792975200, 15m=1792974600), post-wipe-4 recovery.
 - data/summary_replay_cycle114_20261026.json - summary at cycle 114.
+- data/ledger_replay_cycle124_20261026.jsonl - REPLAY-vintage ledger, cycle 124 snapshot
+  (cursors 5m=1793010900, 15m=1793010600), post-wipe-5 recovery, 13,033,068 bytes.
+- data/summary_replay_cycle124_20261026.json - summary at cycle 124.
 - data/pilot.py - collector as of 2026-10-23 (includes --until chunking patch).
 - data/SPEC.md - strategy/simulation spec.
 - data/AGGREGATES.md - this file.
@@ -76,6 +79,21 @@ Cycle 114 (2026-10-26 02:42 IST, after wipe-4 recovery) - snapshot files:
   (~9 min total). Fourth wipe overall.
 - New losses in the recovered span (cycles 114): A90d eth 5m 1792971000 Down (-$15),
   B02 xrp 5m 1792973700 Up (-$15.11). B10 turned net positive (+$0.53).
+- 2 stale open rows still carried (A45 btc 5m 1792746900, A90d btc 5m 1792757700).
+
+Cycle 124 (2026-10-26 12:40 IST, after wipe-5 recovery) - snapshot files:
+  ledger_replay_cycle124_20261026.jsonl, summary_replay_cycle124_20261026.json;
+  cursors 5m=1793010900 15m=1793010600:
+- A90 517 (480W/37L, -$299.40), A45 235 (223W/12L, -$68.38), A90d 776 (697W/79L, -$617.54),
+  B05 181 (150W/31L, -$67.49), B02 402 (337W/65L, -$129.97), B10 45 (39W/6L, -$9.87).
+- Wipe #5 (2026-10-26 ~12:33 IST): workspace reset; recovered from this archive (cycle-114
+  snapshot) with zero row loss; ~8.8h delta replayed deterministically in 5x2h chunks
+  (~7 min total). Fifth wipe overall.
+- Losses in the recovered span (cycles 115-124): two correlated clusters - 2026-10-26 ~09:00 IST
+  Up-flips (9 losses: B02+B05 eth+sol 5m 1792997400, B02 btc+eth 15m + B05 eth 15m 1792998000,
+  A45 sol 5m 1792998900, B02 xrp 5m 1792999200; ~-$121 across variants) and xrp 5m 1793006400
+  Down hitting all 3 B variants (-$15.36 each); plus A90/A90d xrp+sol 5m 1793008500 Up (3x -$15).
+  B02 fell -$28.79 -> -$129.97; B05 -$30.72 -> -$67.49; B10 back negative.
 - 2 stale open rows still carried (A45 btc 5m 1792746900, A90d btc 5m 1792757700).
 
 ## Divergence note (aggregate level only - matched-fill attribution impossible without live rows)
