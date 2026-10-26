@@ -1,4 +1,4 @@
-# Polymarket paper-trading pilot - durable archive (updated 2026-10-25, cycle 99)
+# Polymarket paper-trading pilot - durable archive (updated 2026-10-26, cycle 114)
 
 Paper only. No real money. Read-only public data (gamma / data-api / Coinbase).
 Owner: Roy. Todo: todo-01M5ECKPM14F87B4B1AH3DKXNV. Genesis: 1792558500 (2026-10-21 04:55 UTC).
@@ -10,6 +10,9 @@ Owner: Roy. Todo: todo-01M5ECKPM14F87B4B1AH3DKXNV. Genesis: 1792558500 (2026-10-
 - data/ledger_replay_cycle99_20261025.jsonl - REPLAY-vintage ledger, cycle 99 snapshot
   (cursors 5m=1792920300, 15m=1792919700), 10,394,931 bytes.
 - data/summary_replay_cycle99_20261025.json - summary at cycle 99.
+- data/ledger_replay_cycle114_20261026.jsonl - REPLAY-vintage ledger, cycle 114 snapshot
+  (cursors 5m=1792975200, 15m=1792974600), post-wipe-4 recovery.
+- data/summary_replay_cycle114_20261026.json - summary at cycle 114.
 - data/pilot.py - collector as of 2026-10-23 (includes --until chunking patch).
 - data/SPEC.md - strategy/simulation spec.
 - data/AGGREGATES.md - this file.
@@ -61,6 +64,19 @@ Cycle 99 (2026-10-25 11:30 IST; Israel moved IDT->IST/UTC+2 2026-10-25 02:00) - 
   (A45 + B02 + B05, -$15/-$15.34/-$15.34) in cycle 99.
 - 2 stale open rows still carried (A45 btc 5m 1792746900, A90d btc 5m 1792757700; resolution
   data still absent from gamma as of cycle 99).
+
+
+Cycle 114 (2026-10-26 02:42 IST, after wipe-4 recovery) - snapshot files:
+  ledger_replay_cycle114_20261026.jsonl, summary_replay_cycle114_20261026.json;
+  cursors 5m=1792975200 15m=1792974600:
+- A90 457 (422W/35L, -$301.95), A45 215 (204W/11L, -$63.05), A90d 693 (618W/75L, -$620.04),
+  B05 153 (128W/25L, -$30.72), B02 359 (305W/54L, -$28.79), B10 39 (34W/5L, +$0.53).
+- Wipe #4 (2026-10-26 ~02:32 IST): workspace reset; recovered from this archive (cycle-99
+  snapshot) with zero row loss; ~15.7h delta replayed deterministically in 8x2h chunks
+  (~9 min total). Fourth wipe overall.
+- New losses in the recovered span (cycles 114): A90d eth 5m 1792971000 Down (-$15),
+  B02 xrp 5m 1792973700 Up (-$15.11). B10 turned net positive (+$0.53).
+- 2 stale open rows still carried (A45 btc 5m 1792746900, A90d btc 5m 1792757700).
 
 ## Divergence note (aggregate level only - matched-fill attribution impossible without live rows)
 Replay shows equal or more losses per variant over comparable spans (e.g. B05 -$19.74 replay vs
