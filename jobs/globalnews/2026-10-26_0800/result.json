@@ -1,0 +1,51 @@
+{
+ "done": {
+  "post:single1_spacex_debt": {
+   "media_id": "18139397803629133",
+   "permalink": "https://www.instagram.com/p/De8l33KFTJO/"
+  },
+  "post:single2_claude_georgia": {
+   "media_id": "18147121987526897",
+   "permalink": "https://www.instagram.com/p/De8l72TlbtG/"
+  },
+  "post:summary": {
+   "media_id": "18359573530221877",
+   "permalink": "https://www.instagram.com/p/De8l_rOlSzX/"
+  },
+  "threads:single1_spacex_debt": {
+   "media_id": "17945838135354077",
+   "permalink": "https://www.threads.com/@globalnews.il/post/De8mDCtFTP6"
+  },
+  "threads:single2_claude_georgia": {
+   "media_id": "18091896626237898",
+   "permalink": "https://www.threads.com/@globalnews.il/post/De8mGRjlfCz"
+  },
+  "threads:summary": {
+   "media_id": "18097998677555409",
+   "permalink": "https://www.threads.com/@globalnews.il/post/De8mJc0lc65"
+  },
+  "story:single1_spacex_debt:1": {
+   "media_id": "18104182208253282"
+  },
+  "story:single2_claude_georgia:1": {
+   "media_id": "18137627260629835"
+  },
+  "story:summary:1": {
+   "media_id": "17937819135403851"
+  },
+  "story:summary:2": {
+   "media_id": "17881152579553848"
+  },
+  "story:summary:3": {
+   "media_id": "18080456063450337"
+  },
+  "story:summary:4": {
+   "media_id": "18115369292141616"
+  },
+  "story:summary:5": {
+   "media_id": "18144816916720315"
+  }
+ },
+ "errors": [],
+ "complete": true
+}
