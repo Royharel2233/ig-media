@@ -1,0 +1,52 @@
+{
+ "done": {
+  "post:single1_saudi_oil": {
+   "media_id": "18107645960106262",
+   "permalink": "https://www.instagram.com/p/De9Ha2gm2KO/"
+  },
+  "post:single2_audi_china": {
+   "media_id": "17893259559654737",
+   "permalink": "https://www.instagram.com/p/De9HfXLG-Fp/"
+  },
+  "post:summary": {
+   "media_id": "17995629524841001",
+   "permalink": "https://www.instagram.com/p/De9HkGom3wo/"
+  },
+  "threads:single1_saudi_oil": {
+   "media_id": "17962658523079554",
+   "permalink": "https://www.threads.com/@globalnews.il/post/De9HoOJGzV1"
+  },
+  "threads:single2_audi_china": {
+   "media_id": "17901830502610003",
+   "permalink": "https://www.threads.com/@globalnews.il/post/De9HreHG20J"
+  },
+  "story:single1_saudi_oil:1": {
+   "media_id": "18122992213944038"
+  },
+  "story:single2_audi_china:1": {
+   "media_id": "17866802913680367"
+  },
+  "story:summary:1": {
+   "media_id": "17909879874591611"
+  },
+  "story:summary:2": {
+   "media_id": "18116034395028234"
+  },
+  "story:summary:3": {
+   "media_id": "18116064797131310"
+  },
+  "story:summary:4": {
+   "media_id": "18630849592045302"
+  },
+  "story:summary:5": {
+   "media_id": "17909206605578401"
+  },
+  "story:summary:6": {
+   "media_id": "18140330587728411"
+  }
+ },
+ "errors": [
+  "threads:summary: POST https://graph.threads.com/v1.0/me/threads_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17936043438162076 cannot be found.\",\"fbtrace_id\":\"AQER1D8Pyo4O8iyVRpd22lY\"}}'"
+ ],
+ "complete": false
+}
