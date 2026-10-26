@@ -41,7 +41,7 @@ export function App() {
                 <Row number={1} name="24/10 07:30 UTC" detail="7 הפסדים בחלון אחד (A90/A90d/B02/B05)" value="‎-$105.67" valueKnown />
                 <Row number={2} name="22/10 13:50 UTC" detail="6 הפסדים (B02/B05/B10)" value="‎-$90.47" valueKnown />
                 <Row number={3} name="23/10 04:30 UTC" detail="5 הפסדים (A90/A90d)" value="‎-$75.00" valueKnown />
-                <Row number={4} name="26/10 (יום הסגירה)" detail="41 הפסדים ב־8 אשכולות באותו יום" value="‎-$622.95" valueKnown />
+                <Row number={4} name="26/10 (יום הסגירה)" detail="41 הפסדים בסך הכול באותו יום" value="‎-$622.95" valueKnown />
             </Rows>
             <Facts items={[
                 { label: 'B05 זכייה ממוצעת', value: '‎+$2.72' },
