@@ -1,4 +1,4 @@
-# Polymarket paper-trading pilot - durable archive (updated 2026-10-26, cycle 124)
+# Polymarket paper-trading pilot - durable archive (updated 2026-10-26, cycle 130)
 
 Paper only. No real money. Read-only public data (gamma / data-api / Coinbase).
 Owner: Roy. Todo: todo-01M5ECKPM14F87B4B1AH3DKXNV. Genesis: 1792558500 (2026-10-21 04:55 UTC).
@@ -16,6 +16,9 @@ Owner: Roy. Todo: todo-01M5ECKPM14F87B4B1AH3DKXNV. Genesis: 1792558500 (2026-10-
 - data/ledger_replay_cycle124_20261026.jsonl - REPLAY-vintage ledger, cycle 124 snapshot
   (cursors 5m=1793010900, 15m=1793010600), post-wipe-5 recovery, 13,033,068 bytes.
 - data/summary_replay_cycle124_20261026.json - summary at cycle 124.
+- data/ledger_replay_cycle130_20261026.jsonl - REPLAY-vintage ledger, cycle 130 snapshot
+  (cursors 5m=1793032200, 15m=1793032200), B05 early-dead trigger cycle.
+- data/summary_replay_cycle130_20261026.json - summary at cycle 130.
 - data/pilot.py - collector as of 2026-10-23 (includes --until chunking patch).
 - data/SPEC.md - strategy/simulation spec.
 - data/AGGREGATES.md - this file.
@@ -96,6 +99,20 @@ Cycle 124 (2026-10-26 12:40 IST, after wipe-5 recovery) - snapshot files:
   B02 fell -$28.79 -> -$129.97; B05 -$30.72 -> -$67.49; B10 back negative.
 - 2 stale open rows still carried (A45 btc 5m 1792746900, A90d btc 5m 1792757700).
 
+Cycle 130 (2026-10-26 18:34 IST) - B05 EARLY-DEAD TRIGGER - snapshot files:
+  ledger_replay_cycle130_20261026.jsonl, summary_replay_cycle130_20261026.json;
+  cursors 5m=1793032200 15m=1793032200:
+- A90 540 (503W/37L, -$286.70), A45 244 (230W/14L, -$93.64), A90d 811 (729W/82L, -$636.46),
+  B05 190 (155W/35L, -$112.89), B02 418 (347W/71L, -$186.79), B10 45 (39W/6L, -$9.87).
+- B05 crossed its pre-registered early-dead criterion (net <= -$100 after >=60 settled)
+  at cycle 130 (18:34 IST): -$112.89 after 190 settled. Same criterion class as the one
+  that declared Strategy A dead on 2026-10-22.
+- All six variants net negative on the replay vintage. Losses today arrived in 5 correlated
+  clusters (~09:00 x9, ~14:24 x4, ~15:10 x3, ~16:50 x4, ~18:05 x5; windows 1792997400,
+  1792998000, 1793006400, 1793008500, 1793014200, 1793016600, 1793017800, 1793023200,
+  1793029500, 1793030700). B05 simulated taker fees $30.77 of the -$112.89 net.
+- 2 stale open rows still carried (A45 btc 5m 1792746900, A90d btc 5m 1792757700).
+
 ## Divergence note (aggregate level only - matched-fill attribution impossible without live rows)
 Replay shows equal or more losses per variant over comparable spans (e.g. B05 -$19.74 replay vs
 +$2.40 live; A45 -$10.43 vs +$0.52; A90 -$82.79/12L vs -$58.59/10L live at cycle 47). Pattern is
@@ -108,8 +125,11 @@ fills cluster with collapses, queue position unmeasurable). Neither vintage meas
 - Strategy A (A90 primary): DEAD on the LIVE vintage as originally observed - 150 settled, 140W/10L,
   net -$77.36, pre-registered early-dead criterion (net <= -$75 after >=40 settled) met 2026-10-22
   18:23 IDT. Replay sensitivity alongside: 198 settled, 186W/12L, -$82.79 at cycle 48 (direction unchanged).
-- Strategy B variants: roughly break-even (live) to negative (replay); correlated tail flips
-  (BTC+ETH+SOL flipping in one 5-min window) erase accumulated edge; no live-trading justification.
+- Strategy B: B05 (primary) met its pre-registered early-dead criterion 2026-10-26 18:34 IST
+  (replay vintage; -$112.89 after 190 settled). B02 shadow -$186.79 / 418 settled; B10 shadow
+  -$9.87 / 45 settled (underpowered, neither proven nor disproven). Correlated tail flips
+  (multiple assets flipping in one 5-min window) erase accumulated edge on every tested variant;
+  no live-trading justification. Untested thresholds are not ruled out by this pilot.
 
 ## Standing caveats
 Maker fill proxy is conservative AND adverse-selected; taker fee model = shares*0.07*p*(1-p), maker 0;
