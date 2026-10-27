@@ -3,8 +3,9 @@
 1. קטאר: דובר משרד החוץ אמר שאיראן צריכה להפגין כוונות טובות, להפסיק את האיומים על מדינות המפרץ ולפתוח את מצר הורמוז, כתנאי להצלחת מאמצי התיווך (financialjuice).
 https://x.com/financialjuice/status/2115024610173263911
 
-2. הקרמלין: פוטין, ראש ממשלת פינלנד סטוב וראש ממשלת נורווגיה סטורה הסכימו לשמור על קשר ישיר, ודנו בפגישות קרובות באבו דאבי (TASS, דרך financialjuice).
+2. הקרמלין: פוטין, נשיא פינלנד סטוב וראש ממשלת נורווגיה סטורה הסכימו לשמור על קשר ישיר, ודנו בפגישות קרובות באבו דאבי (TASS, דרך financialjuice; גם אתר נשיאות פינלנד).
 https://x.com/financialjuice/status/2115026800082641357
+https://www.presidentti.fi/en/president-stubb-and-prime-minister-store-held-a-phone-call-with-president-putin/
 
 3. עדכון ל־HSBC מהבוקר: הרווח הרבעוני קפץ 32%, אבל ההכנסות החטיאו את התחזיות והמניה ירדה (ReutersBiz).
 https://x.com/ReutersBiz/status/2115005761734459875
