@@ -8,3 +8,4 @@
 - The proteome of Middle Pleistocene Xujiayao and common Denisovan morphology (Xing, Wu, Shao, Fu et al.; Chinese Academy of Sciences; Nature 2026)
 - Why is AI-generated language so hard to understand? (Clark, Martin, Mahowald; NYU, UT Austin; arXiv 2026)
 - Self-Reported Adverse Effects Among Social Media Users Taking Nonapproved Retatrutide (Sehgal, Tronieri, Rader, Ungar, Guntuku; University of Pennsylvania, Boston Children's Hospital; JAMA Network Open 2026)
+- Characterizing Artificial Intelligence Psychosis in a Large Medical Setting (Bergson, Vassall, Wright, McCoy, Schafer, Achee, Sheffield; Vanderbilt University Medical Center; JAMA Psychiatry 2026)

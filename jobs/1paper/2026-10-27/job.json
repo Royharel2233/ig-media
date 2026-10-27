@@ -1,0 +1,23 @@
+{
+ "page": "1paper",
+ "slot": "2026-10-27",
+ "stories": false,
+ "publish_after": "2026-10-27T08:00:00+02:00",
+ "posts": [
+  {
+   "name": "27-mind-ai-psychosis",
+   "type": "single",
+   "caption": "Is “AI psychosis” real? Doctors checked the records of 215,712 mental health patients at one US hospital 🧠\n\nNot medical advice. If you or someone close to you is struggling, talk to a doctor.\n\nSource: Bergson, Vassall, Wright, McCoy, Schafer, Achee, Sheffield (Vanderbilt University Medical Center), “Characterizing Artificial Intelligence Psychosis in a Large Medical Setting”, JAMA Psychiatry, 2026.\n\n#aipsychosis #chatgpt #mentalhealth #ai #psychology",
+   "images": [
+    "media/1paper/2026-10-27/27-mind-ai-psychosis/01.jpg",
+    "media/1paper/2026-10-27/27-mind-ai-psychosis/02.jpg",
+    "media/1paper/2026-10-27/27-mind-ai-psychosis/03.jpg",
+    "media/1paper/2026-10-27/27-mind-ai-psychosis/04.jpg",
+    "media/1paper/2026-10-27/27-mind-ai-psychosis/05.jpg",
+    "media/1paper/2026-10-27/27-mind-ai-psychosis/06.jpg",
+    "media/1paper/2026-10-27/27-mind-ai-psychosis/07.jpg",
+    "media/1paper/2026-10-27/27-mind-ai-psychosis/08.jpg"
+   ]
+  }
+ ]
+}
