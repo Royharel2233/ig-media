@@ -61,10 +61,13 @@
   },
   "story:summary:8": {
    "media_id": "18119011798970712"
+  },
+  "story:summary:1": {
+   "media_id": "18120357743516405"
   }
  },
  "errors": [
   "story:summary:1: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,117,709,651,895,034 cannot be found.\",\"fbtrace_id\":\"A5_hjrG-JvyH88bGv2bXA8t\"}}'"
  ],
- "complete": false
+ "complete": true
 }
