@@ -1,0 +1,64 @@
+{
+ "done": {
+  "post:single1_gas": {
+   "media_id": "18074364482593009",
+   "permalink": "https://www.instagram.com/p/DfC7eKkG08x/"
+  },
+  "post:single2_wendys": {
+   "media_id": "18130076878876515",
+   "permalink": "https://www.instagram.com/p/DfC7ircG8z2/"
+  },
+  "post:single3_google": {
+   "media_id": "18396722785167965",
+   "permalink": "https://www.instagram.com/p/DfC7nESm52G/"
+  },
+  "post:summary": {
+   "media_id": "18116937269020391",
+   "permalink": "https://www.instagram.com/p/DfC7rsTGx0z/"
+  },
+  "threads:single1_gas": {
+   "media_id": "18120422956937832",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfC7wCHG0PI"
+  },
+  "threads:single2_wendys": {
+   "media_id": "18112347608608212",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfC70KJG-sQ"
+  },
+  "threads:single3_google": {
+   "media_id": "18378367252241327",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfC73cpG3_P"
+  },
+  "threads:summary": {
+   "media_id": "18128876467876940",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfC77qyGxqx"
+  },
+  "story:single1_gas:1": {
+   "media_id": "17990006238079582"
+  },
+  "story:single2_wendys:1": {
+   "media_id": "18106207514253308"
+  },
+  "story:single3_google:1": {
+   "media_id": "18180893380429899"
+  },
+  "story:summary:1": {
+   "media_id": "18361522303217196"
+  },
+  "story:summary:2": {
+   "media_id": "18149790505600548"
+  },
+  "story:summary:3": {
+   "media_id": "18098145842407139"
+  },
+  "story:summary:4": {
+   "media_id": "18094616786182540"
+  },
+  "story:summary:6": {
+   "media_id": "17906463348597628"
+  }
+ },
+ "errors": [
+  "story:summary:5: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"User is performing too many actions\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":9,\"error_subcode\":2207042,\"error_user_title\":\"Media Publish Limit Exceeded\",\"error_user_msg\":\"You reached maximum number of posts that is allowed to be published by Content Publishing API.\",\"fbtrace_id\":\"AQaZinkvs6vWuQVUjMjDAdw\"}}'"
+ ],
+ "complete": false
+}
