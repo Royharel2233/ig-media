@@ -61,6 +61,9 @@
   },
   "story:summary:4": {
    "media_id": "17915419860282286"
+  },
+  "story:summary:8": {
+   "media_id": "18416002885085306"
   }
  },
  "errors": [
@@ -71,5 +74,5 @@
   "story:summary:8: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"ACL8ffPWyxzuUsa2gnokWfG\"}}'",
   "story:summary:8: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,118,101,829,895,034 cannot be found.\",\"fbtrace_id\":\"Ao79KtI6kfi-M5MQ0Q9i1y1\"}}'"
  ],
- "complete": false
+ "complete": true
 }
