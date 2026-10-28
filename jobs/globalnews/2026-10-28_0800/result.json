@@ -48,6 +48,19 @@
   },
   "story:summary:7": {
    "media_id": "17942973663373042"
+  },
+  "threads:single3_gm": {
+   "media_id": "17909588478330091",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfCTvWXIPrN"
+  },
+  "story:single2_anthropic:1": {
+   "media_id": "18011080304777954"
+  },
+  "story:summary:3": {
+   "media_id": "18117869387587397"
+  },
+  "story:summary:4": {
+   "media_id": "17915419860282286"
   }
  },
  "errors": [
@@ -55,7 +68,8 @@
   "story:single2_anthropic:1: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,118,036,243,895,034 cannot be found.\",\"fbtrace_id\":\"ADEWJY0BysMH0gUZr0-AFgH\"}}'",
   "story:summary:3: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,118,036,570,895,034 cannot be found.\",\"fbtrace_id\":\"Au-3Po7O2TVlFgdgYSidkOr\"}}'",
   "story:summary:4: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,118,036,594,895,034 cannot be found.\",\"fbtrace_id\":\"AydCIa6tsna-h93YlMsg-2o\"}}'",
-  "story:summary:8: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"ACL8ffPWyxzuUsa2gnokWfG\"}}'"
+  "story:summary:8: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"ACL8ffPWyxzuUsa2gnokWfG\"}}'",
+  "story:summary:8: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,118,101,829,895,034 cannot be found.\",\"fbtrace_id\":\"Ao79KtI6kfi-M5MQ0Q9i1y1\"}}'"
  ],
  "complete": false
 }
