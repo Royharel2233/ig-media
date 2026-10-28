@@ -1,0 +1,23 @@
+{
+ "page": "1paper",
+ "slot": "2026-10-28",
+ "stories": false,
+ "publish_after": "2026-10-28T08:00:00+02:00",
+ "posts": [
+  {
+   "name": "28-world-spider-sleep",
+   "type": "single",
+   "caption": "Do spiders dream? A new PNAS study filmed jumping spiders through the night and found two distinct sleep stages, one with REM like eye movements and twitches 🕷️\n\nThe catch: no brain recordings, one species, and the authors say it does not prove spiders dream.\n\nSource: Geiger, Capelle, Rosentreter, Herberstein, Bahl, De Agrò, Klein, Rößler (University of Bonn), “Behavioral evidence for two-stage sleep in spiders”, PNAS, 2026.\n\n#spiders #sleep #science #animalbehavior #remsleep",
+   "images": [
+    "media/1paper/2026-10-28/28-world-spider-sleep/01.jpg",
+    "media/1paper/2026-10-28/28-world-spider-sleep/02.jpg",
+    "media/1paper/2026-10-28/28-world-spider-sleep/03.jpg",
+    "media/1paper/2026-10-28/28-world-spider-sleep/04.jpg",
+    "media/1paper/2026-10-28/28-world-spider-sleep/05.jpg",
+    "media/1paper/2026-10-28/28-world-spider-sleep/06.jpg",
+    "media/1paper/2026-10-28/28-world-spider-sleep/07.jpg",
+    "media/1paper/2026-10-28/28-world-spider-sleep/08.jpg"
+   ]
+  }
+ ]
+}

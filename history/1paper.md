@@ -9,3 +9,4 @@
 - Why is AI-generated language so hard to understand? (Clark, Martin, Mahowald; NYU, UT Austin; arXiv 2026)
 - Self-Reported Adverse Effects Among Social Media Users Taking Nonapproved Retatrutide (Sehgal, Tronieri, Rader, Ungar, Guntuku; University of Pennsylvania, Boston Children's Hospital; JAMA Network Open 2026)
 - Characterizing Artificial Intelligence Psychosis in a Large Medical Setting (Bergson, Vassall, Wright, McCoy, Schafer, Achee, Sheffield; Vanderbilt University Medical Center; JAMA Psychiatry 2026)
+- Behavioral evidence for two-stage sleep in spiders (Geiger, Capelle, Rosentreter, Herberstein, Bahl, De Agrò, Klein, Rößler; University of Bonn; PNAS 2026)
