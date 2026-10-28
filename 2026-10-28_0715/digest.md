@@ -1,7 +1,7 @@
 מהדורת 28.10.2026 - בוקר (07:15) (1/2)
 
-1. הבחירות בישראל - ספירה חיה: נכון לשעת הדיווח, אחרי ספירת כ-42% מהקולות, גוש נתניהו מוביל עם 57 מנדטים מול 47 לגוש אייזנקוט, ו-16 למפלגות הערביות. אף גוש עדיין לא מגיע ל-61. (spectatorindex + Bull Theory; טיימס אוף יזראל)
-https://www.timesofisrael.com/liveblog_entry/with-nearly-42-of-ballots-counted-pms-bloc-leads-opposition-57-47-arab-parties-hold-remaining-seats/
+1. הבחירות בישראל - ספירה חיה: נכון לשעה 09:20, אחרי ספירת 66.2% מהקלפיות, גוש נתניהו על 56 מנדטים, גוש אייזנקוט על 48, והמפלגות הערביות על 16. אף גוש עדיין לא מגיע ל-61 הנדרשים; הספירה נמשכת והקולות במעטפות כפולות ייספרו מאוחר יותר. (טיימס אוף יזראל, ספירה חיה)
+https://www.timesofisrael.com/liveblog_entry/with-over-66-of-ballots-counted-netanyahu-led-bloc-at-56-seats/
 
 2. וול סטריט ג'ורנל: ארה"ב הזהירה מדינות המפרץ להתכונן לקמפיין צבאי "קצר ואינטנסיבי" נגד איראן, חידוש של המלחמה, אחרי הבחירות לאמצע הקדנציה ב-3 בנובמבר. (KobeissiLetter + Bull Theory; WSJ)
 https://www.wsj.com/world/middle-east/u-s-warns-gulf-of-possible-short-intense-renewal-of-iran-war-after-midterms-cd1a55e1
@@ -13,9 +13,9 @@ https://www.theguardian.com/us-news/2026/oct/27/trump-oil-tanker-venezuela
 https://www.bbc.com/news/articles/ckly0xpxp243o
 https://apnews.com/article/brazil-flavio-bolsonaro-passport-lula-1f64bda20de066eeea04349e0319820a
 
-5. ראלי AI בקוריאה: הקוספי קפץ 5% והופעל בלם צד-קנייה ליום שני ברציפות. SK Hynix זינקה 9% אחרי רבעון שיא: הכנסות מעל 100 טריליון וון לראשונה בתולדות החברה (+328% לעומת אשתקד) ורווח תפעולי +632%. (Bull Theory; אתר החדשות של SK Hynix, CNBC)
+5. ראלי AI בקוריאה: הקוספי נעל בזינוק של 6.6% ל-6,012 נקודות, נעילה ראשונה מעל 6,000 מאז 14.10, ובלם צד-קנייה הופעל ליום שני ברציפות. SK Hynix זינקה כ-11% בסגירה אחרי רבעון שיא: הכנסות מעל 100 טריליון וון לראשונה בתולדות החברה (+328% לעומת אשתקד) ורווח תפעולי +632%. (Bull Theory; אתר החדשות של SK Hynix, יונהאפ)
 https://news.skhynix.com/en/q3-2026-business-results/
-https://www.cnbc.com/2026/10/28/sk-hynix-third-quarter-profit.html
+https://en.yna.co.kr/view/AEN20261028008051320
 
 6. החוב הלאומי של ארה"ב חצה את רף 40 הטריליון דולר ועומד על כ-40.5 טריליון, שיא חדש, לפי נתוני משרד האוצר. (exec_sum + WatcherGuru; נתוני האוצר)
 https://econotimes.com/US-federal-debt-reaches-40-46-trillion-Treasury-figures-show-1763957
