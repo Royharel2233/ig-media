@@ -1,0 +1,44 @@
+{
+ "done": {
+  "post:single1_volkswagen": {
+   "media_id": "18154471999496393",
+   "permalink": "https://www.instagram.com/p/DfE2rrukc7Z/"
+  },
+  "post:single2_lagarde": {
+   "media_id": "18431196436144505",
+   "permalink": "https://www.instagram.com/p/DfE2wcKkWeR/"
+  },
+  "post:summary": {
+   "media_id": "18024134159714838",
+   "permalink": "https://www.instagram.com/p/DfE206MEbTj/"
+  },
+  "threads:single1_volkswagen": {
+   "media_id": "17906402619354000",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfE25hikWmg"
+  },
+  "threads:single2_lagarde": {
+   "media_id": "17995511961101882",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfE2-LXEabY"
+  },
+  "threads:summary": {
+   "media_id": "18200693077391506",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfE3Bh-keRo"
+  },
+  "story:single1_volkswagen:1": {
+   "media_id": "17971322604194638"
+  },
+  "story:single2_lagarde:1": {
+   "media_id": "18120788537288664"
+  },
+  "story:summary:1": {
+   "media_id": "18018468302746180"
+  },
+  "story:summary:3": {
+   "media_id": "17959059342271154"
+  }
+ },
+ "errors": [
+  "story:summary:2: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"AVEEzjASnFRdojVTCRiSBmp\"}}'"
+ ],
+ "complete": false
+}
