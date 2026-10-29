@@ -10,3 +10,4 @@
 - Self-Reported Adverse Effects Among Social Media Users Taking Nonapproved Retatrutide (Sehgal, Tronieri, Rader, Ungar, Guntuku; University of Pennsylvania, Boston Children's Hospital; JAMA Network Open 2026)
 - Characterizing Artificial Intelligence Psychosis in a Large Medical Setting (Bergson, Vassall, Wright, McCoy, Schafer, Achee, Sheffield; Vanderbilt University Medical Center; JAMA Psychiatry 2026)
 - Behavioral evidence for two-stage sleep in spiders (Geiger, Capelle, Rosentreter, Herberstein, Bahl, De Agrò, Klein, Rößler; University of Bonn; PNAS 2026)
+- Following Manosphere Influencers and Endorsement of Traditional Masculinity Beliefs Among Adolescent Boys (Scharrer, Ward, Volling; UMass Amherst, University of Michigan; Psychology of Men & Masculinities 2026)
