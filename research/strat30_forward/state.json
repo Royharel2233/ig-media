@@ -7,24 +7,24 @@
    "sym": "M",
    "entry_px": 0.91566,
    "entry_date": "2026-10-24",
-   "last_px": 1.07013,
-   "ret_since_entry": 0.16869798833628202
+   "last_px": 1.03433,
+   "ret_since_entry": 0.1296005067383088
   },
   {
    "cid": "monero",
    "sym": "XMR",
    "entry_px": 617.1,
    "entry_date": "2026-10-24",
-   "last_px": 607.68,
-   "ret_since_entry": -0.015264948954788693
+   "last_px": 598.84,
+   "ret_since_entry": -0.0295900178253119
   },
   {
    "cid": "zcash",
    "sym": "ZEC",
    "entry_px": 1208.31,
    "entry_date": "2026-10-24",
-   "last_px": 1309.84,
-   "ret_since_entry": 0.08402645016593424
+   "last_px": 1310.21,
+   "ret_since_entry": 0.08433266297556097
   }
  ],
  "cash_mult": 0.997002999,
@@ -44,6 +44,10 @@
   {
    "date": "2026-10-27",
    "avg_open_ret": 0.07915316318247585
+  },
+  {
+   "date": "2026-10-28",
+   "avg_open_ret": 0.06144771729618596
   }
  ],
  "rebalances": [
@@ -70,5 +74,5 @@
  "pending_signal": null,
  "last_signal_date": "2026-10-23",
  "last_rebal_date": "2026-10-24",
- "last_mark_date": "2026-10-27"
+ "last_mark_date": "2026-10-28"
 }
