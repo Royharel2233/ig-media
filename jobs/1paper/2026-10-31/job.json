@@ -1,0 +1,23 @@
+{
+ "page": "1paper",
+ "slot": "2026-10-31",
+ "stories": false,
+ "publish_after": "2026-10-31T08:00:00+02:00",
+ "posts": [
+  {
+   "name": "31-world-crocodile-asteroid",
+   "type": "single",
+   "caption": "An asteroid wiped out the dinosaurs 66 million years ago. Crocodiles came through it, and new research says warm refuges near the equator are a big part of why 🐊\n\nThe team reconstructed the temperature and rainfall preferences of over 400 crocodile-line species across 245 million years, then ran climate simulations of the years after the impact. Heat was probably only one reason they made it: small bodies, water, flexible diets and very low energy needs all helped too.\n\nSource: Chiarenza, Howard, Varnham, Farnsworth, Valdes, Mannion (University College London), “Climatic niche conservatism shapes the macroevolution, extinction, and survivorship of crocodile-line archosaurs”, Science Advances, 2026.\n\n#crocodiles #dinosaurs #extinction #evolution #climate",
+   "images": [
+    "media/1paper/2026-10-31/31-world-crocodile-asteroid/01.jpg",
+    "media/1paper/2026-10-31/31-world-crocodile-asteroid/02.jpg",
+    "media/1paper/2026-10-31/31-world-crocodile-asteroid/03.jpg",
+    "media/1paper/2026-10-31/31-world-crocodile-asteroid/04.jpg",
+    "media/1paper/2026-10-31/31-world-crocodile-asteroid/05.jpg",
+    "media/1paper/2026-10-31/31-world-crocodile-asteroid/06.jpg",
+    "media/1paper/2026-10-31/31-world-crocodile-asteroid/07.jpg",
+    "media/1paper/2026-10-31/31-world-crocodile-asteroid/08.jpg"
+   ]
+  }
+ ]
+}

@@ -12,3 +12,4 @@
 - Behavioral evidence for two-stage sleep in spiders (Geiger, Capelle, Rosentreter, Herberstein, Bahl, De Agrò, Klein, Rößler; University of Bonn; PNAS 2026)
 - Following Manosphere Influencers and Endorsement of Traditional Masculinity Beliefs Among Adolescent Boys (Scharrer, Ward, Volling; UMass Amherst, University of Michigan; Psychology of Men & Masculinities 2026)
 - Bias-Adjusted Prevalence of Chronic Traumatic Encephalopathy Among Deceased National Football League Players (Gallini ... Tripodis; Boston University, Mass General Brigham, Concussion & CTE Foundation; JAMA Network Open 2026)
+- Climatic niche conservatism shapes the macroevolution, extinction, and survivorship of crocodile-line archosaurs (Chiarenza, Howard, Varnham, Farnsworth, Valdes, Mannion; University College London; Science Advances 2026)
