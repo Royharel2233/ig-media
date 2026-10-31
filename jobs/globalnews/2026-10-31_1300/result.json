@@ -1,0 +1,34 @@
+{
+ "done": {
+  "post:single1_fitch": {
+   "media_id": "17914672062557993",
+   "permalink": "https://www.instagram.com/p/DfJ_K16GwbB/"
+  },
+  "post:summary": {
+   "media_id": "18134684110779863",
+   "permalink": "https://www.instagram.com/p/DfJ_OLPm7zp/"
+  },
+  "threads:single1_fitch": {
+   "media_id": "17991232611080637",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfJ_SqKG5d9"
+  },
+  "threads:summary": {
+   "media_id": "18117892610088951",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfJ_V3OG7Ps"
+  },
+  "story:single1_fitch:1": {
+   "media_id": "17892710499455994"
+  },
+  "story:summary:1": {
+   "media_id": "18021157736959552"
+  },
+  "story:summary:2": {
+   "media_id": "17918379570529565"
+  },
+  "story:summary:3": {
+   "media_id": "18099266960690059"
+  }
+ },
+ "errors": [],
+ "complete": true
+}
