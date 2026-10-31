@@ -1,0 +1,64 @@
+{
+ "done": {
+  "post:single1_wallst": {
+   "media_id": "18192772159405956",
+   "permalink": "https://www.instagram.com/p/DfJd4zlFmJZ/"
+  },
+  "post:single2_apple": {
+   "media_id": "17952220413340548",
+   "permalink": "https://www.instagram.com/p/DfJd8_WloBv/"
+  },
+  "post:single3_openai": {
+   "media_id": "18115446271850232",
+   "permalink": "https://www.instagram.com/p/DfJeBM-lmQk/"
+  },
+  "post:summary": {
+   "media_id": "18650729173040684",
+   "permalink": "https://www.instagram.com/p/DfJeFuZlojc/"
+  },
+  "threads:single1_wallst": {
+   "media_id": "18137302300646776",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfJeJNLFnD3"
+  },
+  "threads:single2_apple": {
+   "media_id": "18099032363409733",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfJeMyJFq3V"
+  },
+  "threads:single3_openai": {
+   "media_id": "17918028597263054",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfJeQVWFqQK"
+  },
+  "threads:summary": {
+   "media_id": "17990778246065673",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfJeULlFr4p"
+  },
+  "story:single1_wallst:1": {
+   "media_id": "17903906130603555"
+  },
+  "story:single2_apple:1": {
+   "media_id": "18109734389194261"
+  },
+  "story:single3_openai:1": {
+   "media_id": "18345066484253844"
+  },
+  "story:summary:1": {
+   "media_id": "18023052428933512"
+  },
+  "story:summary:2": {
+   "media_id": "18114188563891496"
+  },
+  "story:summary:3": {
+   "media_id": "18073202126598020"
+  },
+  "story:summary:4": {
+   "media_id": "18067256405685786"
+  },
+  "story:summary:5": {
+   "media_id": "18090091643273853"
+  }
+ },
+ "errors": [
+  "story:summary:6: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"AzFZ2xIAbanl3AOStjHqYA6\"}}'"
+ ],
+ "complete": false
+}
