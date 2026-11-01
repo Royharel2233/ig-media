@@ -1,0 +1,23 @@
+{
+ "page": "1paper",
+ "slot": "2026-11-01",
+ "stories": false,
+ "publish_after": "2026-11-01T08:00:00+02:00",
+ "posts": [
+  {
+   "name": "32-world-long-covid-overcount",
+   "type": "single",
+   "caption": "Long COVID research may have blamed the virus for hundreds of problems it did not cause, says a new study of 244.7 million US patients 🧪\n\nCompared with people who tested negative instead of people who were never tested, the list of problems linked to COVID shrank from 262 to 43 in the first months, and from 369 to zero after a year. The authors stress that lasting symptoms can be real. What is uncertain is whether COVID caused them.\n\nSource: Nilforoshan, Reisler, Jahanparast, Moor, Goodman, Wager, Leskovec (Stanford University, UC Berkeley, ETH Zurich), “Revised estimates of types and duration of long COVID symptoms based on claims records from 245 million US patients”, PNAS, 2026.\n\n#longcovid #covid19 #research #publichealth #science",
+   "images": [
+    "media/1paper/2026-11-01/32-world-long-covid-overcount/01.jpg",
+    "media/1paper/2026-11-01/32-world-long-covid-overcount/02.jpg",
+    "media/1paper/2026-11-01/32-world-long-covid-overcount/03.jpg",
+    "media/1paper/2026-11-01/32-world-long-covid-overcount/04.jpg",
+    "media/1paper/2026-11-01/32-world-long-covid-overcount/05.jpg",
+    "media/1paper/2026-11-01/32-world-long-covid-overcount/06.jpg",
+    "media/1paper/2026-11-01/32-world-long-covid-overcount/07.jpg",
+    "media/1paper/2026-11-01/32-world-long-covid-overcount/08.jpg"
+   ]
+  }
+ ]
+}
