@@ -1,0 +1,34 @@
+{
+ "done": {
+  "post:single1_xiaomi": {
+   "media_id": "18351509335269426",
+   "permalink": "https://www.instagram.com/p/DfMk1E-kVi0/"
+  },
+  "post:summary": {
+   "media_id": "18156230377553039",
+   "permalink": "https://www.instagram.com/p/DfMk5NOkeF9/"
+  },
+  "threads:single1_xiaomi": {
+   "media_id": "17901870171389577",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfMk9j_kVI3"
+  },
+  "threads:summary": {
+   "media_id": "18179185087451436",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfMlAr2EXJQ"
+  },
+  "story:single1_xiaomi:1": {
+   "media_id": "18437260162199221"
+  },
+  "story:summary:1": {
+   "media_id": "18106016504287654"
+  },
+  "story:summary:2": {
+   "media_id": "18031520465885778"
+  },
+  "story:summary:3": {
+   "media_id": "18116921765010979"
+  }
+ },
+ "errors": [],
+ "complete": true
+}
