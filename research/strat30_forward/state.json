@@ -105,5 +105,36 @@
  "pending_signal": null,
  "last_signal_date": "2026-10-30",
  "last_rebal_date": "2026-10-31",
- "last_mark_date": "2026-10-31"
+ "last_mark_date": "2026-10-31",
+ "segments": [
+  {
+   "start": "2026-10-24",
+   "end": "2026-10-31",
+   "positions": [
+    {
+     "sym": "M",
+     "entry_px": 0.91566,
+     "exit_px": 0.89992,
+     "ret": -0.017189786602013868
+    },
+    {
+     "sym": "XMR",
+     "entry_px": 617.1,
+     "exit_px": 599.25,
+     "ret": -0.02892561983471076
+    },
+    {
+     "sym": "ZEC",
+     "entry_px": 1208.31,
+     "exit_px": 1252.39,
+     "ret": 0.03648070445498264
+    }
+   ],
+   "gross_avg": -0.0032115673272473297,
+   "reconstructed": true,
+   "provenance": "exit prices from MEXC 1d klines re-fetched 2026-11-01; ZEC exit 1252.39 cross-validated against recorded re-entry price; gross/NAV verified by independent calculation and QA replay of pre-rotation state"
+  }
+ ],
+ "nav_gross_mult": 0.9967884326727526,
+ "nav": 0.9908226339823833
 }

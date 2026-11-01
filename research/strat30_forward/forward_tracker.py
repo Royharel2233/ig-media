@@ -44,6 +44,12 @@ def completed_closes(rows):
 
 def main():
     st = load_state()
+    # bookkeeping (2026-11-01, approved by parent): realized-segment NAV tracking.
+    # Does NOT change the frozen rule: same signals, same execution timing, same cost model.
+    st.setdefault('segments', [])
+    st.setdefault('nav_gross_mult', 1.0)
+    if 'nav' not in st:
+        st['nav'] = st['cash_mult'] * st['nav_gross_mult']
     uni = universe()
     data = {}
     for cid, sym in uni:
@@ -62,6 +68,22 @@ def main():
     ps = st.get('pending_signal')
     if ps and last_close > datetime.date.fromisoformat(ps['signal_date']):
         prev_n = len(st['positions'])
+        # bookkeeping: record realized segment for outgoing positions at THIS close
+        if prev_n:
+            seg_pos = []
+            for p_old in st['positions']:
+                rows_old = data.get((p_old['cid'], p_old['sym']))
+                if rows_old and rows_old[-1][0] == last_close:
+                    exit_px = rows_old[-1][1]
+                    seg_pos.append({'sym': p_old['sym'], 'entry_px': p_old['entry_px'],
+                                    'exit_px': exit_px, 'ret': exit_px / p_old['entry_px'] - 1})
+            if seg_pos:
+                gross = sum(x['ret'] for x in seg_pos) / len(seg_pos)
+                st['segments'].append({'start': st.get('last_rebal_date'), 'end': str(last_close),
+                                       'positions': seg_pos, 'gross_avg': gross,
+                                       'reconstructed': False})
+                st['nav_gross_mult'] *= (1 + gross)
+                print('SEGMENT closed at', last_close, [(x['sym'], round(x['ret'],4)) for x in seg_pos], 'gross %.4f' % gross)
         positions = []
         for pick in ps['picks']:
             rows = data.get((pick['cid'], pick['sym']))
@@ -80,7 +102,8 @@ def main():
             if st['started_utc'] is None:
                 st['started_utc'] = str(last_close)
             st['last_rebal_date'] = str(last_close)
-            print('EXECUTED next-bar at', last_close, [(p['sym'], p['entry_px']) for p in positions])
+            st['nav'] = st['nav_gross_mult'] * st['cash_mult']
+            print('EXECUTED next-bar at', last_close, [(p['sym'], p['entry_px']) for p in positions], 'nav %.6f' % st['nav'])
         else:
             print('PENDING SIGNAL UNEXECUTABLE (no price rows at close); kept pending')
         st['pending_signal'] = None
