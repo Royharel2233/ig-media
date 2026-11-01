@@ -1,0 +1,51 @@
+{
+ "done": {
+  "post:single1_capex": {
+   "media_id": "17923723005442033",
+   "permalink": "https://www.instagram.com/p/DfNNlBvCWUM/"
+  },
+  "post:single2_tokens": {
+   "media_id": "17963398413251282",
+   "permalink": "https://www.instagram.com/p/DfNNpd8CV4s/"
+  },
+  "post:summary": {
+   "media_id": "18108488282105101",
+   "permalink": "https://www.instagram.com/p/DfNNtysifkM/"
+  },
+  "threads:single1_capex": {
+   "media_id": "17918901270263880",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfNNyDGiUGF"
+  },
+  "threads:single2_tokens": {
+   "media_id": "18159049690516949",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfNN1lHCbcL"
+  },
+  "threads:summary": {
+   "media_id": "18034840697854280",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfNN542CdhE"
+  },
+  "story:single1_capex:1": {
+   "media_id": "18438285061178087"
+  },
+  "story:single2_tokens:1": {
+   "media_id": "18112594370621649"
+  },
+  "story:summary:1": {
+   "media_id": "17932801707162884"
+  },
+  "story:summary:2": {
+   "media_id": "18017854001986533"
+  },
+  "story:summary:3": {
+   "media_id": "18094162577197479"
+  },
+  "story:summary:4": {
+   "media_id": "18107996717197116"
+  }
+ },
+ "errors": [
+  "story:summary:5: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,119,632,981,895,034 cannot be found.\",\"fbtrace_id\":\"A9Z9tKhbRaPNvKrTBdAcBhJ\"}}'",
+  "story:summary:6: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,119,633,032,895,034 cannot be found.\",\"fbtrace_id\":\"AYQjRKQwH8CVQ9SOuIHabI0\"}}'"
+ ],
+ "complete": false
+}
