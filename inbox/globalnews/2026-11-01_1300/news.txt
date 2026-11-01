@@ -6,8 +6,8 @@ https://www.devdiscourse.com/article/international/4000283-hundreds-of-thousands
 2. ובכיוון ההפוך: מתקפת מל"טים נרחבת פגעה קשות במתקן תעשייתי במחוז ניז'ני נובגורוד ברוסיה; המושל דיווח על נזק משמעותי, ורוסיה פתחה בחקירת טרור. לפי הרשויות יורטו מעל 100 מל"טים ואין נפגעים. (financialjuice; אינטרפקס ורויטרס)
 https://www.interfax.ru/russia/1126381
 
-3. בינאנס חידשה את משיכות הלקוחות אחרי שכיסתה 95% מהנכסים שנגנבו בפריצת ה-6.3 מיליארד דולר. (FT)
-https://www.ft.com/
+3. בינאנס חידשה את משיכות הלקוחות אחרי שכיסתה 95% מהנכסים שנגנבו בפריצת ה-6.3 מיליארד דולר. (FT; AFP)
+https://www.afp.com/en/binance-says-resuming-withdrawals-after-major-hack
 
 4. שיאוומי מסרה באוקטובר יותר מ-50,000 מכוניות חשמליות - החודש החזק שלה השנה, אחרי חודשיים של ירידות שנתיות. (ReutersTech; רויטרס)
 https://www.investing.com/news/stock-market-news/xiaomis-october-ev-deliveries-top-50000-hit-2026-monthly-high-4989416
