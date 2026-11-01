@@ -3,31 +3,31 @@
  "started_utc": "2026-10-24",
  "positions": [
   {
-   "cid": "memecore",
-   "sym": "M",
-   "entry_px": 0.91566,
-   "entry_date": "2026-10-24",
-   "last_px": 0.95858,
-   "ret_since_entry": 0.04687329358058667
-  },
-  {
-   "cid": "monero",
-   "sym": "XMR",
-   "entry_px": 617.1,
-   "entry_date": "2026-10-24",
-   "last_px": 587.41,
-   "ret_since_entry": -0.04811213741695031
+   "cid": "hyperliquid",
+   "sym": "HYPE",
+   "entry_px": 88.0,
+   "entry_date": "2026-10-31",
+   "last_px": 88.0,
+   "ret_since_entry": 0.0
   },
   {
    "cid": "zcash",
    "sym": "ZEC",
-   "entry_px": 1208.31,
-   "entry_date": "2026-10-24",
-   "last_px": 1270.84,
-   "ret_since_entry": 0.05174996482690708
+   "entry_px": 1252.39,
+   "entry_date": "2026-10-31",
+   "last_px": 1252.39,
+   "ret_since_entry": 0.0
+  },
+  {
+   "cid": "pepe",
+   "sym": "PEPE",
+   "entry_px": 4.964e-06,
+   "entry_date": "2026-10-31",
+   "last_px": 4.964e-06,
+   "ret_since_entry": 0.0
   }
  ],
- "cash_mult": 0.997002999,
+ "cash_mult": 0.994014980014994,
  "marks": [
   {
    "date": "2026-10-24",
@@ -56,6 +56,10 @@
   {
    "date": "2026-10-30",
    "avg_open_ret": 0.016837040330181147
+  },
+  {
+   "date": "2026-10-31",
+   "avg_open_ret": 0.0
   }
  ],
  "rebalances": [
@@ -77,31 +81,29 @@
     }
    ],
    "universe_n": 35
+  },
+  {
+   "signal_date": "2026-10-30",
+   "exec_date": "2026-10-31",
+   "picks": [
+    {
+     "sym": "HYPE",
+     "entry_px": 88.0
+    },
+    {
+     "sym": "ZEC",
+     "entry_px": 1252.39
+    },
+    {
+     "sym": "PEPE",
+     "entry_px": 4.964e-06
+    }
+   ],
+   "universe_n": 35
   }
  ],
- "pending_signal": {
-  "signal_date": "2026-10-30",
-  "picks": [
-   {
-    "cid": "hyperliquid",
-    "sym": "HYPE",
-    "r7": 0.1674
-   },
-   {
-    "cid": "zcash",
-    "sym": "ZEC",
-    "r7": 0.0751
-   },
-   {
-    "cid": "pepe",
-    "sym": "PEPE",
-    "r7": 0.0742
-   }
-  ],
-  "universe_n": 35,
-  "note": "next-bar: executes at the next completed UTC close"
- },
+ "pending_signal": null,
  "last_signal_date": "2026-10-30",
- "last_rebal_date": "2026-10-24",
- "last_mark_date": "2026-10-30"
+ "last_rebal_date": "2026-10-31",
+ "last_mark_date": "2026-10-31"
 }
