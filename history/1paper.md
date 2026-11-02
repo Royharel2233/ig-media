@@ -14,3 +14,4 @@
 - Bias-Adjusted Prevalence of Chronic Traumatic Encephalopathy Among Deceased National Football League Players (Gallini ... Tripodis; Boston University, Mass General Brigham, Concussion & CTE Foundation; JAMA Network Open 2026)
 - Climatic niche conservatism shapes the macroevolution, extinction, and survivorship of crocodile-line archosaurs (Chiarenza, Howard, Varnham, Farnsworth, Valdes, Mannion; University College London; Science Advances 2026)
 - Revised estimates of types and duration of long COVID symptoms based on claims records from 245 million US patients (Nilforoshan, Reisler, Jahanparast, Moor, Goodman, Wager, Leskovec; Stanford, UC Berkeley, ETH Zurich; PNAS 2026)
+- Ultrarapid decision-making in an avian brain (Schmidt, Nieder; University of Tübingen; Science 2026)
