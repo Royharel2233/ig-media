@@ -15,3 +15,4 @@
 - Climatic niche conservatism shapes the macroevolution, extinction, and survivorship of crocodile-line archosaurs (Chiarenza, Howard, Varnham, Farnsworth, Valdes, Mannion; University College London; Science Advances 2026)
 - Revised estimates of types and duration of long COVID symptoms based on claims records from 245 million US patients (Nilforoshan, Reisler, Jahanparast, Moor, Goodman, Wager, Leskovec; Stanford, UC Berkeley, ETH Zurich; PNAS 2026)
 - Ultrarapid decision-making in an avian brain (Schmidt, Nieder; University of Tübingen; Science 2026)
+- Retrofitting language models to operate over bytes (Minixhofer, Hofmann et al.; Allen Institute for AI, University of Cambridge, University of Washington; Nature 2026)

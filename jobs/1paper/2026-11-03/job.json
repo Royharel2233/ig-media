@@ -1,0 +1,23 @@
+{
+ "page": "1paper",
+ "slot": "2026-11-03",
+ "stories": false,
+ "publish_after": "2026-11-03T08:00:00+02:00",
+ "posts": [
+  {
+   "name": "34-ai-chatbots-see-letters",
+   "type": "single",
+   "caption": "Most AI chatbots never see individual letters, which is why they stumble when asked to spell a word backwards 🔤\n\nResearchers rewired Llama 3, Qwen3 and Olmo 3 to read raw bytes using under 1% of normal training. Letter tasks jumped (Olmo: 54.3 to 78.1) while general scores stayed about the same. Caveat: only models up to about 8 billion parameters were tested, and first try coding got slightly worse.\n\nSource: Minixhofer, Hofmann et al. (Allen Institute for AI, University of Cambridge, University of Washington), “Retrofitting language models to operate over bytes”, Nature, 2026.\n\n#ai #chatbots #machinelearning #llm #science",
+   "images": [
+    "media/1paper/2026-11-03/34-ai-chatbots-see-letters/01.jpg",
+    "media/1paper/2026-11-03/34-ai-chatbots-see-letters/02.jpg",
+    "media/1paper/2026-11-03/34-ai-chatbots-see-letters/03.jpg",
+    "media/1paper/2026-11-03/34-ai-chatbots-see-letters/04.jpg",
+    "media/1paper/2026-11-03/34-ai-chatbots-see-letters/05.jpg",
+    "media/1paper/2026-11-03/34-ai-chatbots-see-letters/06.jpg",
+    "media/1paper/2026-11-03/34-ai-chatbots-see-letters/07.jpg",
+    "media/1paper/2026-11-03/34-ai-chatbots-see-letters/08.jpg"
+   ]
+  }
+ ]
+}
