@@ -7,24 +7,24 @@
    "sym": "HYPE",
    "entry_px": 88.0,
    "entry_date": "2026-10-31",
-   "last_px": 87.9,
-   "ret_since_entry": -0.001136363636363602
+   "last_px": 84.06,
+   "ret_since_entry": -0.0447727272727273
   },
   {
    "cid": "zcash",
    "sym": "ZEC",
    "entry_px": 1252.39,
    "entry_date": "2026-10-31",
-   "last_px": 1235.0,
-   "ret_since_entry": -0.013885451017654371
+   "last_px": 1135.37,
+   "ret_since_entry": -0.09343734779102375
   },
   {
    "cid": "pepe",
    "sym": "PEPE",
    "entry_px": 4.964e-06,
    "entry_date": "2026-10-31",
-   "last_px": 4.885e-06,
-   "ret_since_entry": -0.01591458501208709
+   "last_px": 4.776e-06,
+   "ret_since_entry": -0.037872683319903455
   }
  ],
  "cash_mult": 0.994014980014994,
@@ -64,6 +64,10 @@
   {
    "date": "2026-11-01",
    "avg_open_ret": -0.010312133222035022
+  },
+  {
+   "date": "2026-11-02",
+   "avg_open_ret": -0.0586942527945515
   }
  ],
  "rebalances": [
@@ -109,7 +113,7 @@
  "pending_signal": null,
  "last_signal_date": "2026-10-30",
  "last_rebal_date": "2026-10-31",
- "last_mark_date": "2026-11-01",
+ "last_mark_date": "2026-11-02",
  "segments": [
   {
    "start": "2026-10-24",
