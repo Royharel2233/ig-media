@@ -48,10 +48,10 @@ https://www.techmeme.com/261103/p16
 14. Nexperia ההולנדית תובעת את הבעלים הסינית Wingtech ואת מייסדה; לפי Wingtech מדובר בדרישת פיצויים של 2 מיליארד דולר (Reuters; CNA, TradingView).
 https://www.channelnewsasia.com/business/nexperia-sues-wingtech-and-its-founder-demanding-compensation-damages-6517126
 
-15. אפולו דיווחה על שיא ברישום נכסים חדשים (origination) של 114 מיליארד דולר ברבעון השלישי, לפי הודעת החברה; exec_sum תיאר את הנתון כהלוואות וציין עלייה של 50% מהרבעון הקודם - נוסח שלא אומת מול הדוח. הנכסים המנוהלים הגיעו ל-1.074 טריליון דולר (exec_sum; הודעת אפולו, Investing.com).
+15. אפולו דיווחה על שיא בהיקף עסקאות המימון החדשות (origination) של 114 מיליארד דולר ברבעון השלישי, לפי הודעת החברה; הנכסים המנוהלים הגיעו ל-1.074 טריליון דולר (exec_sum; הודעת אפולו, Investing.com).
 https://ir.apollo.com/news-events/press-releases/detail/658/apollo-reports-third-quarter-2026-results
 
-16. גרינלנד: financialjuice דיווח שהפרלמנט אישר את עסקת הביטחון עם ארה"ב (סביב 16:29 UTC), אך הדיווח לא אומת. הרשת הדנית DR מסרה שהדיון באישור הסופי הופסק זמנית אחרי דיווח למשטרה נגד מפלגת האופוזיציה Naleraq על הפרת סודיות, ואז חודש - בלי תוצאת הצבעה (financialjuice בלבד; DR).
+16. גרינלנד: financialjuice דיווח שהפרלמנט אישר את עסקת הביטחון עם ארה"ב (סביב 16:29 UTC), הדיווח לא אומת במקור עצמאי. הרשת הדנית DR מסרה שהדיון באישור הסופי הופסק זמנית אחרי דיווח למשטרה נגד מפלגת האופוזיציה Naleraq על הפרת סודיות, ואז חודש, בלי תוצאת הצבעה מתועדת - ייתכן שהדיווח הקדים את ההצבעה או שהאישור ניתן מאוחר יותר (financialjuice; DR).
 https://www.dr.dk/nyheder/indland/groenland/groenlands-regering-anklager-parti-brud-paa-tavshedspligt-godkendelse-af-usa-aftale-sat-paa-pause-i
 
 17. AMD מפרסמת היום אחרי הסגירה את תוצאות הרבעון השלישי; סוחרי האופציות מתמחרים תנועה של כ-7.2% במנייה, לפי exec_sum (ציוץ סביב 15:58 UTC) (exec_sum; לוח האירועים של AMD).
