@@ -1,6 +1,6 @@
 תקציר חדשות - יום רביעי, 4 בנובמבר 2026 (מהדורת צהריים)
 
-1. עדכון ספירת הבחירות (מעודכן להצילום של spectatorindex סביב 08:15 UTC, מחליף את נתוני הבוקר): בית הנבחרים - 228 דמוקרטים מול 144 רפובליקנים, ולפי spectatorindex כבר נקבע שהדמוקרטים ניצחו בבית; סנאט - 54 דמוקרטים מול 41 רפובליקנים. הספירה עוד נמשכת, המספרים משקפים רגע בזמן (spectatorindex; NBC, CBS).
+1. ספירת הבחירות נכון לצילומים של spectatorindex סביב 08:15 UTC: בית הנבחרים - 228 דמוקרטים מול 144 רפובליקנים, ולפי spectatorindex כבר נקבע שהדמוקרטים ניצחו בבית; סנאט - 54 דמוקרטים מול 41 רפובליקנים. הספירה עוד נמשכת, המספרים משקפים רגע בזמן (spectatorindex; NBC, CBS).
 https://x.com/spectatorindex/status/2117888317480169965
 https://x.com/spectatorindex/status/2117867102501834802
 https://www.nbcnews.com/politics/2026-election/democrats-capture-full-control-congress-nbc-news-projects-fueled-victo-rcna607042
@@ -22,7 +22,7 @@ https://www.france24.com/en/americas/20261103-trump-family-wealth-epstein-vanity
 https://www.moneycontrol.com/news/business/markets/us-futures-pare-early-losses-to-turn-green-as-investors-see-limited-impact-of-democrat-sweep-on-earnings-growth-14069295.html
 https://x.com/KobeissiLetter/status/2117910000592961851
 
-6. מורגן סטנלי מטוקנת מניות ואגרות חוב ממשלתיות אמריקאיות בבלוקצ'יין דרך שירות של DTCC - מהבנקים הגדולים הראשונים שעושים זאת (WatcherGuru; CoinDesk, The Block).
+6. מורגן סטנלי מבצעת טוקניזציה של מניות ואג"ח ממשלתיות אמריקאיות דרך שירות של DTCC בבלוקצ'יין - מהבנקים הגדולים הראשונים שעושים זאת (WatcherGuru; CoinDesk, The Block).
 https://www.coindesk.com/markets/2026/11/04/morgan-stanley-says-it-is-among-the-first-banks-to-put-u-s-stocks-and-treasuries-on-a-blockchain
 https://www.theblock.co/news/markets/2026-11-04-morgan-stanley-among-first-banks-to-tokenize-us-equities-treasurys-through-dtccs-service-432633
 
@@ -54,14 +54,14 @@ https://x.com/financialjuice/status/2117920990579626201
 
 אינסטגרם: ארבעה פוסטים חדשים של WeHaveTheData (חמש שקופיות; ב-Unusual Whales אין חדש). כל הנתונים כפי שהופיעו בצילומי השידור שבפוסטים ברגע פרסומם - ספירות חיות, לא תוצאות סופיות.
 
-א. קרוסלה בת 2 שקופיות (פורסמה ב-4.11; חותמת הפוסט 07:51 UTC): שקופית 1 - פריים משידור CNN עם חלונית הבחירות; שקופית 2 - הגרפיקה: סיבוב שני לראשות עיריית לוס אנג'לס, קרן באס (מכהנת) 303,855 קולות מול ניתיה ראמן 303,362, פער 493, כ-52% מהקולות הוערכו כנספרים. כיתוב: "Karen Bass is up by 493 votes in the LA Mayor election". בתגובות, הגולשים miltechmoto ("statistically impossible by the way") ו-boozefighterblanks הביעו ספק בספירה - דעות גולשים. מאוחר יותר דיווח ABC7 שראמן עקפה את באס (סעיף 2).
+א. קרוסלה בת 2 שקופיות (פורסמה ב-4.11; חותמת הפוסט 07:51 UTC לפי מאפיין ה-datetime): שקופית 1 - פריים משידור CNN עם חלונית הבחירות; שקופית 2 - הגרפיקה: סיבוב שני לראשות עיריית לוס אנג'לס, קרן באס (מכהנת) 303,855 קולות מול ניתיה ראמן 303,362, פער 493, כ-52% מהקולות הוערכו כנספרים. כיתוב: "Karen Bass is up by 493 votes in the LA Mayor election". בתגובות, הגולשים miltechmoto ("statistically impossible by the way") ו-boozefighterblanks הביעו ספק בספירה - דעות גולשים. מאוחר יותר דיווח ABC7 שראמן עקפה את באס (סעיף 2).
 https://www.instagram.com/p/DfT9kF1Fsis/
 
-ב. פוסט בודד (פורסם ב-4.11; חותמת הפוסט 07:14 UTC): צילום ציוץ של קווין וולינג - "ויזואליה מדהימה למירוצי הבית" - עם מפת ארה"ב מלאת חצים כחולים על רקע מירוצי הבית; משמעות החצים אינה מוגדרת במפה עצמה (ייתכן מגמת הצבעה, לא בהכרח החלפת שלטון), ומסגור ה"גל הכחול" הוא של וולינג ושל הפוסט. כיתוב: "POLL: Blue wave or blue tsunami?".
+ב. פוסט בודד (פורסם ב-4.11; חותמת הפוסט 07:14 UTC לפי מאפיין ה-datetime): צילום ציוץ של קווין וולינג - "ויזואליה מדהימה למירוצי הבית" - עם מפת ארה"ב מלאת חצים כחולים על רקע מירוצי הבית; משמעות החצים אינה מוגדרת במפה עצמה (ייתכן מגמת הצבעה, לא בהכרח החלפת שלטון), ומסגור ה"גל הכחול" הוא של וולינג ושל הפוסט. כיתוב: "POLL: Blue wave or blue tsunami?".
 https://www.instagram.com/p/DfT5J0Gs2xn/
 
-ג. פוסט בודד (פורסם ב-4.11; חותמת הפוסט 06:56 UTC): פריים משידור MS NOW - סנאט אלסקה: פלטולה 48.1% (78,961) מול סאליבן (מכהן) 48.0% (78,709), פער 252, 54% נספרו; הייקס 2.0%, סאליבן ג'וניור 1.6%. כיתוב: "Mary Peltola is up by 252 votes in Alaska". הגולש tswienton28 כתב שהתוצאה "נחוצה" להדחת טראמפ - דעת גולש.
+ג. פוסט בודד (פורסם ב-4.11; חותמת הפוסט 06:56 UTC לפי מאפיין ה-datetime): פריים משידור MS NOW - סנאט אלסקה: פלטולה 48.1% (78,961) מול סאליבן (מכהן) 48.0% (78,709), פער 252, 54% נספרו; הייקס 2.0%, סאליבן ג'וניור 1.6%. כיתוב: "Mary Peltola is up by 252 votes in Alaska". הגולש tswienton28 כתב שהתוצאה "נחוצה" להדחת טראמפ - דעת גולש.
 https://www.instagram.com/p/DfT3LBABYG_/
 
-ד. פוסט בודד (פורסם ב-4.11; חותמת הפוסט 06:25 UTC): פריים משידור MS NOW - סנאט מיסיסיפי: קולום 48.95% (462,779) מול הייד-סמית' (מכהנת) 48.94% (462,751), פער 28, 97% נספרו. כיתוב: "Scott Colom is up by 28 votes in Mississippi". הגולש rambler12222 מתח ביקורת על שני המועמדים מנקודת מבט שמרנית - דעת גולש.
+ד. פוסט בודד (פורסם ב-4.11; חותמת הפוסט 06:25 UTC לפי מאפיין ה-datetime): פריים משידור MS NOW - סנאט מיסיסיפי: קולום 48.95% (462,779) מול הייד-סמית' (מכהנת) 48.94% (462,751), פער 28, 97% נספרו. כיתוב: "Scott Colom is up by 28 votes in Mississippi". הגולש rambler12222 מתח ביקורת על שני המועמדים מנקודת מבט שמרנית - דעת גולש.
 https://www.instagram.com/p/DfTzrkKx1in/
