@@ -1,0 +1,23 @@
+{
+ "page": "1paper",
+ "slot": "2026-11-04",
+ "stories": false,
+ "publish_after": "2026-11-04T08:00:00+02:00",
+ "posts": [
+  {
+   "name": "35-world-third-kind-magnet",
+   "type": "single",
+   "caption": "Textbooks teach two kinds of magnet, and physicists now have strong X-ray evidence for a third kind called altermagnets 🧲\n\nA SLAC led team fired left and right twisted X-rays at manganese telluride (MnTe) and saw a handedness signal an ordinary antiferromagnet should not produce. They repeated the test in 2025 with the same result. Caveat: one material, measured in deep cold, and the authors still call for sharper follow-up tests. Spintronic chips are a possibility, not a product.\n\nSource: Jost et al. (SLAC National Accelerator Laboratory, Stanford, ESRF, University of Notre Dame), “Chiral Altermagnon in MnTe” (arXiv title), Science, 2026.\n\n#physics #magnetism #science #quantum #spintronics",
+   "images": [
+    "media/1paper/2026-11-04/35-world-third-kind-magnet/01.jpg",
+    "media/1paper/2026-11-04/35-world-third-kind-magnet/02.jpg",
+    "media/1paper/2026-11-04/35-world-third-kind-magnet/03.jpg",
+    "media/1paper/2026-11-04/35-world-third-kind-magnet/04.jpg",
+    "media/1paper/2026-11-04/35-world-third-kind-magnet/05.jpg",
+    "media/1paper/2026-11-04/35-world-third-kind-magnet/06.jpg",
+    "media/1paper/2026-11-04/35-world-third-kind-magnet/07.jpg",
+    "media/1paper/2026-11-04/35-world-third-kind-magnet/08.jpg"
+   ]
+  }
+ ]
+}
