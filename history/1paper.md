@@ -17,3 +17,4 @@
 - Ultrarapid decision-making in an avian brain (Schmidt, Nieder; University of Tübingen; Science 2026)
 - Retrofitting language models to operate over bytes (Minixhofer, Hofmann et al.; Allen Institute for AI, University of Cambridge, University of Washington; Nature 2026)
 - Chiral Altermagnon in MnTe (Jost, Regmi, Lomeli ... Geprägs, Kling; SLAC, Stanford, ESRF, University of Notre Dame; Science 2026)
+- Heme signatures in mineralized red blood cells within vascular canals of a 115-million-year-old dinosaur bone (Grice, Isaji, Wiemann ... Kellner; Curtin University, JAMSTEC, Brazilian National Museum, Johns Hopkins; PNAS 2026)
