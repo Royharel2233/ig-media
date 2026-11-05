@@ -37,10 +37,14 @@
   },
   "story:summary:4": {
    "media_id": "18153283144557715"
+  },
+  "threads:single2_ymtc": {
+   "media_id": "17913580221483780",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfWVukVlXj6"
   }
  },
  "errors": [
   "threads:single2_ymtc: POST https://graph.threads.com/v1.0/me/threads_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17939031363162076 cannot be found.\",\"fbtrace_id\":\"Ahoa1Na6Yrk5SGalHX6G-4i\"}}'"
  ],
- "complete": false
+ "complete": true
 }
