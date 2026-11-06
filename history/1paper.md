@@ -18,3 +18,4 @@
 - Retrofitting language models to operate over bytes (Minixhofer, Hofmann et al.; Allen Institute for AI, University of Cambridge, University of Washington; Nature 2026)
 - Chiral Altermagnon in MnTe (Jost, Regmi, Lomeli ... Geprägs, Kling; SLAC, Stanford, ESRF, University of Notre Dame; Science 2026)
 - Heme signatures in mineralized red blood cells within vascular canals of a 115-million-year-old dinosaur bone (Grice, Isaji, Wiemann ... Kellner; Curtin University, JAMSTEC, Brazilian National Museum, Johns Hopkins; PNAS 2026)
+- Direct evidence for psychoactive cannabis use 2,800 years ago (Caspari, Sadykov ... Spengler; University of Bern, Max Planck Institute of Geoanthropology; Science 2026)
