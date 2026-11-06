@@ -1,0 +1,60 @@
+{
+ "done": {
+  "post:single1_cybertruck": {
+   "media_id": "18506771344099731",
+   "permalink": "https://www.instagram.com/p/DfZc_GrGyua/"
+  },
+  "post:single2_singapore": {
+   "media_id": "18121053833570876",
+   "permalink": "https://www.instagram.com/p/DfZdEHPm49c/"
+  },
+  "post:single3_gopax": {
+   "media_id": "18138174571646300",
+   "permalink": "https://www.instagram.com/p/DfZdIS_m_ue/"
+  },
+  "post:summary": {
+   "media_id": "18120845896963471",
+   "permalink": "https://www.instagram.com/p/DfZdMnRGwez/"
+  },
+  "threads:single2_singapore": {
+   "media_id": "18081252839385422",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfZdTQwGxY7"
+  },
+  "threads:single3_gopax": {
+   "media_id": "17916755235549353",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfZdW3Um5w3"
+  },
+  "threads:summary": {
+   "media_id": "18110851304343967",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfZdZ5mG2Rj"
+  },
+  "story:single1_cybertruck:1": {
+   "media_id": "18059526416571668"
+  },
+  "story:single2_singapore:1": {
+   "media_id": "18123567301934703"
+  },
+  "story:single3_gopax:1": {
+   "media_id": "18120705211770304"
+  },
+  "story:summary:1": {
+   "media_id": "18496900234128686"
+  },
+  "story:summary:2": {
+   "media_id": "18340828204263541"
+  },
+  "story:summary:3": {
+   "media_id": "18100117004105174"
+  },
+  "story:summary:4": {
+   "media_id": "17999342313043816"
+  },
+  "story:summary:5": {
+   "media_id": "18117157388582606"
+  }
+ },
+ "errors": [
+  "threads:single1_cybertruck: POST https://graph.threads.com/v1.0/me/threads_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17939577354162076 cannot be found.\",\"fbtrace_id\":\"AQj5xygk29oQI6My_pnsoOd\"}}'"
+ ],
+ "complete": false
+}
