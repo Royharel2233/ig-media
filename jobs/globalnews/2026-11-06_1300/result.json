@@ -54,7 +54,8 @@
   }
  },
  "errors": [
-  "threads:single1_cybertruck: POST https://graph.threads.com/v1.0/me/threads_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17939577354162076 cannot be found.\",\"fbtrace_id\":\"AQj5xygk29oQI6My_pnsoOd\"}}'"
+  "threads:single1_cybertruck: POST https://graph.threads.com/v1.0/me/threads_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17939577354162076 cannot be found.\",\"fbtrace_id\":\"AQj5xygk29oQI6My_pnsoOd\"}}'",
+  "threads:single1_cybertruck: POST https://graph.threads.com/v1.0/me/threads_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17939671749162076 cannot be found.\",\"fbtrace_id\":\"AoIRAAerzVKt4GL2EOCy0WN\"}}'"
  ],
  "complete": false
 }
