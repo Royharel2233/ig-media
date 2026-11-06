@@ -1,0 +1,57 @@
+{
+ "done": {
+  "post:single1_markets": {
+   "media_id": "18024268241722665",
+   "permalink": "https://www.instagram.com/p/DfY6q71nJOw/"
+  },
+  "post:single2_anthropic": {
+   "media_id": "17870648274659351",
+   "permalink": "https://www.instagram.com/p/DfY6vHNHHig/"
+  },
+  "post:single3_cesiumastro": {
+   "media_id": "17898716505611019",
+   "permalink": "https://www.instagram.com/p/DfY60HKHA99/"
+  },
+  "post:summary": {
+   "media_id": "18240935893319366",
+   "permalink": "https://www.instagram.com/p/DfY64B-HIdj/"
+  },
+  "threads:single2_anthropic": {
+   "media_id": "17906948559669869",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfY69r0nPTq"
+  },
+  "threads:single3_cesiumastro": {
+   "media_id": "18099199373678265",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfY7A_4nB_j"
+  },
+  "threads:summary": {
+   "media_id": "18135393694752560",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfY7DQNnJLi"
+  },
+  "story:single1_markets:1": {
+   "media_id": "18129382208487779"
+  },
+  "story:single2_anthropic:1": {
+   "media_id": "18115987516866077"
+  },
+  "story:single3_cesiumastro:1": {
+   "media_id": "18106558466529262"
+  },
+  "story:summary:1": {
+   "media_id": "18124329395475783"
+  },
+  "story:summary:2": {
+   "media_id": "18122836216947909"
+  },
+  "story:summary:3": {
+   "media_id": "18396199597160433"
+  },
+  "story:summary:4": {
+   "media_id": "17985651536905727"
+  }
+ },
+ "errors": [
+  "threads:single1_markets: POST https://graph.threads.com/v1.0/me/threads_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17939514693162076 cannot be found.\",\"fbtrace_id\":\"AbgxAte2DDYnIyooLI2pwsM\"}}'"
+ ],
+ "complete": false
+}
