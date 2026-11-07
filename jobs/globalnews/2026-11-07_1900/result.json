@@ -1,0 +1,28 @@
+{
+ "done": {
+  "post:single1_berkshire": {
+   "media_id": "18177836947454342",
+   "permalink": "https://www.instagram.com/p/DfcqyL9GqmU/"
+  },
+  "post:single2_softbank": {
+   "media_id": "18376927522242456",
+   "permalink": "https://www.instagram.com/p/Dfcq2ZwmgcM/"
+  },
+  "threads:single1_berkshire": {
+   "media_id": "18132721439511986",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Dfcq5rMmq0F"
+  },
+  "threads:single2_softbank": {
+   "media_id": "18033253586910249",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Dfcq89rGqL2"
+  },
+  "story:single1_berkshire:1": {
+   "media_id": "18021752975976272"
+  },
+  "story:single2_softbank:1": {
+   "media_id": "17908215582667687"
+  }
+ },
+ "errors": [],
+ "complete": true
+}
