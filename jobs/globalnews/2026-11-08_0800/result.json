@@ -1,0 +1,39 @@
+{
+ "done": {
+  "post:single1_nasa": {
+   "media_id": "17993811435117065",
+   "permalink": "https://www.instagram.com/p/DfeERO3kdzx/"
+  },
+  "post:single2_pokemon": {
+   "media_id": "18131259049753161",
+   "permalink": "https://www.instagram.com/p/DfeEUV8kfNP/"
+  },
+  "post:summary": {
+   "media_id": "18439080361181391",
+   "permalink": "https://www.instagram.com/p/DfeEYuKkchu/"
+  },
+  "threads:summary": {
+   "media_id": "18347400379252901",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfeEhQVEcbK"
+  },
+  "story:single1_nasa:1": {
+   "media_id": "18104821643040690"
+  },
+  "story:single2_pokemon:1": {
+   "media_id": "17960000241255669"
+  },
+  "story:summary:2": {
+   "media_id": "17907254631656284"
+  },
+  "story:summary:4": {
+   "media_id": "17955174420295767"
+  }
+ },
+ "errors": [
+  "threads:single1_nasa: POST https://graph.threads.com/v1.0/me/threads_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17940184632162076 cannot be found.\",\"fbtrace_id\":\"AlTvU0VokHgzjCfLCejI6t1\"}}'",
+  "threads:single2_pokemon: POST https://graph.threads.com/v1.0/me/threads_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17940184866162076 cannot be found.\",\"fbtrace_id\":\"AELRN6TuIIbdLrxK5fKRdYq\"}}'",
+  "story:summary:1: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"A1vSfxfHBNaLwnrTyojhY9t\"}}'",
+  "story:summary:3: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,121,880,077,895,034 cannot be found.\",\"fbtrace_id\":\"AgPz1FkLOvRvRaDRTdUvKQs\"}}'"
+ ],
+ "complete": false
+}
