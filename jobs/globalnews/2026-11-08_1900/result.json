@@ -1,0 +1,31 @@
+{
+ "done": {
+  "post:single1_anthropic": {
+   "media_id": "18034319285884247",
+   "permalink": "https://www.instagram.com/p/DffPkfDmqsV/"
+  },
+  "post:summary": {
+   "media_id": "17927625606206022",
+   "permalink": "https://www.instagram.com/p/DffPnbFGqq5/"
+  },
+  "threads:single1_anthropic": {
+   "media_id": "18098949800126137",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DffPq6_mrV0"
+  },
+  "threads:summary": {
+   "media_id": "17941923372402197",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DffPtYRGj3L"
+  },
+  "story:single1_anthropic:1": {
+   "media_id": "18485190841119365"
+  },
+  "story:summary:1": {
+   "media_id": "18153612370551162"
+  },
+  "story:summary:2": {
+   "media_id": "17933597529163001"
+  }
+ },
+ "errors": [],
+ "complete": true
+}
