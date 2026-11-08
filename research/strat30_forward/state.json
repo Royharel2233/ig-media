@@ -3,31 +3,31 @@
  "started_utc": "2026-10-24",
  "positions": [
   {
-   "cid": "hyperliquid",
-   "sym": "HYPE",
-   "entry_px": 88.0,
-   "entry_date": "2026-10-31",
-   "last_px": 78.56,
-   "ret_since_entry": -0.1072727272727273
+   "cid": "monero",
+   "sym": "XMR",
+   "entry_px": 602.11,
+   "entry_date": "2026-11-07",
+   "last_px": 602.11,
+   "ret_since_entry": 0.0
   },
   {
    "cid": "zcash",
    "sym": "ZEC",
-   "entry_px": 1252.39,
-   "entry_date": "2026-10-31",
-   "last_px": 1318.57,
-   "ret_since_entry": 0.052842964252349356
+   "entry_px": 1223.99,
+   "entry_date": "2026-11-07",
+   "last_px": 1223.99,
+   "ret_since_entry": 0.0
   },
   {
    "cid": "pepe",
    "sym": "PEPE",
-   "entry_px": 4.964e-06,
-   "entry_date": "2026-10-31",
-   "last_px": 4.982e-06,
-   "ret_since_entry": 0.003626107977437565
+   "entry_px": 4.858e-06,
+   "entry_date": "2026-11-07",
+   "last_px": 4.858e-06,
+   "ret_since_entry": 0.0
   }
  ],
- "cash_mult": 0.994014980014994,
+ "cash_mult": 0.991035916125874,
  "marks": [
   {
    "date": "2026-10-24",
@@ -84,6 +84,10 @@
   {
    "date": "2026-11-06",
    "avg_open_ret": -0.016934551680980126
+  },
+  {
+   "date": "2026-11-07",
+   "avg_open_ret": 0.0
   }
  ],
  "rebalances": [
@@ -124,33 +128,31 @@
     }
    ],
    "universe_n": 35
+  },
+  {
+   "signal_date": "2026-11-06",
+   "exec_date": "2026-11-07",
+   "picks": [
+    {
+     "sym": "XMR",
+     "entry_px": 602.11
+    },
+    {
+     "sym": "ZEC",
+     "entry_px": 1223.99
+    },
+    {
+     "sym": "PEPE",
+     "entry_px": 4.858e-06
+    }
+   ],
+   "universe_n": 33
   }
  ],
- "pending_signal": {
-  "signal_date": "2026-11-06",
-  "picks": [
-   {
-    "cid": "monero",
-    "sym": "XMR",
-    "r7": 0.0413
-   },
-   {
-    "cid": "zcash",
-    "sym": "ZEC",
-    "r7": 0.0376
-   },
-   {
-    "cid": "pepe",
-    "sym": "PEPE",
-    "r7": 0.0151
-   }
-  ],
-  "universe_n": 33,
-  "note": "next-bar: executes at the next completed UTC close"
- },
+ "pending_signal": null,
  "last_signal_date": "2026-11-06",
- "last_rebal_date": "2026-10-31",
- "last_mark_date": "2026-11-06",
+ "last_rebal_date": "2026-11-07",
+ "last_mark_date": "2026-11-07",
  "segments": [
   {
    "start": "2026-10-24",
@@ -178,8 +180,34 @@
    "gross_avg": -0.0032115673272473297,
    "reconstructed": true,
    "provenance": "exit prices from MEXC 1d klines re-fetched 2026-11-01; ZEC exit 1252.39 cross-validated against recorded re-entry price; gross/NAV verified by independent calculation and QA replay of pre-rotation state"
+  },
+  {
+   "start": "2026-10-31",
+   "end": "2026-11-07",
+   "positions": [
+    {
+     "sym": "HYPE",
+     "entry_px": 88.0,
+     "exit_px": 77.71,
+     "ret": -0.1169318181818183
+    },
+    {
+     "sym": "ZEC",
+     "entry_px": 1252.39,
+     "exit_px": 1223.99,
+     "ret": -0.02267664225999899
+    },
+    {
+     "sym": "PEPE",
+     "entry_px": 4.964e-06,
+     "exit_px": 4.858e-06,
+     "ret": -0.021353746978243437
+    }
+   ],
+   "gross_avg": -0.053654069140020244,
+   "reconstructed": false
   }
  ],
- "nav_gross_mult": 0.9967884326727526,
- "nav": 0.9908226339823833
+ "nav_gross_mult": 0.9433066771881563,
+ "nav": 0.9348507970148187
 }
