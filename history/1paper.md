@@ -20,3 +20,4 @@
 - Heme signatures in mineralized red blood cells within vascular canals of a 115-million-year-old dinosaur bone (Grice, Isaji, Wiemann ... Kellner; Curtin University, JAMSTEC, Brazilian National Museum, Johns Hopkins; PNAS 2026)
 - Direct evidence for psychoactive cannabis use 2,800 years ago (Caspari, Sadykov ... Spengler; University of Bern, Max Planck Institute of Geoanthropology; Science 2026)
 - Over a billion more dark-morning school commutes for K-12 children under the Sunshine Protection Act (Rodríguez Ferrante ... de la Iglesia; University of Washington; Current Biology 2026)
+- Accounting for global carbon dioxide production from human metabolism between 1985 and 2015: a modelling study (Gonzalez ... Speakman et al.; University of Bath; The Lancet Planetary Health 2026)
