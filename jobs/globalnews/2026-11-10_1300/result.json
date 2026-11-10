@@ -1,0 +1,45 @@
+{
+ "done": {
+  "post:single1_vodafone": {
+   "media_id": "18186929290426414",
+   "permalink": "https://www.instagram.com/p/Dfjv28cFvht/"
+  },
+  "post:single2_oil": {
+   "media_id": "18103921706531023",
+   "permalink": "https://www.instagram.com/p/Dfjv7TfFlrv/"
+  },
+  "post:summary": {
+   "media_id": "18201268354381240",
+   "permalink": "https://www.instagram.com/p/Dfjv-jhlrI0/"
+  },
+  "threads:single1_vodafone": {
+   "media_id": "18121192063965214",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfjwCFMlpfF"
+  },
+  "threads:single2_oil": {
+   "media_id": "18065813624550780",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfjwFEfFh3N"
+  },
+  "threads:summary": {
+   "media_id": "17916830073558662",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfjwH8flhT7"
+  },
+  "story:single1_vodafone:1": {
+   "media_id": "18157551619521641"
+  },
+  "story:single2_oil:1": {
+   "media_id": "18162513766503569"
+  },
+  "story:summary:1": {
+   "media_id": "18108445667525717"
+  },
+  "story:summary:2": {
+   "media_id": "18101819528386491"
+  },
+  "story:summary:3": {
+   "media_id": "17963636049257123"
+  }
+ },
+ "errors": [],
+ "complete": true
+}
