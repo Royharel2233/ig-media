@@ -1,0 +1,23 @@
+{
+ "page": "1paper",
+ "slot": "2026-11-10",
+ "stories": false,
+ "publish_after": "2026-11-10T08:00:00+02:00",
+ "posts": [
+  {
+   "name": "41-world-lhcb-rare-decay",
+   "type": "single",
+   "caption": "Physicists at CERN have the first evidence of a particle decay they hunted for 42 years ⚛️\n\nThe LHCb experiment saw signs of a beauty particle breaking into two muons, something theory says happens about once in every 10 billion. At 3.2 sigma it counts as evidence, not yet a discovery (that takes five sigma). The rate matches the Standard Model, so no new physics yet.\n\nSource: LHCb Collaboration (CERN), “Evidence for the decay B0→μ+μ− and improved measurements of the decay B0s→μ+μ−”, arXiv 2611.00230, 2026 (preprint, submitted to Physical Review X, not peer reviewed yet).\n\n#physics #cern #particlephysics #science #lhc",
+   "images": [
+    "media/1paper/2026-11-10/41-world-lhcb-rare-decay/01.jpg",
+    "media/1paper/2026-11-10/41-world-lhcb-rare-decay/02.jpg",
+    "media/1paper/2026-11-10/41-world-lhcb-rare-decay/03.jpg",
+    "media/1paper/2026-11-10/41-world-lhcb-rare-decay/04.jpg",
+    "media/1paper/2026-11-10/41-world-lhcb-rare-decay/05.jpg",
+    "media/1paper/2026-11-10/41-world-lhcb-rare-decay/06.jpg",
+    "media/1paper/2026-11-10/41-world-lhcb-rare-decay/07.jpg",
+    "media/1paper/2026-11-10/41-world-lhcb-rare-decay/08.jpg"
+   ]
+  }
+ ]
+}
