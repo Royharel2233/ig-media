@@ -1,0 +1,23 @@
+{
+ "page": "1paper",
+ "slot": "2026-11-11",
+ "stories": false,
+ "publish_after": "2026-11-11T08:00:00+02:00",
+ "posts": [
+  {
+   "name": "42-mind-gut-dopamine-taste",
+   "type": "single",
+   "caption": "Why does a taste you hated turn into one you crave? A slow signal from your gut to your brain may be part of the answer ☕\n\nUCSF scientists found that nutrients in the stomach of mice trigger a dopamine wave in the amygdala that lasts minutes, not seconds. Block it and mice stop learning which flavors bring calories. Switch it on and they learn to like a flavor with no calories at all. Brain scans in people point to the same spot. Coffee itself was not tested.\n\nSource: Grove, Knight et al. (UC San Francisco, Yale), “The neural basis of flavour-nutrient learning”, Nature, 2026.\n\n#neuroscience #dopamine #brain #nutrition #science",
+   "images": [
+    "media/1paper/2026-11-11/42-mind-gut-dopamine-taste/01.jpg",
+    "media/1paper/2026-11-11/42-mind-gut-dopamine-taste/02.jpg",
+    "media/1paper/2026-11-11/42-mind-gut-dopamine-taste/03.jpg",
+    "media/1paper/2026-11-11/42-mind-gut-dopamine-taste/04.jpg",
+    "media/1paper/2026-11-11/42-mind-gut-dopamine-taste/05.jpg",
+    "media/1paper/2026-11-11/42-mind-gut-dopamine-taste/06.jpg",
+    "media/1paper/2026-11-11/42-mind-gut-dopamine-taste/07.jpg",
+    "media/1paper/2026-11-11/42-mind-gut-dopamine-taste/08.jpg"
+   ]
+  }
+ ]
+}

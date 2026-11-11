@@ -23,3 +23,4 @@
 - Accounting for global carbon dioxide production from human metabolism between 1985 and 2015: a modelling study (Gonzalez ... Speakman et al.; University of Bath; The Lancet Planetary Health 2026)
 - DNA signatures preserved in the official 1978 sample collection of the Shroud of Turin (Barcaccia, Rambaldi Migliore, Gabelli ... Squartini, Achilli; University of Padova, University of Pavia; Scientific Reports 2026)
 - Evidence for the decay B0 → μ+μ− and improved measurements of the decay B0s → μ+μ− (LHCb Collaboration; CERN; arXiv 2026, submitted to Physical Review X)
+- The neural basis of flavour-nutrient learning (Grove, Hakimi, Li ... Small, Tittgemeyer, Knight; UC San Francisco, Yale; Nature 2026)
