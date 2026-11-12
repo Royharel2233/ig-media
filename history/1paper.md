@@ -24,3 +24,4 @@
 - DNA signatures preserved in the official 1978 sample collection of the Shroud of Turin (Barcaccia, Rambaldi Migliore, Gabelli ... Squartini, Achilli; University of Padova, University of Pavia; Scientific Reports 2026)
 - Evidence for the decay B0 → μ+μ− and improved measurements of the decay B0s → μ+μ− (LHCb Collaboration; CERN; arXiv 2026, submitted to Physical Review X)
 - The neural basis of flavour-nutrient learning (Grove, Hakimi, Li ... Small, Tittgemeyer, Knight; UC San Francisco, Yale; Nature 2026)
+- Energy drinks, stimulant products linked to cardiac arrest, heart attack in young adults (Samayamanthula; University of Virginia School of Medicine; American Heart Association Scientific Sessions 2026, conference abstract)
