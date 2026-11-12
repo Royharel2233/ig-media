@@ -1,0 +1,49 @@
+{
+ "done": {
+  "post:single1_nvidia": {
+   "media_id": "17909946639668134",
+   "permalink": "https://www.instagram.com/p/DfoXfAulQ34/"
+  },
+  "post:single2_founders": {
+   "media_id": "17940383463122472",
+   "permalink": "https://www.instagram.com/p/DfoXjO9laxV/"
+  },
+  "post:summary": {
+   "media_id": "18315590017304779",
+   "permalink": "https://www.instagram.com/p/DfoXm1BFcfT/"
+  },
+  "threads:single1_nvidia": {
+   "media_id": "18132405242569533",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfoXpizFW8-"
+  },
+  "threads:summary": {
+   "media_id": "18135868129742709",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfoXvXNlW6g"
+  },
+  "story:single1_nvidia:1": {
+   "media_id": "18233391193326562"
+  },
+  "story:single2_founders:1": {
+   "media_id": "17939752515128403"
+  },
+  "story:summary:1": {
+   "media_id": "18612240148064729"
+  },
+  "story:summary:2": {
+   "media_id": "18152812879514306"
+  },
+  "story:summary:3": {
+   "media_id": "18436325410151347"
+  },
+  "story:summary:4": {
+   "media_id": "17894929767444104"
+  },
+  "story:summary:5": {
+   "media_id": "18170578045475848"
+  }
+ },
+ "errors": [
+  "threads:single2_founders: POST https://graph.threads.com/v1.0/me/threads_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17941603806162076 cannot be found.\",\"fbtrace_id\":\"Aim7juDukQ-4dfRB08uzq2L\"}}'"
+ ],
+ "complete": false
+}
