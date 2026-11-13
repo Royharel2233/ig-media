@@ -1,0 +1,50 @@
+{
+ "done": {
+  "post:single1_microsoft": {
+   "media_id": "17952241200362398",
+   "permalink": "https://www.instagram.com/p/Dfq8QRPFjDV/"
+  },
+  "post:single2_spacextesla": {
+   "media_id": "18065631014563721",
+   "permalink": "https://www.instagram.com/p/Dfq8UmLlkv3/"
+  },
+  "post:summary": {
+   "media_id": "18033510005918293",
+   "permalink": "https://www.instagram.com/p/Dfq8YkQlvHt/"
+  },
+  "threads:single1_microsoft": {
+   "media_id": "18111589310241731",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Dfq8caPlg1x"
+  },
+  "threads:single2_spacextesla": {
+   "media_id": "18116478515036462",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Dfq8f19lhpb"
+  },
+  "threads:summary": {
+   "media_id": "17926292331443875",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Dfq8jQRFoAi"
+  },
+  "story:single1_microsoft:1": {
+   "media_id": "17922660297241180"
+  },
+  "story:single2_spacextesla:1": {
+   "media_id": "18426149146157316"
+  },
+  "story:summary:1": {
+   "media_id": "18121310962955270"
+  },
+  "story:summary:3": {
+   "media_id": "17912216217577597"
+  },
+  "story:summary:4": {
+   "media_id": "18345228802276537"
+  },
+  "story:summary:5": {
+   "media_id": "18112210706191532"
+  }
+ },
+ "errors": [
+  "story:summary:2: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,123,576,067,895,034 cannot be found.\",\"fbtrace_id\":\"AXi2K10dM4b9y-klUmKz5M2\"}}'"
+ ],
+ "complete": false
+}
