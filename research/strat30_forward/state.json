@@ -7,24 +7,24 @@
    "sym": "XMR",
    "entry_px": 602.11,
    "entry_date": "2026-11-07",
-   "last_px": 577.98,
-   "ret_since_entry": -0.04007573366992745
+   "last_px": 533.55,
+   "ret_since_entry": -0.11386623706631693
   },
   {
    "cid": "zcash",
    "sym": "ZEC",
    "entry_px": 1223.99,
    "entry_date": "2026-11-07",
-   "last_px": 964.33,
-   "ret_since_entry": -0.21214225606418347
+   "last_px": 958.0,
+   "ret_since_entry": -0.21731386694335741
   },
   {
    "cid": "pepe",
    "sym": "PEPE",
    "entry_px": 4.858e-06,
    "entry_date": "2026-11-07",
-   "last_px": 4.537e-06,
-   "ret_since_entry": -0.06607657472210782
+   "last_px": 4.521e-06,
+   "ret_since_entry": -0.06937011115685454
   }
  ],
  "cash_mult": 0.991035916125874,
@@ -104,6 +104,10 @@
   {
    "date": "2026-11-11",
    "avg_open_ret": -0.1060981881520729
+  },
+  {
+   "date": "2026-11-12",
+   "avg_open_ret": -0.13351673838884295
   }
  ],
  "rebalances": [
@@ -168,7 +172,7 @@
  "pending_signal": null,
  "last_signal_date": "2026-11-06",
  "last_rebal_date": "2026-11-07",
- "last_mark_date": "2026-11-11",
+ "last_mark_date": "2026-11-12",
  "segments": [
   {
    "start": "2026-10-24",
