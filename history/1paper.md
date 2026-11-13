@@ -25,3 +25,4 @@
 - Evidence for the decay B0 → μ+μ− and improved measurements of the decay B0s → μ+μ− (LHCb Collaboration; CERN; arXiv 2026, submitted to Physical Review X)
 - The neural basis of flavour-nutrient learning (Grove, Hakimi, Li ... Small, Tittgemeyer, Knight; UC San Francisco, Yale; Nature 2026)
 - Energy drinks, stimulant products linked to cardiac arrest, heart attack in young adults (Samayamanthula; University of Virginia School of Medicine; American Heart Association Scientific Sessions 2026, conference abstract)
+- Per- and Polyfluoroalkyl Substance Exposure and Breast Cancer Incidence in the Sister Study (Chang, White et al.; NIEHS, National Institutes of Health; Journal of Clinical Oncology 2026)

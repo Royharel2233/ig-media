@@ -1,0 +1,23 @@
+{
+ "page": "1paper",
+ "slot": "2026-11-13",
+ "stories": false,
+ "publish_after": "2026-11-13T08:00:00+02:00",
+ "posts": [
+  {
+   "name": "44-world-pfas-breast-cancer",
+   "type": "single",
+   "caption": "Most people carry the \"forever chemicals\" PFOA and PFOS in their blood. A new NIH study linked both to a higher rate of ER negative breast cancer, but not to breast cancer overall 🧪\n\nResearchers tested blood drawn from US women years before any diagnosis for 17 PFAS, comparing 1,609 women who later developed breast cancer with 2,269 randomly chosen women. Women in the top quarter of PFOA levels had a 67% higher rate of ER negative breast cancer than the bottom quarter, and 93% higher for PFOS. These are relative differences between groups, not a personal risk, and the study is observational, so it cannot prove cause. All participants had a sister with breast cancer.\n\nSource: Chang, White et al. (National Institute of Environmental Health Sciences, NIH), “Per- and Polyfluoroalkyl Substance Exposure and Breast Cancer Incidence in the Sister Study”, Journal of Clinical Oncology, 2026.\n\n#PFAS #foreverchemicals #breastcancer #cancerresearch #science",
+   "images": [
+    "media/1paper/2026-11-13/44-world-pfas-breast-cancer/01.jpg",
+    "media/1paper/2026-11-13/44-world-pfas-breast-cancer/02.jpg",
+    "media/1paper/2026-11-13/44-world-pfas-breast-cancer/03.jpg",
+    "media/1paper/2026-11-13/44-world-pfas-breast-cancer/04.jpg",
+    "media/1paper/2026-11-13/44-world-pfas-breast-cancer/05.jpg",
+    "media/1paper/2026-11-13/44-world-pfas-breast-cancer/06.jpg",
+    "media/1paper/2026-11-13/44-world-pfas-breast-cancer/07.jpg",
+    "media/1paper/2026-11-13/44-world-pfas-breast-cancer/08.jpg"
+   ]
+  }
+ ]
+}
