@@ -1,0 +1,23 @@
+{
+ "page": "1paper",
+ "slot": "2026-11-14",
+ "stories": false,
+ "publish_after": "2026-11-14T08:00:00+02:00",
+ "posts": [
+  {
+   "name": "45-ai-bionic-eye-brain",
+   "type": "single",
+   "caption": "An AI model learned to choose the electric pulses sent into a blind man's brain implant, getting more precise brain responses with less current 🧠\n\nA 27 year old man who lost his sight after a brain injury had 96 electrodes placed in his visual cortex for about six months, as part of a feasibility trial in Spain. A deep neural network predicted how his brain would respond to each stimulation setting, using his brain's resting activity too. This was one person, and he saw flashes and shapes of light, not real images. It is a proof of concept, not restored sight.\n\nSource: Moure, Granley, Grani ... Beyeler, Fernández (UC Santa Barbara, ETH Zurich, Miguel Hernández University), “Deep learning-based control of electrically evoked activity in human visual cortex”, Neuron, 2026.\n\n#bioniceye #neuroscience #braincomputerinterface #AI #blindness",
+   "images": [
+    "media/1paper/2026-11-14/45-ai-bionic-eye-brain/01.jpg",
+    "media/1paper/2026-11-14/45-ai-bionic-eye-brain/02.jpg",
+    "media/1paper/2026-11-14/45-ai-bionic-eye-brain/03.jpg",
+    "media/1paper/2026-11-14/45-ai-bionic-eye-brain/04.jpg",
+    "media/1paper/2026-11-14/45-ai-bionic-eye-brain/05.jpg",
+    "media/1paper/2026-11-14/45-ai-bionic-eye-brain/06.jpg",
+    "media/1paper/2026-11-14/45-ai-bionic-eye-brain/07.jpg",
+    "media/1paper/2026-11-14/45-ai-bionic-eye-brain/08.jpg"
+   ]
+  }
+ ]
+}
