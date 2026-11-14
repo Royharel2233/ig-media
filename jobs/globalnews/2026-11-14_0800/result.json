@@ -1,0 +1,48 @@
+{
+ "done": {
+  "post:single2_mercedes": {
+   "media_id": "18126818737930265",
+   "permalink": "https://www.instagram.com/p/DfthJ7ZDuFM/"
+  },
+  "post:single1_faa": {
+   "media_id": "18360178813220841",
+   "permalink": "https://www.instagram.com/p/DfthO7ADuNj/"
+  },
+  "post:summary": {
+   "media_id": "18128212975904721",
+   "permalink": "https://www.instagram.com/p/DfthTPUjmEl/"
+  },
+  "threads:single2_mercedes": {
+   "media_id": "18341485477276754",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfthWoCDnuw"
+  },
+  "threads:single1_faa": {
+   "media_id": "18081811574389889",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfthamLjlPO"
+  },
+  "threads:summary": {
+   "media_id": "18117729266595798",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfthdrRDiaB"
+  },
+  "story:single2_mercedes:1": {
+   "media_id": "18192031849413881"
+  },
+  "story:single1_faa:1": {
+   "media_id": "18394690411226969"
+  },
+  "story:summary:1": {
+   "media_id": "18102863687393194"
+  },
+  "story:summary:2": {
+   "media_id": "18395486674161019"
+  },
+  "story:summary:3": {
+   "media_id": "18015663860764929"
+  },
+  "story:summary:4": {
+   "media_id": "18128952190851641"
+  }
+ },
+ "errors": [],
+ "complete": true
+}
