@@ -1,0 +1,43 @@
+{
+ "done": {
+  "post:single1_ai_music": {
+   "media_id": "18075334583501830",
+   "permalink": "https://www.instagram.com/p/Dfur2MLFKdB/"
+  },
+  "post:single2_trump_media": {
+   "media_id": "17967449055229611",
+   "permalink": "https://www.instagram.com/p/Dfur6XlFB_S/"
+  },
+  "post:summary": {
+   "media_id": "18147592156501508",
+   "permalink": "https://www.instagram.com/p/Dfur9fulKpB/"
+  },
+  "threads:single2_trump_media": {
+   "media_id": "18128805142934554",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfusC7ylDOF"
+  },
+  "threads:summary": {
+   "media_id": "18126971281931383",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfusGBYFCKG"
+  },
+  "story:single1_ai_music:1": {
+   "media_id": "17937282504620606"
+  },
+  "story:single2_trump_media:1": {
+   "media_id": "18136456939664940"
+  },
+  "story:summary:1": {
+   "media_id": "18087605909650855"
+  },
+  "story:summary:2": {
+   "media_id": "18077095610577747"
+  },
+  "story:summary:3": {
+   "media_id": "18084601211708105"
+  }
+ },
+ "errors": [
+  "threads:single1_ai_music: POST https://graph.threads.com/v1.0/me/threads_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17942520387162076 cannot be found.\",\"fbtrace_id\":\"ACEcSLuZ83elMxgJ_Ee22si\"}}'"
+ ],
+ "complete": false
+}
