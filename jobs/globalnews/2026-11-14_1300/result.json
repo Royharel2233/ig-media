@@ -1,0 +1,33 @@
+{
+ "done": {
+  "post:single1_ai_lawsuit": {
+   "media_id": "17947116582369694",
+   "permalink": "https://www.instagram.com/p/DfuDJWAoNa1/"
+  },
+  "post:summary": {
+   "media_id": "17942381877396208",
+   "permalink": "https://www.instagram.com/p/DfuDMJtoLAX/"
+  },
+  "threads:single1_ai_lawsuit": {
+   "media_id": "17868628236680412",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfuDPGlILaI"
+  },
+  "threads:summary": {
+   "media_id": "18099094136660538",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DfuDSNxIFdu"
+  },
+  "story:single1_ai_lawsuit:1": {
+   "media_id": "17911043832330187"
+  },
+  "story:summary:1": {
+   "media_id": "18198019909392795"
+  },
+  "story:summary:2": {
+   "media_id": "18162345163504139"
+  }
+ },
+ "errors": [
+  "story:summary:3: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,123,907,924,895,034 cannot be found.\",\"fbtrace_id\":\"AAk5IInRlGV42IamIJkC3fS\"}}'"
+ ],
+ "complete": false
+}
