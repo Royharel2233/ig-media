@@ -3,31 +3,31 @@
  "started_utc": "2026-10-24",
  "positions": [
   {
-   "cid": "monero",
-   "sym": "XMR",
-   "entry_px": 602.11,
-   "entry_date": "2026-11-07",
-   "last_px": 513.43,
-   "ret_since_entry": -0.14728205809569694
+   "cid": "memecore",
+   "sym": "M",
+   "entry_px": 0.80725,
+   "entry_date": "2026-11-14",
+   "last_px": 0.80725,
+   "ret_since_entry": 0.0
   },
   {
-   "cid": "zcash",
-   "sym": "ZEC",
-   "entry_px": 1223.99,
-   "entry_date": "2026-11-07",
-   "last_px": 934.33,
-   "ret_since_entry": -0.23665226023088426
+   "cid": "the-open-network",
+   "sym": "GRAM",
+   "entry_px": 1.043,
+   "entry_date": "2026-11-14",
+   "last_px": 1.043,
+   "ret_since_entry": 0.0
   },
   {
-   "cid": "pepe",
-   "sym": "PEPE",
-   "entry_px": 4.858e-06,
-   "entry_date": "2026-11-07",
-   "last_px": 4.407e-06,
-   "ret_since_entry": -0.0928365582544256
+   "cid": "avalanche-2",
+   "sym": "AVAX",
+   "entry_px": 7.108,
+   "entry_date": "2026-11-14",
+   "last_px": 7.108,
+   "ret_since_entry": 0.0
   }
  ],
- "cash_mult": 0.991035916125874,
+ "cash_mult": 0.9880657804942089,
  "marks": [
   {
    "date": "2026-10-24",
@@ -112,6 +112,10 @@
   {
    "date": "2026-11-13",
    "avg_open_ret": -0.15892362552700226
+  },
+  {
+   "date": "2026-11-14",
+   "avg_open_ret": 0.0
   }
  ],
  "rebalances": [
@@ -171,33 +175,31 @@
     }
    ],
    "universe_n": 33
+  },
+  {
+   "signal_date": "2026-11-13",
+   "exec_date": "2026-11-14",
+   "picks": [
+    {
+     "sym": "M",
+     "entry_px": 0.80725
+    },
+    {
+     "sym": "GRAM",
+     "entry_px": 1.043
+    },
+    {
+     "sym": "AVAX",
+     "entry_px": 7.108
+    }
+   ],
+   "universe_n": 32
   }
  ],
- "pending_signal": {
-  "signal_date": "2026-11-13",
-  "picks": [
-   {
-    "cid": "memecore",
-    "sym": "M",
-    "r7": 0.0033
-   },
-   {
-    "cid": "the-open-network",
-    "sym": "GRAM",
-    "r7": 0.0
-   },
-   {
-    "cid": "avalanche-2",
-    "sym": "AVAX",
-    "r7": -0.0126
-   }
-  ],
-  "universe_n": 32,
-  "note": "next-bar: executes at the next completed UTC close"
- },
+ "pending_signal": null,
  "last_signal_date": "2026-11-13",
- "last_rebal_date": "2026-11-07",
- "last_mark_date": "2026-11-13",
+ "last_rebal_date": "2026-11-14",
+ "last_mark_date": "2026-11-14",
  "segments": [
   {
    "start": "2026-10-24",
@@ -251,8 +253,34 @@
    ],
    "gross_avg": -0.053654069140020244,
    "reconstructed": false
+  },
+  {
+   "start": "2026-11-07",
+   "end": "2026-11-14",
+   "positions": [
+    {
+     "sym": "XMR",
+     "entry_px": 602.11,
+     "exit_px": 457.94,
+     "ret": -0.2394412981016758
+    },
+    {
+     "sym": "ZEC",
+     "entry_px": 1223.99,
+     "exit_px": 863.58,
+     "ret": -0.29445502005735336
+    },
+    {
+     "sym": "PEPE",
+     "entry_px": 4.858e-06,
+     "exit_px": 3.892e-06,
+     "ret": -0.19884726224783855
+    }
+   ],
+   "gross_avg": -0.24424786013562258,
+   "reconstructed": false
   }
  ],
- "nav_gross_mult": 0.9433066771881563,
- "nav": 0.9348507970148187
+ "nav_gross_mult": 0.7129060398333046,
+ "nav": 0.7043980626669297
 }
