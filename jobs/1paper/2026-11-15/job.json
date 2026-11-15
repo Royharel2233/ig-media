@@ -1,0 +1,23 @@
+{
+ "page": "1paper",
+ "slot": "2026-11-15",
+ "stories": false,
+ "publish_after": "2026-11-15T08:00:00+02:00",
+ "posts": [
+  {
+   "name": "46-mind-superager-alzheimers",
+   "type": "single",
+   "caption": "Alzheimer's risk may show up in brain wiring years before memory slips, according to a new Stanford study built on superagers, people over 75 with the memory of someone decades younger 🧠\n\nThe team trained a model on scans of 180 superagers and 110 Alzheimer's patients, then applied it to more than 1,300 healthy adults aged 55 to 70. Those with an Alzheimer's style pattern were more likely to develop memory problems later. It is a group level signal, not a test for one person.\n\nSource: Zhao, Zhang et al. (Stanford Medicine), “A functional connectome identifies vulnerability to cognitive decline and Alzheimer's disease progression”, Science Advances, 2026.\n\n#alzheimers #brainhealth #neuroscience #aging #science",
+   "images": [
+    "media/1paper/2026-11-15/46-mind-superager-alzheimers/01.jpg",
+    "media/1paper/2026-11-15/46-mind-superager-alzheimers/02.jpg",
+    "media/1paper/2026-11-15/46-mind-superager-alzheimers/03.jpg",
+    "media/1paper/2026-11-15/46-mind-superager-alzheimers/04.jpg",
+    "media/1paper/2026-11-15/46-mind-superager-alzheimers/05.jpg",
+    "media/1paper/2026-11-15/46-mind-superager-alzheimers/06.jpg",
+    "media/1paper/2026-11-15/46-mind-superager-alzheimers/07.jpg",
+    "media/1paper/2026-11-15/46-mind-superager-alzheimers/08.jpg"
+   ]
+  }
+ ]
+}
