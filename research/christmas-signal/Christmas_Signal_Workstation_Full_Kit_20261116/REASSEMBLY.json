@@ -1,0 +1,23 @@
+{
+  "archive": "Christmas_Signal_Workstation_Full_Kit_20261116.zip",
+  "bytes": 53380693,
+  "sha256": "ca65c42605b58cc4ef29a40b16209bed2a5e6c4b8de564d1ad843f3bb90507ae",
+  "reassemble": "Concatenate part01, part02, part03 in numerical order as binary bytes, then verify the archive SHA256 before opening.",
+  "parts": [
+    {
+      "name": "Christmas_Signal_Workstation_Full_Kit_20261116.zip.part01",
+      "bytes": 18000000,
+      "sha256": "6fd734367f1696e9f780fcaddd3d59b2cf2a611089388fda47d1cc343f064600"
+    },
+    {
+      "name": "Christmas_Signal_Workstation_Full_Kit_20261116.zip.part02",
+      "bytes": 18000000,
+      "sha256": "7cba71af1d45097d0a6d68d8e176803dc47e6472dc438f135f2f4d369e893a7e"
+    },
+    {
+      "name": "Christmas_Signal_Workstation_Full_Kit_20261116.zip.part03",
+      "bytes": 17380693,
+      "sha256": "f7f163f542cab63d65fe8ba07d6e41fbd0ee84356e06c73a8b601ea165d73208"
+    }
+  ]
+}
