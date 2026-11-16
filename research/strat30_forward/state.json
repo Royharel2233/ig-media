@@ -7,24 +7,24 @@
    "sym": "M",
    "entry_px": 0.80725,
    "entry_date": "2026-11-14",
-   "last_px": 0.80725,
-   "ret_since_entry": 0.0
+   "last_px": 0.83722,
+   "ret_since_entry": 0.03712604521523688
   },
   {
    "cid": "the-open-network",
    "sym": "GRAM",
    "entry_px": 1.043,
    "entry_date": "2026-11-14",
-   "last_px": 1.043,
-   "ret_since_entry": 0.0
+   "last_px": 1.072,
+   "ret_since_entry": 0.027804410354746123
   },
   {
    "cid": "avalanche-2",
    "sym": "AVAX",
    "entry_px": 7.108,
    "entry_date": "2026-11-14",
-   "last_px": 7.108,
-   "ret_since_entry": 0.0
+   "last_px": 7.316,
+   "ret_since_entry": 0.02926280247608326
   }
  ],
  "cash_mult": 0.9880657804942089,
@@ -116,6 +116,10 @@
   {
    "date": "2026-11-14",
    "avg_open_ret": 0.0
+  },
+  {
+   "date": "2026-11-15",
+   "avg_open_ret": 0.031397752682022086
   }
  ],
  "rebalances": [
@@ -199,7 +203,7 @@
  "pending_signal": null,
  "last_signal_date": "2026-11-13",
  "last_rebal_date": "2026-11-14",
- "last_mark_date": "2026-11-14",
+ "last_mark_date": "2026-11-15",
  "segments": [
   {
    "start": "2026-10-24",
