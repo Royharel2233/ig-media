@@ -1,0 +1,21 @@
+{
+ "done": {
+  "post:single1_anthropic_cdr": {
+   "media_id": "17990561565095623",
+   "permalink": "https://www.instagram.com/p/Dfz17VliSk5/"
+  },
+  "post:single2_plural": {
+   "media_id": "18016590065993946",
+   "permalink": "https://www.instagram.com/p/Dfz1_3GiQzf/"
+  },
+  "story:single1_anthropic_cdr:1": {
+   "media_id": "17937533523147716"
+  }
+ },
+ "errors": [
+  "threads:single1_anthropic_cdr: POST https://graph.threads.com/v1.0/me/threads_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17943097872162076 cannot be found.\",\"fbtrace_id\":\"AJQUal1SCr7o5BNVO_zqgCA\"}}'",
+  "threads:single2_plural: POST https://graph.threads.com/v1.0/me/threads_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17943098058162076 cannot be found.\",\"fbtrace_id\":\"AEPLVp4vLb3J52hDhbZpIHC\"}}'",
+  "story:single2_plural:1: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"A-L5LVGZbwsgi-wPR8InFkR\"}}'"
+ ],
+ "complete": false
+}
