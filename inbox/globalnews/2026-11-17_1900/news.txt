@@ -5,7 +5,7 @@ https://x.com/FT/status/2122728828661358618
 https://x.com/KobeissiLetter/status/2122722496667398408
 https://x.com/KobeissiLetter/status/2122710310171668717
 
-2. הסלמה מול איראן: גורם איראני אמר שארה"ב תקפה את האי קישם במצר הורמוז. על רקע זה המדדים הורחבו: S&P 500 ירד 1.6%, הדאו 1.5%, נסד"ק 100 ירד 2.0%. Nvidia בדרך לשבוע ירידות שביעי ברצף, מינוס 2 טריליון דולר משיא אוקטובר, רצף כזה לא נרשם מאז 2012. (מקור: Kobeissi Letter; אימות: Arab News)
+2. הסלמה מול איראן: גורם איראני אמר שארה"ב תקפה את האי קישם במצר הורמוז. על רקע זה הירידות במדדים הורחבו: S&P 500 ירד 1.6%, הדאו 1.5%, נסד"ק 100 ירד 2.0%. Nvidia בדרך לשבוע ירידות שביעי ברצף, מינוס 2 טריליון דולר משיא אוקטובר, רצף כזה לא נרשם מאז 2012. (מקור: Kobeissi Letter; אימות: Arab News)
 https://x.com/KobeissiLetter/status/2122719257423159373
 https://www.arabnews.com/middle-east/us-attacks-irans-qeshm-island-in-strait-of-hormuz-official-3012499
 
