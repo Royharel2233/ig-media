@@ -1,0 +1,61 @@
+{
+ "done": {
+  "post:single1_java": {
+   "media_id": "18204211702380271",
+   "permalink": "https://www.instagram.com/p/Df4Wg98oN2R/"
+  },
+  "post:single2_waymo": {
+   "media_id": "17896407786435068",
+   "permalink": "https://www.instagram.com/p/Df4WlacoFsd/"
+  },
+  "post:single3_transceivers": {
+   "media_id": "18173482777407839",
+   "permalink": "https://www.instagram.com/p/Df4WqDGoBf-/"
+  },
+  "post:summary": {
+   "media_id": "18293557675292236",
+   "permalink": "https://www.instagram.com/p/Df4WtsDoAyJ/"
+  },
+  "threads:single1_java": {
+   "media_id": "18125519312318825",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df4WxhXIALh"
+  },
+  "threads:single2_waymo": {
+   "media_id": "18440027494183127",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df4W1ZooMsO"
+  },
+  "threads:single3_transceivers": {
+   "media_id": "18018737861971183",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df4W49QIGuY"
+  },
+  "threads:summary": {
+   "media_id": "18057121733811181",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df4W8iaIHgU"
+  },
+  "story:single1_java:1": {
+   "media_id": "18105137219365008"
+  },
+  "story:single3_transceivers:1": {
+   "media_id": "18083813819414281"
+  },
+  "story:summary:1": {
+   "media_id": "17916362511290040"
+  },
+  "story:summary:2": {
+   "media_id": "18098230106653241"
+  },
+  "story:summary:3": {
+   "media_id": "18182768056443628"
+  },
+  "story:summary:4": {
+   "media_id": "18138810877656903"
+  },
+  "story:summary:5": {
+   "media_id": "17952191007350645"
+  }
+ },
+ "errors": [
+  "story:single2_waymo:1: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,125,025,487,895,034 cannot be found.\",\"fbtrace_id\":\"AFZYatV4wuz-Vp8ZQ5iFlWG\"}}'"
+ ],
+ "complete": false
+}
