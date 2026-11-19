@@ -1,0 +1,51 @@
+{
+ "done": {
+  "post:single1_anthropic": {
+   "media_id": "18083924891734088",
+   "permalink": "https://www.instagram.com/p/Df6YWxbEdHT/"
+  },
+  "post:single2_commerzbank": {
+   "media_id": "18367993759247566",
+   "permalink": "https://www.instagram.com/p/Df6YbcLkSTK/"
+  },
+  "post:summary": {
+   "media_id": "18096346607184409",
+   "permalink": "https://www.instagram.com/p/Df6YfwokRRs/"
+  },
+  "threads:single1_anthropic": {
+   "media_id": "18084190586432774",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df6Yj2cEcv_"
+  },
+  "threads:single2_commerzbank": {
+   "media_id": "17912067588579655",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df6Yni0ERfX"
+  },
+  "threads:summary": {
+   "media_id": "18047006498828671",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df6YrGVEdJq"
+  },
+  "story:single1_anthropic:1": {
+   "media_id": "18006994407033786"
+  },
+  "story:single2_commerzbank:1": {
+   "media_id": "18165360001497444"
+  },
+  "story:summary:1": {
+   "media_id": "18005180963797506"
+  },
+  "story:summary:2": {
+   "media_id": "18039717656850219"
+  },
+  "story:summary:3": {
+   "media_id": "18004447146012483"
+  },
+  "story:summary:4": {
+   "media_id": "18194801278402766"
+  },
+  "story:summary:5": {
+   "media_id": "18148468534574952"
+  }
+ },
+ "errors": [],
+ "complete": true
+}
