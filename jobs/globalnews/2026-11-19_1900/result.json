@@ -1,0 +1,62 @@
+{
+ "done": {
+  "post:single1_anthropic": {
+   "media_id": "18104383916532170",
+   "permalink": "https://www.instagram.com/p/Df7kkKJlRed/"
+  },
+  "post:single2_amd": {
+   "media_id": "18139404268662698",
+   "permalink": "https://www.instagram.com/p/Df7kojtFZgi/"
+  },
+  "post:single3_cards": {
+   "media_id": "18115469282237055",
+   "permalink": "https://www.instagram.com/p/Df7ktsZlTGE/"
+  },
+  "post:summary": {
+   "media_id": "18104650754427993",
+   "permalink": "https://www.instagram.com/p/Df7kw03FY8t/"
+  },
+  "threads:single1_anthropic": {
+   "media_id": "18119534345022286",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df7k0LOFc_a"
+  },
+  "threads:single2_amd": {
+   "media_id": "18359951815169810",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df7k3iolVdT"
+  },
+  "threads:single3_cards": {
+   "media_id": "18110760056211864",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df7k75jFVuX"
+  },
+  "threads:summary": {
+   "media_id": "17991131085089624",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df7k_FbFZh4"
+  },
+  "story:single1_anthropic:1": {
+   "media_id": "18117933413143136"
+  },
+  "story:single2_amd:1": {
+   "media_id": "18137928107507801"
+  },
+  "story:single3_cards:1": {
+   "media_id": "18127416499715419"
+  },
+  "story:summary:1": {
+   "media_id": "18102841919656592"
+  },
+  "story:summary:2": {
+   "media_id": "18139830787711460"
+  },
+  "story:summary:3": {
+   "media_id": "18039834617900076"
+  },
+  "story:summary:4": {
+   "media_id": "18112341730923838"
+  },
+  "story:summary:5": {
+   "media_id": "18036824075884635"
+  }
+ },
+ "errors": [],
+ "complete": true
+}
