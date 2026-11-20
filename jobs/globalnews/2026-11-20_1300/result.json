@@ -1,0 +1,39 @@
+{
+ "done": {
+  "post:single1_anthropic": {
+   "media_id": "18190130428411164",
+   "permalink": "https://www.instagram.com/p/Df9fmfzlVko/"
+  },
+  "post:single2_costco": {
+   "media_id": "18202979497380213",
+   "permalink": "https://www.instagram.com/p/Df9frTFFX5F/"
+  },
+  "post:single3_ukcyber": {
+   "media_id": "17983407348131925",
+   "permalink": "https://www.instagram.com/p/Df9fu7lldNV/"
+  },
+  "threads:single1_anthropic": {
+   "media_id": "18122165065758187",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df9fyKjlfom"
+  },
+  "threads:single2_costco": {
+   "media_id": "18390660718227665",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df9f10sFdd0"
+  },
+  "threads:single3_ukcyber": {
+   "media_id": "18019897799969168",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df9f4yuFRDZ"
+  },
+  "story:single1_anthropic:1": {
+   "media_id": "17911626615604334"
+  },
+  "story:single2_costco:1": {
+   "media_id": "18118039700584391"
+  },
+  "story:single3_ukcyber:1": {
+   "media_id": "17999653464018869"
+  }
+ },
+ "errors": [],
+ "complete": true
+}
