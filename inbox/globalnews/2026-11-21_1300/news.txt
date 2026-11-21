@@ -13,7 +13,7 @@ https://www.nbcnews.com/politics/justice-department/fbi-investigating-potential-
 4. הקואליציה הסעודית: 3 טילים בליסטיים של החות'ים לעבר ריאד יורטו; יום שלישי ברצף של התרעות, יומיים אחרי הפגיעה במגדל PIF. (Al Jazeera, Financial Juice)
 https://www.aljazeera.com/news/2026/11/21/saudi-led-coalition-intercepts-three-houthi-missiles-headed-for-riyadh
 
-5. ביטקוין מתחת ל-$57K לראשונה מאז ספטמבר 2024, מינוס 28% מהשיא הרבעוני; חיסולים של $2.4 מיליארד (אומת). מאז התאושש מעל $58K (לפי Bull Theory, לא אומת). (CoinDesk, Watcher Guru, Spectator Index)
+5. ביטקוין מתחת ל-$57K לראשונה מאז ספטמבר 2024, מינוס 28% מהשיא הרבעוני; חיסולים של $2.4 מיליארד (אומת). מאז התאושש: כ-$57.9K נכון לצהריים (CoinGecko; הריבאונד עצמו דווח ב-Bull Theory, לא אומת). (CoinDesk, Watcher Guru, Spectator Index)
 https://www.coindesk.com/markets/2026/11/21/bitcoin-tanks-below-usd57-000-for-the-first-time-in-two-years-and-its-not-alone
 
 6. אינטסה סנפאולו משיקה הצעת רכש במזומן ובמניות בהיקף €34.5 מיליארד למונטה דיי פאסקי; דירקטוריון MPS כבר קבע שהתמורה הוגנת (אומת). (Reuters Business, Investing.com)
