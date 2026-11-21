@@ -1,0 +1,56 @@
+{
+ "done": {
+  "post:single1_nvidiasec": {
+   "media_id": "18117738674124662",
+   "permalink": "https://www.instagram.com/p/Df_iy5cmxfH/"
+  },
+  "post:single2_correction": {
+   "media_id": "18213601126317242",
+   "permalink": "https://www.instagram.com/p/Df_i3aLm40G/"
+  },
+  "post:single3_bitcoin": {
+   "media_id": "18214733014362770",
+   "permalink": "https://www.instagram.com/p/Df_i74kmxQu/"
+  },
+  "post:summary": {
+   "media_id": "17938852089410584",
+   "permalink": "https://www.instagram.com/p/Df_jAM9mxcb/"
+  },
+  "threads:single1_nvidiasec": {
+   "media_id": "17899530696413692",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df_jD2GG6ha"
+  },
+  "threads:single2_correction": {
+   "media_id": "18049551800826488",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df_jHoumw5_"
+  },
+  "threads:single3_bitcoin": {
+   "media_id": "18381593683243506",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df_jLMXG3-G"
+  },
+  "threads:summary": {
+   "media_id": "18341785288279426",
+   "permalink": "https://www.threads.com/@globalnews.il/post/Df_jNuLm3H0"
+  },
+  "story:single1_nvidiasec:1": {
+   "media_id": "18074461448785210"
+  },
+  "story:single2_correction:1": {
+   "media_id": "17997697632024187"
+  },
+  "story:single3_bitcoin:1": {
+   "media_id": "18151179814564160"
+  },
+  "story:summary:1": {
+   "media_id": "18647179654018739"
+  },
+  "story:summary:2": {
+   "media_id": "18121205744612199"
+  },
+  "story:summary:3": {
+   "media_id": "18399459739204734"
+  }
+ },
+ "errors": [],
+ "complete": true
+}
