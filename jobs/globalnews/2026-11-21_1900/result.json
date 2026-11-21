@@ -1,0 +1,45 @@
+{
+ "done": {
+  "post:single1_bitcoin": {
+   "media_id": "18127579858920186",
+   "permalink": "https://www.instagram.com/p/DgAuD3emn11/"
+  },
+  "post:single2_techpe": {
+   "media_id": "17887471788525678",
+   "permalink": "https://www.instagram.com/p/DgAuHnDmkjP/"
+  },
+  "post:summary": {
+   "media_id": "18121776700971798",
+   "permalink": "https://www.instagram.com/p/DgAuLrHmsDu/"
+  },
+  "threads:single1_bitcoin": {
+   "media_id": "18438667054199011",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgAuO9JGo3N"
+  },
+  "threads:single2_techpe": {
+   "media_id": "17911637673575653",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgAuR-1mt-2"
+  },
+  "threads:summary": {
+   "media_id": "17911247859334392",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgAuUchmjcb"
+  },
+  "story:single1_bitcoin:1": {
+   "media_id": "18101378852402529"
+  },
+  "story:single2_techpe:1": {
+   "media_id": "17976639726156448"
+  },
+  "story:summary:1": {
+   "media_id": "18645464239009419"
+  },
+  "story:summary:2": {
+   "media_id": "18435520504144576"
+  },
+  "story:summary:3": {
+   "media_id": "17995587594026488"
+  }
+ },
+ "errors": [],
+ "complete": true
+}
