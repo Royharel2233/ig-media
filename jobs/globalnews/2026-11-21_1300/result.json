@@ -1,0 +1,40 @@
+{
+ "done": {
+  "post:summary": {
+   "media_id": "18092108885306783",
+   "permalink": "https://www.instagram.com/p/DgAEYVxluKQ/"
+  },
+  "threads:single1_intesa": {
+   "media_id": "18080733665422004",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgAEcSSFtqY"
+  },
+  "threads:single2_spacex": {
+   "media_id": "18098562248167395",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgAEfzeFmnc"
+  },
+  "threads:summary": {
+   "media_id": "18120982159801585",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgAEiotlsVF"
+  },
+  "story:single1_intesa:1": {
+   "media_id": "17930072967432661"
+  },
+  "story:single2_spacex:1": {
+   "media_id": "18117125096170681"
+  },
+  "story:summary:1": {
+   "media_id": "17986706690898268"
+  },
+  "story:summary:2": {
+   "media_id": "18009227240991237"
+  },
+  "story:summary:3": {
+   "media_id": "18468059050185536"
+  }
+ },
+ "errors": [
+  "post:single1_intesa: POST https://graph.instagram.com/v26.0/17841426850998559/media -> HTTP 400: b'{\"error\":{\"message\":\"Timeout\",\"type\":\"OAuthException\",\"code\":-2,\"error_subcode\":2207003,\"is_transient\":false,\"error_user_title\":\"Timeout\",\"error_user_msg\":\"It takes too long to download the media.\",\"fbtrace_id\":\"AQwunEpxd_lcp7l_bJUam3e\"}}'",
+  "post:single2_spacex: POST https://graph.instagram.com/v26.0/17841426850998559/media -> HTTP 400: b'{\"error\":{\"message\":\"Timeout\",\"type\":\"OAuthException\",\"code\":-2,\"error_subcode\":2207003,\"is_transient\":false,\"error_user_title\":\"Timeout\",\"error_user_msg\":\"It takes too long to download the media.\",\"fbtrace_id\":\"AQ5sKQji_pUb0rA1ou_6IeI\"}}'"
+ ],
+ "complete": false
+}
