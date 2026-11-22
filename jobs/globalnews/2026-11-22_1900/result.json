@@ -1,0 +1,47 @@
+{
+ "done": {
+  "post:single1_anthropic_ipo": {
+   "media_id": "18647652910044065",
+   "permalink": "https://www.instagram.com/p/DgDS_qUmP0S/"
+  },
+  "post:single2_korea": {
+   "media_id": "18120598967102286",
+   "permalink": "https://www.instagram.com/p/DgDTEL-mOnV/"
+  },
+  "post:summary": {
+   "media_id": "18112211450248897",
+   "permalink": "https://www.instagram.com/p/DgDTI8RGMva/"
+  },
+  "threads:single1_anthropic_ipo": {
+   "media_id": "17922568758464712",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgDTMY8GMcO"
+  },
+  "threads:single2_korea": {
+   "media_id": "17910456711668056",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgDTQEvGFBF"
+  },
+  "threads:summary": {
+   "media_id": "18083975933447911",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgDTTfBmMly"
+  },
+  "story:single1_anthropic_ipo:1": {
+   "media_id": "18082434365735405"
+  },
+  "story:single2_korea:1": {
+   "media_id": "18015437216992751"
+  },
+  "story:summary:1": {
+   "media_id": "18651659557051430"
+  },
+  "story:summary:3": {
+   "media_id": "17889120141652605"
+  },
+  "story:summary:4": {
+   "media_id": "18289397884291839"
+  }
+ },
+ "errors": [
+  "story:summary:2: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,125,975,341,895,034 cannot be found.\",\"fbtrace_id\":\"A5_tVhbIOJnR-DFiAML2z9W\"}}'"
+ ],
+ "complete": false
+}
