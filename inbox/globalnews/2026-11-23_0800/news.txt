@@ -3,7 +3,7 @@
 1. קריסה בדרום קוריאה הבוקר: מדד KOSPI נפל 5.11% ל-4,211 נקודות, והבורסה הפעילה "סיידקר", השהיית מסחר תכנותי לחמש דקות, ביום השני ברציפות, למרות הכנות הממשלה להפעלת קרן ייצוב (אומת מול Yonhap). לפי Bull Theory נמחקו כ-194 טריליון וון, כ-133 מיליארד דולר (נתון פרופיל, לא אומת). (Bull Theory, Yonhap)
 https://en.yna.co.kr/view/AEN20261123001900320
 
-2. חוזים עתידיים בארה"ב קופצים בפתיחת שני: נאסד"ק 100 פלוס 2% ו-S&P 500 פלוס 1%, אחרי נפילה שבועית של 10% בנאסד"ק, הגדולה מאז מרץ 2020. באסיה ממשיכים להתכונן: טייוואן מטה 17% השבוע, הגדולה מאז 1990 (אומת מול Reuters). (Reuters Biz, Watcher Guru, Bull Theory)
+2. חוזים עתידיים בארה"ב קופצים בפתיחת שני: נאסד"ק 100 פלוס 2% ו-S&P 500 פלוס 1%, אחרי נפילה שבועית של 10% בנאסד"ק, הגדולה מאז מרץ 2020. באסיה ממשיכים להתכונן: טייוואן ירדה 17% בשבוע שעבר, הגדולה מאז 1990 (אומת מול Reuters). (Reuters Biz, Watcher Guru, Bull Theory)
 https://www.investing.com/news/economy-news/us-futures-bounce-while-asia-markets-brace-for-ai-wipeout-5044181
 
 3. טראמפ שוב קורא לדירקטוריון אנבידיה להחזיר את ג'נסן הואנג לתפקיד: "זה יהיה הדבר הטוב ביותר לחברה וגם לארה"ב". ביום שישי אמר שירצה לתת לו "הזדמנות שנייה" ושדן בו עם שי ג'ינפינג (אומת מול Politico ודיווחים נוספים מהיום). (Kobeissi Letter, Watcher Guru, Bull Theory)
@@ -18,10 +18,10 @@ https://arstechnica.com/tech-policy/2026/11/california-sues-openai-to-stop-publi
 6. המדען הראשי של OpenAI, יעקב פאצ'וצקי, מציע מגבלות משותפות לתעשייה על פיתוח מודלים, כשמדד "פרפלקסיטי" משמש מדד משותף להתקדמות; ההצעה בגיבוי סם אלטמן (אומת מול Reuters ובלוג OpenAI). (Reuters Tech, Exec Sum)
 https://www.channelnewsasia.com/business/openai-scientist-proposes-industry-ai-limits-tied-model-intelligence-metric-6573461
 
-7. Databricks במגעים מוקדמים לגיוס סבב N בשווי 225 מיליארד דולר, לפי הוול סטריט ג'ורנל (אומת מול Reuters; הכתבה המלאה לא נקראה). (Exec Sum)
+7. Databricks במגעים מוקדמים לגיוס סבב N בשווי 225 מיליארד דולר, לפי הוול סטריט ג'ורנל (אומת מול Reuters; הכתבה המלאה ב-WSJ לא נקראה). (Exec Sum)
 https://www.investing.com/news/stock-market-news/databricks-in-early-talks-to-raise-funds-at-225-billion-valuation-wsj-reports-5042898
 
-8. הוול סטריט ג'ורנל: Anthropic התחייבה להוצאות של 900 מיליארד דולר, ווול סטריט מצפה שדירוג החוב שלה יקבע "זבל", שיעצב את תוכניות ההון אחרי ההנפקה הסוערת (דיווח מיוחס ל-WSJ, נקרא בשניות). (IPO Newsroom)
+8. הוול סטריט ג'ורנל: Anthropic התחייבה להוצאות של 900 מיליארד דולר, ווול סטריט מצפה שדירוג החוב שלה יקבע "זבל", שיעצב את תוכניות ההון אחרי ההנפקה הסוערת (דיווח מיוחס ל-WSJ; נקרא רק דיווח משני, לא הכתבה המלאה). (IPO Newsroom)
 https://www.newsquawk.com/headlines/anthropic-ant-committed-to-spend-usd-900bln-while-is-wall-street-expects-co-debt-to-be-deemed-junk-according-to-wsj
 
 9. לוב: חברת הנפט הלאומית מזהירה שסגירת שסתום בצינור משדה שרררה על ידי "קבוצה בלתי חוקית" תקצץ כ-350 אלף חביות ליום מהתפוקה (אומת מול Reuters). (Financial Juice)
