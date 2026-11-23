@@ -1,0 +1,67 @@
+{
+ "done": {
+  "post:single1_korea_crash": {
+   "media_id": "18144095008624607",
+   "permalink": "https://www.instagram.com/p/DgEsZQUEU5Z/"
+  },
+  "post:single2_anthropic_debt": {
+   "media_id": "18129970145300993",
+   "permalink": "https://www.instagram.com/p/DgEsd3AEbCx/"
+  },
+  "post:single3_openai_limits": {
+   "media_id": "17871851688659414",
+   "permalink": "https://www.instagram.com/p/DgEsihxEcbN/"
+  },
+  "post:summary": {
+   "media_id": "17954494761053572",
+   "permalink": "https://www.instagram.com/p/DgEsnwIEacn/"
+  },
+  "threads:single1_korea_crash": {
+   "media_id": "18406326778206287",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgEssCrEfl7"
+  },
+  "threads:single2_anthropic_debt": {
+   "media_id": "17981498217069975",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgEsvlBkTKl"
+  },
+  "threads:single3_openai_limits": {
+   "media_id": "18344752708262480",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgEszWEEYD_"
+  },
+  "threads:summary": {
+   "media_id": "17998817679111398",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgEs3HvkSGH"
+  },
+  "story:single1_korea_crash:1": {
+   "media_id": "18194859622408849"
+  },
+  "story:single2_anthropic_debt:1": {
+   "media_id": "18234250963325833"
+  },
+  "story:single3_openai_limits:1": {
+   "media_id": "17929371855266034"
+  },
+  "story:summary:1": {
+   "media_id": "18089481830687340"
+  },
+  "story:summary:2": {
+   "media_id": "17994279675119397"
+  },
+  "story:summary:3": {
+   "media_id": "18093293042264911"
+  },
+  "story:summary:4": {
+   "media_id": "17977245594171717"
+  },
+  "story:summary:5": {
+   "media_id": "18140263411647579"
+  },
+  "story:summary:6": {
+   "media_id": "17997309429028087"
+  }
+ },
+ "errors": [
+  "story:summary:7: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,126,085,276,895,034 cannot be found.\",\"fbtrace_id\":\"AWxNpdCaKB4G52dmjuaz-5i\"}}'"
+ ],
+ "complete": false
+}
