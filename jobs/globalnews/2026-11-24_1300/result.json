@@ -1,0 +1,49 @@
+{
+ "done": {
+  "post:single1_nvidia": {
+   "media_id": "18100021235170519",
+   "permalink": "https://www.instagram.com/p/DgHzg8ikWxd/"
+  },
+  "post:summary": {
+   "media_id": "17969430702216962",
+   "permalink": "https://www.instagram.com/p/DgHzooAkSCd/"
+  },
+  "threads:single1_nvidia": {
+   "media_id": "18108792569355925",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgHzs85kcub"
+  },
+  "threads:summary": {
+   "media_id": "18232045048327204",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgHzznlkWu7"
+  },
+  "story:single1_nvidia:1": {
+   "media_id": "18113188243933594"
+  },
+  "story:single2_argentina:1": {
+   "media_id": "18441344992194644"
+  },
+  "story:summary:1": {
+   "media_id": "18337352863272490"
+  },
+  "story:summary:2": {
+   "media_id": "17940871344405808"
+  },
+  "story:summary:3": {
+   "media_id": "17889138021505408"
+  },
+  "story:summary:4": {
+   "media_id": "18027686345947411"
+  },
+  "story:summary:5": {
+   "media_id": "18120241922023883"
+  },
+  "story:summary:6": {
+   "media_id": "18194449012408800"
+  }
+ },
+ "errors": [
+  "post:single2_argentina: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"A2aYlkyIDA0xLmT6HK1gZPl\"}}'",
+  "threads:single2_argentina: POST https://graph.threads.com/v1.0/me/threads_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17944919439162076 cannot be found.\",\"fbtrace_id\":\"A6o98yviQCYeMig4FZl8FcT\"}}'"
+ ],
+ "complete": false
+}
