@@ -1,0 +1,55 @@
+{
+ "done": {
+  "post:single1_kospi": {
+   "media_id": "18020359496748780",
+   "permalink": "https://www.instagram.com/p/DgHRG5tkZCE/"
+  },
+  "post:single2_megaspeed": {
+   "media_id": "18120322343092150",
+   "permalink": "https://www.instagram.com/p/DgHRLd5kdFN/"
+  },
+  "post:single3_australia": {
+   "media_id": "17959882329273766",
+   "permalink": "https://www.instagram.com/p/DgHRPzGERcB/"
+  },
+  "post:summary": {
+   "media_id": "18044950058839740",
+   "permalink": "https://www.instagram.com/p/DgHRTmSkRUo/"
+  },
+  "threads:single1_kospi": {
+   "media_id": "18658677871009483",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgHRXXpkaRj"
+  },
+  "threads:single2_megaspeed": {
+   "media_id": "18013352960826525",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgHRbSWkffH"
+  },
+  "threads:summary": {
+   "media_id": "17927817243442396",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgHRiAjkYkH"
+  },
+  "story:single1_kospi:1": {
+   "media_id": "17994067353119965"
+  },
+  "story:single2_megaspeed:1": {
+   "media_id": "18123764303006268"
+  },
+  "story:single3_australia:1": {
+   "media_id": "18131020171869388"
+  },
+  "story:summary:1": {
+   "media_id": "18096681314666421"
+  },
+  "story:summary:2": {
+   "media_id": "18115751444150256"
+  },
+  "story:summary:4": {
+   "media_id": "17922650100543065"
+  }
+ },
+ "errors": [
+  "threads:single3_australia: POST https://graph.threads.com/v1.0/me/threads_publish -> HTTP 400: b'{\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17944873806162076 cannot be found.\",\"fbtrace_id\":\"A3gmxoBOSyyNZodgweSYC9M\"}}'",
+  "story:summary:3: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"AgvkuxbShP58bYpJrDFEolA\"}}'"
+ ],
+ "complete": false
+}
