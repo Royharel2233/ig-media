@@ -6,7 +6,7 @@ https://www.equinor.com/news/20261124-vng-18-year-gas-sales-agreement
 2. אג"ח ארגנטינה נכנסו לרמת מצוקה: הפרמיה מעל אג"ח ארה"ב עברה את 1,000 נקודות הבסיס, הגבוהה ביותר מאז אוקטובר 2025 (אומת מול Bloomberg Línea). לפי Bull Theory (פרופיל, לא אומת), האג"ח הדולריות ירדו כ-20% מאז אוגוסט. (Bull Theory, Bloomberg Línea)
 https://www.bloomberglinea.com/latinoamerica/argentina/vuelven-a-hundirse-los-bonos-argentinos-y-el-riesgo-pais-supera-los-1000-puntos/
 
-3. בלאקרוק השיקה בהונג קונג את קרן הכספים המטבעית (money market) המטוקננת הראשונה שלה שם, עם השקעה באמצעות סטייבלקוינים (אומת מול SCMP ואתר בלאקרוק). (Bull Theory, Watcher Guru, SCMP)
+3. בלאקרוק השיקה בהונג קונג את הקרן הכספית (money market) המטוקננת הראשונה שלה שם, עם השקעה באמצעות סטייבלקוינים (אומת מול SCMP ואתר בלאקרוק). (Bull Theory, Watcher Guru, SCMP)
 https://www.scmp.com/business/banking-finance/article/3375575/blackrock-taps-hong-kong-stablecoins-new-money-market-fund
 
 4. בעקבות הזינוק של כ-33% אתמול, אנבידיה עקפה את מיקרוסופט ואלפבית והפכה לחברה השנייה בערכה בעולם (אומת מול Business Today). (exec_sum, Business Today)
@@ -16,7 +16,9 @@ https://www.businesstoday.in/markets/stocks/story/nvidia-pips-microsoft-google-i
 https://www.compass-group.com/en/newsroom/corporate/2026/Shareholder-consultation-on-us-listing
 
 6. עדכון לסיפור ה-C4 מהבוקר: בכתבה הבלעדית של ה-FT נמסר שבריטניה קנתה טונות של חומר הנפץ המזויף משוטר אמריקאי לשעבר במשרה חלקית שפשט את הרגל, בעסקאות שטופלו על ידי יחידת הרכש המרכזית של בריטניה לחימוש קייב (לפי הפוסט של FT עצמו; נקרא הטקסט של הפוסט, לא הכתבה המלאה). (FT)
+https://www.ft.com/content/b5873050-2b90-4889-bbf6-902234e51e9f
 
-7. נתוני פרופיל, לא אומת (תוך-יום): הנפט ירד מתחת ל-80 דולר, כ-18% מתחת לרמתו לפני הבחירות לביניים בארה"ב (Bull Theory).
+7. נפט WTI ירד מתחת ל-80 דולר, שפל של שלושה חודשים (אומת מול CNBC, נתון תוך-יום נכון להיום); לפי Bull Theory (פרופיל, לא אומת), מדובר בירידה של כ-18% מאז הבחירות לביניים בארה"ב. (Bull Theory, CNBC)
+https://www.cnbc.com/2026/11/24/oil-wti-brent-hormuz-supply.html
 
 אינסטגרם: אין פוסטים חדשים ב-wehavethedata וב-unusualwhales מאז הבוקר.
