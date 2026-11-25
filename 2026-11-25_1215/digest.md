@@ -10,12 +10,12 @@ https://www.investing.com/news/stock-market-news/exclusivealice-huanglinked-firm
 
 4. בריטניה: רגולטור האנרגיה Ofgem מעלה את תקרת המחיר ב-26% מינואר, לרמה הגבוהה כמעט בארבע שנים, על רקע זינוק במחירי הגז בעקבות העימות במזרח התיכון; מיליוני משקי בית יושפעו. (Reuters Business)
 
-5. דרום קוריאה שוקלת להרחיב את קרן ייצוב השוק, אחרי צניחת הקוספי אתמול (לפי Chosun דרך financialjuice, כותרת, לא אומת מעבר). (Financial Juice)
+5. דרום קוריאה שוקלת להרחיב את קרן ייצוב השוק, על רקע צניחת הקוספי הבוקר (לפי Chosun דרך financialjuice, כותרת, לא אומת מעבר). (Financial Juice)
 
-6. אוקראינה מחשימה קריפטו: הרדה אישרה את חוק לגליזציית שוק הקריפטו ברוב של 271 קולות (אומת מול תקשורת אוקראינית). (Bull Theory)
+6. אוקראינה מכשירה את הקריפטו: הרדה אישרה סופית את חוק לגליזציית שוק הקריפטו ברוב של 271 קולות; החוק ייכנס לתוקף ביולי 2027 (אומת מול הכתבה המלאה ב-UNN). (Bull Theory)
 https://unn.ua/en/news/parliament-approves-the-legalization-of-the-cryptocurrency-market-in-ukraine-when-the-law-will-take-effect
 
-7. ה-WSJ מעריך שאג"ח של Anthropic ידרגו כזבל בדירוג הבא, על רקע הנטל ההשקעתי העצום; המנייה כבר מתחת למחיר ההנפקה (נמסר אתמול). אומת שהדיווח של WSJ קיים. (Bull Theory)
+7. לפי ה-WSJ, הנפקת אג"ח עתידית של Anthropic צפויה לקבל דירוג זבל, על רקע הנטל ההשקעתי העצום; מדובר בהערכה להנפקה אפשרית, לא בדירוג שכבר ניתן. המנייה כבר מתחת למחיר ההנפקה (נמסר אתמול). אומת שהדיווח של WSJ קיים. (Bull Theory)
 https://www.ndtvprofit.com/markets/anthropics-potential-bond-issues-may-be-rated-junk-despite-1-1-trillion-valuation-says-report-12374718
 
 8. שגריר איראן באו"ם מאשים את ארה"ב בשימוש ב-AI לבחירה ותקיפה של מטרות באיראן, ומציין מסמך פנטגון שלפיו AI סייע בפגיעה בכ-2,000 מטרות ב-96 שעות (מיוחס לדברי השגריר, אומת מול CBS). (Bull Theory)
