@@ -1,9 +1,9 @@
 *חדשות ושווקים | רביעי 25.11, בוקר*
 
-1. מכירת ה-AI הגיעה לאסיה: הקוספי צלל 5.3% והופעל סיידקאר מכירה (הירידה אומתה מול Moneycontrol; הסיידקאר לפי Bull Theory), הניקייי ירד 2.9%, סופטבנק צנחה כ-10% (Kobeissi) ובטייוואן המדד נפל (spectatorindex, נתון פרופיל). (Moneycontrol, Al Jazeera, Bull Theory, Kobeissi, FT)
+1. מכירת ה-AI הגיעה לאסיה: הקוספי צלל 5.3% והופעל סיידקאר מכירה (הירידה אומתה מול Moneycontrol; הסיידקאר לפי Bull Theory), הניקיי ירד 2.9%, סופטבנק צנחה כ-10% (Kobeissi) ובטייוואן המדד נפל (spectatorindex, נתון פרופיל). (Moneycontrol, Al Jazeera, Bull Theory, Kobeissi, FT)
 https://www.moneycontrol.com/news/business/markets/kospi-plunges-5-3-nikkei-falls-2-9-as-nvidia-led-tech-rally-fizzles-us-tariff-fears-hit-asian-markets-14088365.html
 
-2. טראמפ בראיון ל-NY Post: פתוח לחנינת ג'נסן הואנג "אם יהיה צורך", קרא לו לא לממש את הזכות החמישית בקונגרס, ואמר ש"כנראה עדיין לא מאוחר" להשקעה ממשלתית באנבידיה (אומת מול NYP ו-CNBC). (NY Post, Kobeissi Letter, spectatorindex, CNBC)
+2. טראמפ בראיון ל-NY Post: פתוח לחנינת ג'נסן הואנג "אם יהיה צורך", קרא לו לא לממש את התיקון החמישי לחוקה בקונגרס, ואמר ש"כנראה עדיין לא מאוחר" להשקעה ממשלתית באנבידיה (אומת מול NYP ו-CNBC). (NY Post, Kobeissi Letter, spectatorindex, CNBC)
 https://nypost.com/2026/11/24/us-news/trump-leaves-door-open-to-jensen-huang-pardon-and-urges-him-not-to-plead-5th-to-congress-next-week/
 
 3. המפרץ: שתי מכליות נפגעו ממוקשים ועלו באש במיצר הורמוז, לפי הצי של משמרות המהפכה (אומת מול Arab News וסוכנות Anadolu). לפי financialjuice (כותרת, לא אומת): הקואליציה הסעודית יירטה ארבעה רחפים מעל ראס תנורה. (Arab News, AA, Financial Juice)
@@ -36,5 +36,5 @@ https://apnews.com/article/fifa-infantino-private-investors-kushner-2b0080332129
 שקופית 8: השערה של קצין CIA לשעבר בנושא הואנג וסין; השערה ספקולטיבית שלא ניתנת לאימות, הפרטים לא נכללו.
 שקופית 9: ה-WSJ מדווח על חקירה פדרלית נגד חברת הקונגרס אילהן עומר, עם צו חיפוש המכסה שנים מ-1980; רשויות תפסו טלפון, מחשב ודרכון (אומת מול וושינגטון פוסט ו-CBS; מיוחס ל-WSJ).
 https://www.washingtonpost.com/national-security/2026/11/23/judge-had-concerns-ahead-search-rep-ilhan-omars-home-unsealed-records-show/
-מוזיקה בקרוסלה: לא זוהתה. קרוסלה נוספת של UW (פודקאסט) ושל wehavethedata (ממים) דולגו.
+קרוסלה נוספת של UW (פודקאסט) ושל wehavethedata (ממים) דולגו.
 https://www.instagram.com/p/DgI6J6okqa_/
