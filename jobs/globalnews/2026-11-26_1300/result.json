@@ -1,0 +1,45 @@
+{
+ "done": {
+  "post:single1_minimax": {
+   "media_id": "18001530006046198",
+   "permalink": "https://www.instagram.com/p/DgM8wnTm1qs/"
+  },
+  "post:single2_spacex_shares": {
+   "media_id": "18034894964881691",
+   "permalink": "https://www.instagram.com/p/DgM81S7G_X5/"
+  },
+  "post:summary": {
+   "media_id": "18120861475807848",
+   "permalink": "https://www.instagram.com/p/DgM84MxG7qC/"
+  },
+  "threads:single1_minimax": {
+   "media_id": "17905246614673464",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgM88QlGzkP"
+  },
+  "threads:single2_spacex_shares": {
+   "media_id": "17892291666474887",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgM8_zWm2Lz"
+  },
+  "threads:summary": {
+   "media_id": "18088585130327853",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgM9CO2m06k"
+  },
+  "story:single1_minimax:1": {
+   "media_id": "17956194915303611"
+  },
+  "story:single2_spacex_shares:1": {
+   "media_id": "18363558943219795"
+  },
+  "story:summary:1": {
+   "media_id": "18135006532911014"
+  },
+  "story:summary:2": {
+   "media_id": "18080738705439711"
+  },
+  "story:summary:3": {
+   "media_id": "18171355903485236"
+  }
+ },
+ "errors": [],
+ "complete": true
+}
