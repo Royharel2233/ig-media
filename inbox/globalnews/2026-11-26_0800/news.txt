@@ -16,7 +16,7 @@ https://neuralink.com/updates/neuralink-receives-fda-approval-to-launch-link-piv
 6. ועדת השירותים הפיננסיים של בית הנבחרים קידמה את חוק עתודת הביטקוין האסטרטגית לקריאה במליאה; ההצעה קובעת נעילת הביטקוין הממשלתי ל-20 שנה (אומת מול The Block ו-CoinDesk). (Watcher Guru)
 https://www.theblock.co/news/regulation/2026-11-25-house-committee-advances-strategic-bitcoin-reserve-bill-446778
 
-7. אחרי המפולת: הדאו מחק ירידה של 1,100 נקודות וסגר בעלייה (Kobeissi, אומת חלקית מול רויטרס); הביטקוין חזר מעל 61,000 דולר והאת'ריום מעל 1,700 (Bull Theory, Watcher Guru, תוך-יומי); הרופיה האינדונזית בשפל שיא חדש, 18,350 לדולר (spectatorindex).
+7. אחרי המפולת: הדאו מחק ירידה של 1,100 נקודות (Kobeissi) וסגר בעלייה של 0.3%, אומת מול AP; הביטקוין חזר מעל 61,000 דולר והאת'ריום מעל 1,700 (Bull Theory, Watcher Guru, תוך-יומי); הרופיה האינדונזית בשפל שיא חדש, 18,350 לדולר (spectatorindex).
 
 8. אורקל נפלה כ-70% משיא 2025 ושווה כיום כ-314 מיליארד דולר, על רקע חששות מהחוב (ירידת ה-70% אומתה; השווי מדווח בפרופיל). (Bull Theory)
 https://247wallst.com/investing/2026/11/21/oracle-stock-is-now-down-almost-70-from-its-peak/
