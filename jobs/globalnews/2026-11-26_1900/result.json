@@ -1,0 +1,51 @@
+{
+ "done": {
+  "post:single1_zodia": {
+   "media_id": "18390057565235421",
+   "permalink": "https://www.instagram.com/p/DgNl1rSlFoW/"
+  },
+  "post:single2_expedia_kiwi": {
+   "media_id": "17966084661260481",
+   "permalink": "https://www.instagram.com/p/DgNl48JFGbK/"
+  },
+  "post:summary": {
+   "media_id": "17872528569653559",
+   "permalink": "https://www.instagram.com/p/DgNl8JxFOrc/"
+  },
+  "threads:single1_zodia": {
+   "media_id": "18224226301354269",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgNl-4ilCQC"
+  },
+  "threads:single2_expedia_kiwi": {
+   "media_id": "18092710325276566",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgNmBfblHi_"
+  },
+  "threads:summary": {
+   "media_id": "18026278823925703",
+   "permalink": "https://www.threads.com/@globalnews.il/post/DgNmEBClKXn"
+  },
+  "story:single1_zodia:1": {
+   "media_id": "18655267438022725"
+  },
+  "story:single2_expedia_kiwi:1": {
+   "media_id": "17977213686197788"
+  },
+  "story:summary:1": {
+   "media_id": "17909573121670635"
+  },
+  "story:summary:2": {
+   "media_id": "17881333047566462"
+  },
+  "story:summary:3": {
+   "media_id": "17981909289132583"
+  },
+  "story:summary:4": {
+   "media_id": "18353132398255107"
+  },
+  "story:summary:5": {
+   "media_id": "18058886156828562"
+  }
+ },
+ "errors": [],
+ "complete": true
+}
