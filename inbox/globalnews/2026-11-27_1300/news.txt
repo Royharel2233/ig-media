@@ -9,7 +9,7 @@ https://www.straitstimes.com/world/united-states/us-pushed-venezuela-iraq-to-con
 3. בריטניה: משרד העבודה והפנסיה (DWP) הוריד כמעט את כל השירותים המקוונים בעקבות "אירוע סייבר"; תשלומי פנסיות וקצבאות לא נפגעו וישולמו כרגיל, והחקירה נמשכת עם ה-NCSC (נקראה כתבת ה-BBC במלואה). (FT)
 https://www.bbc.com/news/articles/ck1l0e946dqmo
 
-4. צרפת: התוצר התכווץ 0.2% ברבעון השלישי, יותר מהצפוי, אחרי 0.0% ברבעון הקודם (אומת מול נתוני INSEE). (Spectator Index, FT)
+4. צרפת: התוצר התכווץ 0.2% ברבעון השלישי של 2026 לעומת הרבעון הקודם, שבו נרשמה יציבות, לפי פרסום התוצאות המפורט של INSEE; ההיקף השנתי שנצבר ל-2026 הוא +0.1% בלבד (נקרא הפרסום של INSEE). (Spectator Index, FT)
 https://www.insee.fr/fr/statistiques/9165918
 
 5. SAP מאשרת אירוע אבטחה: לפי רויטרס, אין ראיות לגישה לא מורשית לנתוני לקוחות; לפי כותרות אצל BleepingComputer ו-SecurityWeek, נגנבו לכאורה פרטי התחברות של עובדים וקוד מקור הועתק או שונה דרך GitHub (כותרות בלבד, לא הכתבות). (Reuters Tech, Bull Theory)
@@ -30,8 +30,8 @@ https://x.com/IPONewsroom_/status/2126236732194431398
 10. נתוני שוק (תוך-יומיים, לפי פרופילים): ביטקוין חזר מעל 62,000 דולר, +8.5% ביומיים; זהב ב-3,650 דולר, +2.4%. (Bull Theory, Watcher Guru, Spectator Index)
 פוסטים: https://x.com/BullTheoryio/status/2126231780307181972 , https://x.com/spectatorindex/status/2126202586655318046
 
-11. הבורסה ההודית NSE הפכה לבורסה הנסחרת השלישית בגודלה בעולם, בשווי 64.1 מיליארד דולר, עוקפת את Deutsche Börse ואת בורסת לונדון (אומת מול כותרות ב-Moneycontrol וב-Hindu BusinessLine). (Bull Theory)
-https://www.moneycontrol.com/news/business/markets/nse-overtakes-deutsche-boerse-london-stock-exchange-to-become-third-largest-stock-exchange-by-market-cap-14089420.html
+11. שווי השוק של הבורסה ההודית NSE עצמה, כחברה נסחרת, הגיע ל-64.1 מיליארד דולר והפך אותה לבורסה הנסחרת השלישית בגודלה בעולם, עוקפת את Deutsche Börse (63.4 מיליארד) ואת בורסת לונדון (62.4 מיליארד); לפניה CME ו-ICE (נקראה הכתבה של Hindu BusinessLine במלואה). (Bull Theory)
+https://www.thehindubusinessline.com/markets/nse-overtakes-deutsche-boerse-lse-to-become-worlds-third-largest-listed-exchange-at-641-billion/article71746352.ece
 
 12. קניה איירווייז מתכננת גיוס של 1.5 מיליארד דולר ממשקיע אסטרטגי עד אמצע 2027, בשילוב הון וחוב (רויטרס דרך IPO Newsroom; לפי הפוסט). (IPO Newsroom)
 https://x.com/IPONewsroom_/status/2126260204199141696
