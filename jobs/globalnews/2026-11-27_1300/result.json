@@ -63,10 +63,14 @@
   },
   "story:summary:9": {
    "media_id": "18122387524967384"
+  },
+  "post:single1_china_stocks": {
+   "media_id": "18128520121999392",
+   "permalink": "https://www.instagram.com/p/DgPjJEDG_jM/"
   }
  },
  "errors": [
   "post:single1_china_stocks: POST https://graph.instagram.com/v26.0/17841426850998559/media_publish -> HTTP 400: b'{\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"As_SsUNcyzf7iyTmnmbECF_\"}}'"
  ],
- "complete": false
+ "complete": true
 }
